@@ -38,6 +38,22 @@ class TriageTest(unittest.TestCase):
         with self.assertRaises(ValueError):
             classify_repair_request("   ")
 
+    def test_matching_ignores_case_and_extra_spaces(self):
+        self.assertEqual(
+            classify_repair_request("GAS   SMELL near the meter", category="other"),
+            "emergency",
+        )
+
+    def test_keywords_inside_longer_words_are_not_emergencies(self):
+        self.assertEqual(
+            classify_repair_request("Brandweer heeft de deur geforceerd", category="lock"),
+            "urgent",
+        )
+        self.assertEqual(
+            classify_repair_request("Fireplace door is loose", category="other"),
+            "normal",
+        )
+
     # Backlog for part 5. Delete the @unittest.skip line to switch a test on.
 
     @unittest.skip("Backlog: switch on in part 5")

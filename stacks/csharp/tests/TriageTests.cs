@@ -29,6 +29,17 @@ public class TriageTests
     public void EmptyDescriptionIsRejected() =>
         Assert.Throws<ArgumentException>(() => Triage.Classify("   "));
 
+    [Fact(DisplayName = "matching ignores case and extra spaces")]
+    public void MatchingIgnoresCaseAndSpaces() =>
+        Assert.Equal(Priority.Emergency, Triage.Classify("GAS   SMELL near the meter", "other"));
+
+    [Fact(DisplayName = "keywords inside longer words are not emergencies")]
+    public void KeywordsInsideLongerWordsAreNotEmergencies()
+    {
+        Assert.Equal(Priority.Urgent, Triage.Classify("Brandweer heeft de deur geforceerd", "lock"));
+        Assert.Equal(Priority.Normal, Triage.Classify("Fireplace door is loose", "other"));
+    }
+
     // Backlog for part 5. Remove the Skip = "..." part to switch a test on.
 
     [Fact(DisplayName = "category ignores case and extra spaces", Skip = "Backlog: switch on in part 5")]

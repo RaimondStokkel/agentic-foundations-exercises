@@ -48,6 +48,17 @@ public class TriageTest {
         assertThrows(IllegalArgumentException.class, () -> Triage.classify("   ", null, false));
     }
 
+    @Test("matching ignores case and extra spaces")
+    void matchingIgnoresCaseAndSpaces() {
+        assertEquals(Triage.Priority.EMERGENCY, Triage.classify("GAS   SMELL near the meter", "other", false));
+    }
+
+    @Test("keywords inside longer words are not emergencies")
+    void keywordsInsideLongerWords() {
+        assertEquals(Triage.Priority.URGENT, Triage.classify("Brandweer heeft de deur geforceerd", "lock", false));
+        assertEquals(Triage.Priority.NORMAL, Triage.classify("Fireplace door is loose", "other", false));
+    }
+
     // Backlog for part 5. Delete the @Skip line to switch a test on.
 
     @Skip("Backlog: switch on in part 5")

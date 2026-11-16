@@ -1,3 +1,5 @@
+using System.Text.RegularExpressions;
+
 namespace RepairTriage;
 
 public enum Priority
@@ -9,6 +11,13 @@ public enum Priority
 
 public static class Triage
 {
+    // Whole words only: "brand" matches "brand in de meterkast", not "brandweer".
+    private static Regex WholeWord(string keyword) => new($@"(?<!\w){Regex.Escape(keyword)}(?!\w)");
+
+    private static readonly Regex[] EmergencyPatterns = Keywords.Emergency.Select(WholeWord).ToArray();
+
+    private static string Normalise(string text) => Regex.Replace(text.ToLowerInvariant(), @"\s+", " ").Trim();
+
     /// <summary>Classify a tenant repair request.</summary>
     /// <param name="description">Free text written by the tenant.</param>
     /// <param name="category">Category picked in the tenant portal.</param>
@@ -20,7 +29,8 @@ public static class Triage
             throw new ArgumentException("description is required", nameof(description));
         }
 
-        if (Keywords.Emergency.Any(keyword => description.Contains(keyword)))
+        var text = Normalise(description);
+        if (EmergencyPatterns.Any(pattern => pattern.IsMatch(text)))
         {
             return Priority.Emergency;
         }

@@ -1,4 +1,18 @@
+import re
+
 from .keywords import EMERGENCY_KEYWORDS, URGENT_CATEGORIES
+
+
+def _whole_word(keyword):
+    # Whole words only: "brand" matches "brand in de meterkast", not "brandweer".
+    return re.compile(r"(?<!\w)" + re.escape(keyword) + r"(?!\w)")
+
+
+_EMERGENCY_PATTERNS = [_whole_word(keyword) for keyword in EMERGENCY_KEYWORDS]
+
+
+def _normalise(text):
+    return " ".join(text.lower().split())
 
 
 def classify_repair_request(description, category=None, vulnerable_tenant=False):
@@ -12,7 +26,8 @@ def classify_repair_request(description, category=None, vulnerable_tenant=False)
     if not isinstance(description, str) or description.strip() == "":
         raise ValueError("description is required")
 
-    if any(keyword in description for keyword in EMERGENCY_KEYWORDS):
+    text = _normalise(description)
+    if any(pattern.search(text) for pattern in _EMERGENCY_PATTERNS):
         return "emergency"
 
     if category in URGENT_CATEGORIES or vulnerable_tenant:

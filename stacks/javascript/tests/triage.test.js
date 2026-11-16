@@ -41,6 +41,24 @@ test('empty description is rejected', () => {
   assert.throws(() => classifyRepairRequest({ description: '   ' }), TypeError);
 });
 
+test('matching ignores case and extra spaces', () => {
+  assert.equal(
+    classifyRepairRequest({ description: 'GAS   SMELL near the meter', category: 'other' }),
+    'emergency',
+  );
+});
+
+test('keywords inside longer words are not emergencies', () => {
+  assert.equal(
+    classifyRepairRequest({ description: 'Brandweer heeft de deur geforceerd', category: 'lock' }),
+    'urgent',
+  );
+  assert.equal(
+    classifyRepairRequest({ description: 'Fireplace door is loose', category: 'other' }),
+    'normal',
+  );
+});
+
 // Backlog for part 5. Remove ".skip" to switch a test on.
 
 test.skip('category ignores case and extra spaces', () => {
