@@ -31,7 +31,10 @@ Start the agent so that it asks before it acts:
 | Tool | How |
 |---|---|
 | Claude Code | `claude --permission-mode default` |
-| Copilot | `copilot` (it asks before it runs a command or changes a file) |
+| Copilot, agent mode | A new session in your stack folder, **Agent**, with the permissions picker set to **Manual permissions** |
+| Copilot CLI | `copilot` (it asks before it runs a command or changes a file) |
+
+In agent mode, Manual still lets read-only commands, and sometimes edits, through without asking. That is fine here.
 
 Give it this task:
 
@@ -74,12 +77,13 @@ git diff
 
 ## 4. Rewind, then steer with acceptance criteria (10 min)
 
-Undo the agent's work with a **checkpoint**, not with git:
+Undo the agent's work with a **checkpoint** where your tool has one (agent mode uses git for this):
 
 | Tool | How |
 |---|---|
 | Claude Code | Press `Esc` twice (or type `/rewind`), pick the point before your task, choose to restore code and conversation |
-| Copilot | Type `/rewind` (or `/undo`), pick the turn before your task, choose to restore the conversation and the files |
+| Copilot, agent mode | Look at what changed in the **Changes** view (**Last Turn**), then undo it with git: `git restore src tests` and `git clean -fd src tests` |
+| Copilot CLI | Type `/rewind` (or `/undo`), pick the turn before your task, choose to restore the conversation and the files |
 
 Run the tests: you are back to 1 failing test.
 
@@ -113,8 +117,8 @@ Ask:
 Last night's pipeline failed. Read logs/nightly-test-run.log and tell me if the failure is related to our fix.
 ```
 
-Type `/context` before and after, in Claude Code or in Copilot. How much of the window did one log file take?
-And how did the agent read it: all 649 lines, or a search?
+In Claude Code or the Copilot CLI, type `/context` before and after. How much of the window did one log file take?
+In every tool: how did the agent read it, all 649 lines or a search?
 
 Then try it the lean way, in a new session:
 

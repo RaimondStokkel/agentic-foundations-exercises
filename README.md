@@ -4,7 +4,7 @@ Three blocks of hands-on exercises for the Zig Grow session **Agentic Foundation
 Each block builds on the one before. First you watch the agent loop and steer it. Then you put a harness
 around it. Then you let it delegate and loop on its own, safely, because of the harness you built.
 
-The exercises work with **Claude Code** and with **GitHub Copilot** (the Copilot CLI or the Copilot app).
+The exercises work with **Claude Code** and with **GitHub Copilot**: agent mode in VS Code's Agents window, or the Copilot CLI.
 They are for **developers in any stack** and for **testers**.
 
 > **All data in this repo is synthetic.** Each stack has a `.env` with a fake key and a `data/tenant-export.csv`
@@ -27,8 +27,8 @@ You need the result of block 1 for block 2, and the harness from block 2 for blo
 
 | | Claude Code | GitHub Copilot |
 |---|---|---|
-| Where | The terminal (`claude`) or the Claude Code extension for VS Code | The Copilot CLI (`copilot`) in a terminal, or the GitHub Copilot app (`copilot app` opens it in the current folder) |
-| Tested with | Claude Code 2.1 | Copilot CLI 1.0 |
+| Where | The terminal (`claude`) or the Claude Code extension for VS Code | **Agent mode** in VS Code's **Agents window**, or the **Copilot CLI** (`copilot`) in a terminal. Both read the same agent and hook files |
+| Tested with | Claude Code 2.1 | Copilot CLI 1.0. The Agents window steps follow the VS Code documentation |
 
 Both need a licence. **No licence?** Do the parts you can do on paper: the predictions, acceptance criteria and
 test plans, and the configuration files. Then compare them with the solutions.
@@ -73,8 +73,10 @@ Then open **your stack folder**, not the repo root, as the project:
 
 - **Claude Code:** run `claude` in the stack folder and say yes when it asks whether you trust the folder.
   Until you trust it, Claude Code ignores the folder's *allow* rules, and you need those in block 2.
-- **Copilot:** run `copilot` in the stack folder and trust the folder when it asks. Prefer a window over a terminal?
-  `copilot app` opens the Copilot app in the same folder. The instructions in the blocks use the CLI.
+- **Copilot, agent mode:** in VS Code, click **Open in Agents** in the title bar (or run `code --agents`). Start a
+  **New Session**, choose **This Computer**, open your stack folder, keep the **Copilot** target and pick **Agent**.
+  Trust the folder when VS Code asks: in a folder you don't trust, agents are switched off.
+- **Copilot CLI:** run `copilot` in the stack folder and trust the folder when it asks.
 
 ## Solutions
 
@@ -107,7 +109,8 @@ In November 2026 every block was run with real agents on Windows, in Claude Code
 All four stacks pass their tests at every solution tag. The guard hook passes the same 23 test cases in Node.js,
 Python, Windows PowerShell 5.1 and PowerShell 7.
 
-**Not tested:** the GitHub Copilot app (the Copilot CLI was tested), and macOS and Linux.
+**Not tested:** Copilot agent mode in VS Code's Agents window (its steps follow the VS Code documentation, and it reads
+the same agent and hook files as the tested Copilot CLI), and macOS and Linux.
 
 ## What is in this repo
 

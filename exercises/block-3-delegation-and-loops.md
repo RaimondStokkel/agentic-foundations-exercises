@@ -72,7 +72,8 @@ Good to know: Copilot delegates with its built-in `task` tool, so name the helpe
 | Tool | How |
 |---|---|
 | Claude Code | `Use the test-runner subagent to run the tests. Then ask the reviewer subagent to review src/ against the tests.` |
-| Copilot | Start with `copilot --agent triage-lead` (or type `/agent triage-lead` in a running session), then: `Run the tests and get a review of src/.` |
+| Copilot, agent mode | A new session in your stack folder with the **Copilot** target. Pick **Triage Lead** in the **Agent** dropdown, then: `Run the tests and get a review of src/.` |
+| Copilot CLI | Start with `copilot --agent triage-lead` (or type `/agent triage-lead` in a running session), then the same request |
 
 Watch the main conversation. It gets a short summary, while the test output and the files the reviewer read stay in
 the helpers' own context windows.
@@ -167,9 +168,12 @@ bash ../../tools/ralph.sh 5 copilot     # Copilot
 
 - **Claude Code** works without anyone to ask, so it can only do what your `.claude/settings.json` allows. Edits to
   `tests/` are on "ask", and in a loop that means no. Your allow rules only count in a folder you trust (README, step 4).
-- **Copilot** runs with `copilot -p` (no questions asked). The script passes `--trust-folder`, so your guard hook loads,
-  and passes the allow and deny rules as flags. It allows every file change, which is why the script itself checks
-  that `tests/` is untouched.
+- **Copilot** runs as the Copilot CLI with `copilot -p` (no questions asked), also if you use agent mode for the rest.
+  The script passes `--trust-folder`, so your guard hook loads, and passes the allow and deny rules as flags. It allows
+  every file change, which is why the script itself checks that `tests/` is untouched.
+- **No Copilot CLI?** Be the loop yourself in agent mode. For each plan item, start a **New Session** (a fresh context)
+  and send `Read ralph/PROMPT.md and follow its instructions exactly.` Then run the tests yourself: commit if fewer
+  tests fail, otherwise `git restore src`.
 - Every iteration is a fresh process: that is the fresh context.
 
 Follow along with `git log --oneline` and `ralph/log-1.txt`, `log-2.txt` and so on.

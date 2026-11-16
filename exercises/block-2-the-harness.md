@@ -79,10 +79,23 @@ Create `.claude/settings.json` in your stack folder. This is the JavaScript vers
 - On Windows, Claude Code can run commands through Bash *and* PowerShell, so write shell rules for both.
 - Allow rules only work once you trust the folder (see the README). Deny and ask rules always work.
 
-### Copilot: flags when you start it
+### Copilot, agent mode: the permissions picker
 
-Copilot asks before it runs a command or changes a file, unless you allow it. It has no file in the repository for
-allow and deny rules: you pass them as flags each time you start it. Deny always wins, even over `--allow-all-tools`.
+Copilot has no file in the repository for allow and deny rules. In agent mode you choose a level in the permissions
+picker under the prompt:
+
+| Level | What it does |
+|---|---|
+| **Manual permissions** | Asks before most commands and edits. Read-only commands may still run without asking. Use this one |
+| **Assisted permissions** | A model decides per call whether to ask you |
+| **Allow all** | Never asks |
+
+There is no level that denies. A real "no" in agent mode needs the hook (step 4).
+
+### Copilot CLI: flags when you start it
+
+The CLI asks before it runs a command or changes a file, unless you allow it. You pass allow and deny rules as flags
+each time you start it. Deny always wins, even over `--allow-all-tools`.
 
 ```bash
 copilot --allow-tool 'shell(npm:*)' --deny-tool 'shell(git push)'
@@ -93,8 +106,8 @@ copilot --allow-tool 'shell(npm:*)' --deny-tool 'shell(git push)'
   test command (`npm test 2>&1 | Select-Object -Last 20`). The narrow rule then no longer matches, and Copilot asks you.
 - Keep your start command in your notes or make it an alias: you will start Copilot often in step 3.
 
-Reading is different. **Copilot reads any file inside your folder without asking**, `.env` included: we tested it.
-No flag stops a read. That needs a hook (step 4).
+Reading is different. **Copilot reads any file inside your folder without asking**, `.env` included: we tested it in
+the CLI. No flag or permission level stops a read. That needs a hook (step 4).
 
 ## 3. Run the test plan (10 min)
 
@@ -103,8 +116,8 @@ Run every case, each in a new session, and fill in **Actual**. Expect gaps. In o
 - **Claude Code** read `.env` with a shell command (`sed … .env`) instead of its Read tool. The rule `Read(./.env)`
   only covers the Read tool, so no rule denied that command. Without a hook, Claude Code would just ask you.
 - **Claude Code**'s rule `git push *` matches text, so it misses `git -C . push`.
-- **Copilot** read `.env` straight away (H4), without asking. Its rule `shell(git push)` did catch `git -C . push`
-  (H8): Copilot understands git subcommands.
+- **Copilot CLI** read `.env` straight away (H4), without asking. Its rule `shell(git push)` did catch `git -C . push`
+  (H8): Copilot understands git subcommands. In agent mode, expect H4 to go through as well: no level stops a read.
 
 > **Tester focus:** every row where Actual differs from Expected is a bug in the harness. Log it, then let the
 > developer fix it in step 4.
@@ -158,7 +171,7 @@ Now connect the hook to your tool. Use the command for your language:
 }
 ```
 
-**Copilot:** create `.github/hooks/guard.json`:
+**Copilot (agent mode and CLI):** create `.github/hooks/guard.json`:
 
 ```json
 {
@@ -183,8 +196,8 @@ Claude Code and Copilot. In H9, Claude Code even tried to *write* a script that 
 writing the file.
 
 One more thing to protect: the harness itself. An agent that can edit its own rules can switch them off. In Claude Code,
-add `Edit(./.claude/**)`, `Edit(./.github/**)` and `Edit(./hooks/**)` to `ask`. Copilot already asks before every file
-change, as long as you don't start it with `--allow-tool write`.
+add `Edit(./.claude/**)`, `Edit(./.github/**)` and `Edit(./hooks/**)` to `ask`. In Copilot, keep agent mode on
+**Manual permissions**, and don't start the CLI with `--allow-tool write`.
 
 ## 6. Commit (2 min)
 
