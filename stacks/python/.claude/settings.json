@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(python -m unittest)",
+      "PowerShell(python -m unittest)",
+      "Bash(python -m unittest *)",
+      "PowerShell(python -m unittest *)",
+      "Bash(py -m unittest)",
+      "PowerShell(py -m unittest)",
+      "Bash(py -m unittest *)",
+      "PowerShell(py -m unittest *)",
+      "Edit(./src/**)"
+    ],
+    "ask": [
+      "Edit(./tests/**)",
+      "Edit(./.claude/**)",
+      "Edit(./.github/**)",
+      "Edit(./hooks/**)",
+      "Bash(git commit *)",
+      "PowerShell(git commit *)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./data/**)",
+      "Bash(git push *)",
+      "PowerShell(git push *)",
+      "WebFetch"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python hooks/guard.py",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

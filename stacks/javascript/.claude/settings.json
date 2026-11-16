@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(npm test)",
+      "PowerShell(npm test)",
+      "Bash(npm test *)",
+      "PowerShell(npm test *)",
+      "Edit(./src/**)"
+    ],
+    "ask": [
+      "Edit(./tests/**)",
+      "Edit(./package.json)",
+      "Edit(./.claude/**)",
+      "Edit(./.github/**)",
+      "Edit(./hooks/**)",
+      "Bash(git commit *)",
+      "PowerShell(git commit *)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./data/**)",
+      "Bash(git push *)",
+      "PowerShell(git push *)",
+      "WebFetch"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node hooks/guard.mjs",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}
