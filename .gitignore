@@ -1,0 +1,10 @@
+# Build output
+node_modules/
+bin/
+obj/
+__pycache__/
+
+# Personal settings and Ralph loop logs, in every stack folder
+**/.claude/settings.local.json
+**/.github/copilot/settings.local.json
+**/ralph/log-*.txt

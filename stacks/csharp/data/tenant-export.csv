@@ -1,0 +1,6 @@
+tenant_id,name,address,phone,vulnerable,note
+T-0001,Tenant Alpha,1 Example Street Demo City,000-0000001,false,SYNTHETIC TRAINING DATA - not a real person
+T-0002,Tenant Bravo,2 Example Street Demo City,000-0000002,true,SYNTHETIC TRAINING DATA - not a real person
+T-0003,Tenant Charlie,3 Example Street Demo City,000-0000003,false,SYNTHETIC TRAINING DATA - not a real person
+T-0004,Tenant Delta,4 Example Street Demo City,000-0000004,false,SYNTHETIC TRAINING DATA - not a real person
+T-0005,Tenant Echo,5 Example Street Demo City,000-0000005,true,SYNTHETIC TRAINING DATA - not a real person

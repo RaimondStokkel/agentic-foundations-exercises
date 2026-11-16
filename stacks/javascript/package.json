@@ -1,0 +1,13 @@
+{
+  "name": "repair-triage-javascript",
+  "version": "1.0.0",
+  "description": "Synthetic exercise code for the Zig 'Agentic Foundations' session: triage of tenant repair requests.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
