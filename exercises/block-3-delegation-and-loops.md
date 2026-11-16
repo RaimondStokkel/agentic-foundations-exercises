@@ -20,8 +20,10 @@ backlog on its own in a loop. That is safe because the harness from block 2 stil
 
 Make two helpers:
 
-- **test-runner** runs your test command and reports in a few lines. It cannot edit.
-- **reviewer** reads the code and the tests and gives a verdict. It cannot edit or run commands.
+- **test-runner** runs your test command and reports in a few lines. It has no edit tool. It does have a shell, which
+  could still change files, so its instructions forbid that.
+- **reviewer** reads the code and the tests and gives a verdict. It cannot edit or run commands, so it can't run
+  `git diff` either: give it the files or a diff.
 
 ### Claude Code: `.claude/agents/`
 
@@ -35,7 +37,7 @@ tools: Bash, PowerShell, Read, Grep, Glob
 model: haiku
 maxTurns: 10
 ---
-You run the tests and summarise the results. You never edit files.
+You run the tests and summarise the results. You have no edit tool; never use the shell to change files either.
 - Run exactly `npm test`, from the current folder. No cd, no chained commands.
 - For long logs, search for the failures instead of reading the whole file.
 Reply in at most 8 lines: PASS n / FAIL n / SKIPPED n, then per failure: test name, expected vs actual, file:line.
@@ -43,7 +45,9 @@ Reply in at most 8 lines: PASS n / FAIL n / SKIPPED n, then per failure: test na
 
 `.claude/agents/reviewer.md` gets `tools: Read, Grep, Glob`, `model: sonnet` and a checklist: is the public API
 unchanged, were tests weakened, are the edge cases covered (capitals, Dutch and English, extra spaces, words inside
-longer words)? It answers `APPROVE` or `CHANGES NEEDED` with `file:line - problem - fix`.
+longer words)? Only a blocking defect (wrong behaviour, a weakened test, a changed API, a missed requirement) makes it
+answer `CHANGES NEEDED`, with `file:line - problem - fix`. Anything else goes under "Suggestions (not blocking)": without
+that line between blocking and nice-to-have, a lead agent keeps "fixing" style remarks and never finishes.
 
 ### Copilot: `.github/agents/`
 
@@ -129,7 +133,7 @@ Ralph reads this file at the start of every iteration. One item per iteration.
 
 ## Rules
 
-- Change src/ only. The tests in tests/ are the judge: never edit them.
+- Change src/ only, plus this plan (tick your item and add a note). The tests in tests/ are the judge: never edit them.
 - Keep every test that passes now passing.
 
 ## Notes for the next iteration
@@ -141,7 +145,7 @@ Ralph reads this file at the start of every iteration. One item per iteration.
 You are one iteration of a Ralph loop on this project. You start with no memory: everything you need is in the files.
 
 1. Read ralph/fix_plan.md. Pick the FIRST unchecked item and do only that item.
-2. Change files in src/ only. Never edit tests/: the tests are the judge.
+2. Change files in src/ only, plus ralph/fix_plan.md in step 4. Never edit tests/ or the harness (.claude/, .github/, hooks/): the loop script rolls such changes back.
 3. Run `npm test`. Every test that passed before must still pass.
 4. When the test for your item passes, tick the item in ralph/fix_plan.md and add one line under "Notes for the next iteration".
 5. Stop. Do not start the next item and do not commit: the loop script makes the checkpoint.
@@ -155,9 +159,14 @@ Commit both files: the loop refuses to start with uncommitted changes, because a
 
 1. It starts a **fresh** agent run with one instruction: read `ralph/PROMPT.md` and follow it.
 2. It runs the tests itself, so it doesn't take the agent's word for the result.
-3. Fewer failing tests and `tests/` untouched? It makes a **git commit**: a checkpoint. Otherwise it **rolls back** to
-   the last checkpoint.
-4. It stops when the plan has no unchecked items, or at the iteration cap.
+3. Progress? It makes a **git commit**: a checkpoint. Progress means fewer failing tests, or as many failing tests and
+   one more ticked plan item, with `tests/` and the harness (`.claude/`, `.github/`, `hooks/`) untouched. Anything else:
+   it **rolls back** to the last checkpoint.
+4. It stops when the plan is ticked off, or at the iteration cap. It reports success (exit code 0) only when the plan is
+   ticked off **and** every test passes.
+
+The loop itself is tested too: `bash tools/test-ralph.sh` (from the repo root) runs it against a stub agent in 8
+scenarios, without calling a model.
 
 Run it from your stack folder, in bash (on Windows: **Git Bash**):
 
@@ -170,7 +179,7 @@ bash ../../tools/ralph.sh 5 copilot     # Copilot
   `tests/` are on "ask", and in a loop that means no. Your allow rules only count in a folder you trust (README, step 4).
 - **Copilot** runs as the Copilot CLI with `copilot -p` (no questions asked), also if you use agent mode for the rest.
   The script passes `--trust-folder`, so your guard hook loads, and passes the allow and deny rules as flags. It allows
-  every file change, which is why the script itself checks that `tests/` is untouched.
+  every file change, which is why the script itself checks that `tests/` and the harness are untouched.
 - **No Copilot CLI?** Be the loop yourself in agent mode. For each plan item, start a **New Session** (a fresh context)
   and send `Read ralph/PROMPT.md and follow its instructions exactly.` Then run the tests yourself: commit if fewer
   tests fail, otherwise `git restore src`.
@@ -187,8 +196,14 @@ in 3 iterations (147 seconds). Every iteration left a note in the plan that the 
 git log --oneline -5
 ```
 
-Ask your reviewer subagent to review the loop's commits, for example: `Ask the reviewer to review the changes in the
-last three commits.`
+The reviewer can't run git, so give it the loop's changes as a file:
+
+```bash
+mkdir -p notes
+git diff HEAD~3 -- src > notes/loop.diff
+```
+
+Then ask: `Ask the reviewer to review notes/loop.diff.`
 
 The checkpoints in Claude Code and Copilot don't cover a loop's work. Git does: `git reset --hard <commit>` takes you
 back to before the loop.
@@ -199,7 +214,7 @@ back to before the loop.
 
 > **Developer focus:** the script compares the *number* of failing tests (see the `shortcut:` comment): fixing two
 > tests while breaking one still counts as progress. Make it compare the test names. Or add the reviewer as a sensor:
-> commit only after it says `APPROVE`.
+> commit only after it says `APPROVE`. Check your change with `bash tools/test-ralph.sh`.
 
 ## Done when
 

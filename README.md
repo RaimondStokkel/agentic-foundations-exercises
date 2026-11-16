@@ -28,7 +28,7 @@ You need the result of block 1 for block 2, and the harness from block 2 for blo
 | | Claude Code | GitHub Copilot |
 |---|---|---|
 | Where | The terminal (`claude`) or the Claude Code extension for VS Code | **Agent mode** in VS Code's **Agents window**, or the **Copilot CLI** (`copilot`) in a terminal. Both read the same agent and hook files |
-| Tested with | Claude Code 2.1 | Copilot CLI 1.0. The Agents window steps follow the VS Code documentation |
+| Tested with | Claude Code 2.1 | Copilot CLI 1.0.105 and 1.0.112. The Agents window steps follow the VS Code documentation |
 
 Both need a licence. **No licence?** Do the parts you can do on paper: the predictions, acceptance criteria and
 test plans, and the configuration files. Then compare them with the solutions.
@@ -106,8 +106,9 @@ In November 2026 every block was run with real agents on Windows, in Claude Code
 - **Block 3:** both tools delegated to the test-runner and reviewer subagents, and the Ralph loop finished the backlog
   in 3 iterations with Claude Code (Python and Java) and with Copilot (C#).
 
-All four stacks pass their tests at every solution tag. The guard hook passes the same 23 test cases in Node.js,
-Python, Windows PowerShell 5.1 and PowerShell 7.
+All four stacks pass their tests at every solution tag. The guard hook passes the same 33 cases in Node.js, Python,
+Windows PowerShell 5.1 and PowerShell 7 (`tools/test-guard.mjs`); block 2 lists what it does and doesn't cover. The loop
+script passes 8 scenarios with a stub agent (`tools/test-ralph.sh`), without calling a model.
 
 **Not tested:** Copilot agent mode in VS Code's Agents window (its steps follow the VS Code documentation, and it reads
 the same agent and hook files as the tested Copilot CLI), and macOS and Linux.
@@ -122,4 +123,5 @@ stacks/<stack>/     one folder per stack, each a complete little project:
   .env, data/       fake secrets and synthetic tenant data, for the agent to stay away from
   logs/             a long, noisy, synthetic pipeline log, for the context exercise
 tools/ralph.sh      the loop script for block 3
+tools/test-*.*      self-tests for the guard hook and the loop script
 ```

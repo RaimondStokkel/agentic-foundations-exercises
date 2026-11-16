@@ -2,8 +2,10 @@
 # Ralph loop (block 3): one fresh, non-interactive agent run per plan item.
 #
 # The script (the harness), not the model, decides what counts as progress:
-#   fewer failing tests AND the tests left untouched -> commit a checkpoint,
-#   anything else                                    -> roll back to the last checkpoint.
+#   tests and harness untouched, AND (fewer failing tests,
+#     or as many failing tests and one more ticked plan item) -> commit a checkpoint,
+#   anything else                                              -> roll back to the last checkpoint.
+# It succeeds (exit 0) only when the whole plan is ticked off AND every test passes.
 #
 # Run it from your stack folder, in bash (on Windows: Git Bash):
 #   bash ../../tools/ralph.sh [max-iterations] [claude|copilot] [extra agent flags...]
@@ -11,7 +13,7 @@
 #   bash ../../tools/ralph.sh 5 claude --model sonnet
 #
 # It needs ralph/PROMPT.md and ralph/fix_plan.md in your stack folder (block 3 shows how).
-# A rollback throws away uncommitted changes in src/, tests/ and ralph/, so it refuses
+# A rollback throws away every uncommitted change in your stack folder, so it refuses
 # to start with uncommitted changes. Use a branch you can throw away.
 set -u
 max=${1:-5}
@@ -69,33 +71,46 @@ run_agent() {
   esac
 }
 
+# The tests are the judge and the harness is the referee: the agent may change neither.
+PROTECTED="tests .claude .github hooks"
+
 rollback() {
-  git restore --source=HEAD --staged --worktree -- . && git clean -qfd -- src tests ralph
+  git restore --source=HEAD --staged --worktree -- . && git clean -qfd -- src ralph $PROTECTED
 }
+plan_done() { ! grep -q '^- \[ \]' ralph/fix_plan.md; }
+ticked() { grep -c '^- \[[xX]\]' ralph/fix_plan.md; }
 
 before=$(fails)
+ticked_before=$(ticked)
 echo "Start: $before failing tests ($TEST_CMD), agent: $agent"
 for i in $(seq 1 "$max"); do
-  if ! grep -q '^- \[ \]' ralph/fix_plan.md; then
-    echo "Plan done after $((i - 1)) iterations. Failing tests: $before"
-    exit 0
-  fi
+  plan_done && break
   echo "--- iteration $i (failing tests: $before)"
   # Fresh context every iteration: the run knows only the prompt and the files.
   run_agent > "ralph/log-$i.txt" 2>&1
   after=$(fails)
-  if [ -n "$(git status --porcelain -- tests)" ]; then
-    echo "the agent changed tests/: rolling back to the last checkpoint"
+  ticked_after=$(ticked)
+  # shellcheck disable=SC2086
+  if [ -n "$(git status --porcelain -- $PROTECTED)" ]; then
+    echo "the agent changed the tests or the harness: rolling back to the last checkpoint"
     rollback
   # shortcut: compares failure counts only, so fixing two tests while breaking one still counts as progress; compare test names if that bites.
-  elif [ "$after" -lt "$before" ]; then
+  elif [ "$after" -lt "$before" ] || { [ "$after" -eq "$before" ] && [ "$ticked_after" -gt "$ticked_before" ]; }; then
     git add -A -- . && git commit -qm "ralph: iteration $i ($before -> $after failing tests)"
-    echo "checkpoint $(git rev-parse --short HEAD): $before -> $after failing tests"
+    echo "checkpoint $(git rev-parse --short HEAD): $before -> $after failing tests, $ticked_after plan items ticked"
     before=$after
+    ticked_before=$ticked_after
   else
     echo "no progress ($before -> $after failing tests): rolling back to the last checkpoint"
     rollback
   fi
 done
+if plan_done && [ "$before" -eq 0 ]; then
+  echo "Plan done and all tests pass."
+  exit 0
+elif plan_done; then
+  echo "Plan ticked off, but $before tests still fail."
+  exit 1
+fi
 echo "Stopped at the iteration cap ($max). Failing tests: $before"
 exit 1
