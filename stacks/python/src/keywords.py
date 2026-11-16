@@ -20,3 +20,9 @@ EMERGENCY_KEYWORDS = [
 
 # Categories that are urgent (respond within 24 hours) when there is no emergency.
 URGENT_CATEGORIES = ["heating", "electricity", "lock"]
+
+# Words in the description that make a request urgent, whatever the category.
+URGENT_KEYWORDS = ["no hot water", "geen warm water"]
+
+# Longer descriptions are rejected, like empty ones.
+MAX_DESCRIPTION_LENGTH = 2000

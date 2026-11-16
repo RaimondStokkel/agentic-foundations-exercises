@@ -1,10 +1,11 @@
-import { EMERGENCY_KEYWORDS, URGENT_CATEGORIES } from './keywords.js';
+import { EMERGENCY_KEYWORDS, URGENT_CATEGORIES, URGENT_KEYWORDS, MAX_DESCRIPTION_LENGTH } from './keywords.js';
 
 const escapeRegExp = (text) => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
 // Whole words only: "brand" matches "brand in de meterkast", not "brandweer".
 const wholeWord = (keyword) => new RegExp(`(^|[^\\p{L}\\p{N}_])${escapeRegExp(keyword)}($|[^\\p{L}\\p{N}_])`, 'u');
 const EMERGENCY_PATTERNS = EMERGENCY_KEYWORDS.map(wholeWord);
+const URGENT_PATTERNS = URGENT_KEYWORDS.map(wholeWord);
 
 const normalise = (text) => text.toLowerCase().replace(/\s+/g, ' ').trim();
 
@@ -21,13 +22,17 @@ export function classifyRepairRequest({ description, category, vulnerableTenant 
   if (typeof description !== 'string' || description.trim() === '') {
     throw new TypeError('description is required');
   }
+  if (description.length > MAX_DESCRIPTION_LENGTH) {
+    throw new TypeError(`description is longer than ${MAX_DESCRIPTION_LENGTH} characters`);
+  }
 
   const text = normalise(description);
   if (EMERGENCY_PATTERNS.some((pattern) => pattern.test(text))) {
     return 'emergency';
   }
 
-  if (URGENT_CATEGORIES.includes(category) || vulnerableTenant) {
+  const urgentCategory = typeof category === 'string' && URGENT_CATEGORIES.includes(normalise(category));
+  if (urgentCategory || URGENT_PATTERNS.some((pattern) => pattern.test(text)) || vulnerableTenant) {
     return 'urgent';
   }
 

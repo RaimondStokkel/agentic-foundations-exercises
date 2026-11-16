@@ -10,6 +10,8 @@ public final class Triage {
 
     private static final List<Pattern> EMERGENCY_PATTERNS =
         Arrays.stream(Keywords.EMERGENCY).map(Triage::wholeWord).collect(Collectors.toList());
+    private static final List<Pattern> URGENT_PATTERNS =
+        Arrays.stream(Keywords.URGENT).map(Triage::wholeWord).collect(Collectors.toList());
 
     private Triage() {
     }
@@ -23,6 +25,10 @@ public final class Triage {
         return text.toLowerCase(Locale.ROOT).trim().replaceAll("\\s+", " ");
     }
 
+    private static boolean matchesAny(List<Pattern> patterns, String text) {
+        return patterns.stream().anyMatch(pattern -> pattern.matcher(text).find());
+    }
+
     /**
      * Classify a tenant repair request.
      *
@@ -34,13 +40,17 @@ public final class Triage {
         if (description == null || description.isBlank()) {
             throw new IllegalArgumentException("description is required");
         }
+        if (description.length() > Keywords.MAX_DESCRIPTION_LENGTH) {
+            throw new IllegalArgumentException("description is longer than " + Keywords.MAX_DESCRIPTION_LENGTH + " characters");
+        }
 
         String text = normalise(description);
-        if (EMERGENCY_PATTERNS.stream().anyMatch(pattern -> pattern.matcher(text).find())) {
+        if (matchesAny(EMERGENCY_PATTERNS, text)) {
             return Priority.EMERGENCY;
         }
 
-        if ((category != null && Arrays.asList(Keywords.URGENT_CATEGORIES).contains(category)) || vulnerableTenant) {
+        boolean urgentCategory = category != null && Arrays.asList(Keywords.URGENT_CATEGORIES).contains(normalise(category));
+        if (urgentCategory || matchesAny(URGENT_PATTERNS, text) || vulnerableTenant) {
             return Priority.URGENT;
         }
 

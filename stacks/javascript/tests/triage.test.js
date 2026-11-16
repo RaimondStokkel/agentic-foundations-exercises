@@ -59,16 +59,16 @@ test('keywords inside longer words are not emergencies', () => {
   );
 });
 
-// Backlog for part 5. Remove ".skip" to switch a test on.
+// Backlog, switched on in part 5.
 
-test.skip('category ignores case and extra spaces', () => {
+test('category ignores case and extra spaces', () => {
   assert.equal(
     classifyRepairRequest({ description: 'Radiator stays cold', category: ' Heating ' }),
     'urgent',
   );
 });
 
-test.skip('no hot water is urgent, also in Dutch', () => {
+test('no hot water is urgent, also in Dutch', () => {
   assert.equal(
     classifyRepairRequest({ description: 'No hot water in the shower', category: 'other' }),
     'urgent',
@@ -79,7 +79,7 @@ test.skip('no hot water is urgent, also in Dutch', () => {
   );
 });
 
-test.skip('descriptions longer than 2000 characters are rejected', () => {
+test('descriptions longer than 2000 characters are rejected', () => {
   assert.equal(classifyRepairRequest({ description: 'x'.repeat(2000) }), 'normal');
   assert.throws(() => classifyRepairRequest({ description: 'x'.repeat(2001) }), TypeError);
 });

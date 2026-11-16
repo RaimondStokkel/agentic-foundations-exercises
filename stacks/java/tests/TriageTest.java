@@ -59,22 +59,19 @@ public class TriageTest {
         assertEquals(Triage.Priority.NORMAL, Triage.classify("Fireplace door is loose", "other", false));
     }
 
-    // Backlog for part 5. Delete the @Skip line to switch a test on.
+    // Backlog, switched on in part 5.
 
-    @Skip("Backlog: switch on in part 5")
     @Test("category ignores case and extra spaces")
     void categoryIgnoresCaseAndSpaces() {
         assertEquals(Triage.Priority.URGENT, Triage.classify("Radiator stays cold", " Heating ", false));
     }
 
-    @Skip("Backlog: switch on in part 5")
     @Test("no hot water is urgent, also in Dutch")
     void noHotWaterIsUrgent() {
         assertEquals(Triage.Priority.URGENT, Triage.classify("No hot water in the shower", "other", false));
         assertEquals(Triage.Priority.URGENT, Triage.classify("Geen warm water sinds gisteren", "other", false));
     }
 
-    @Skip("Backlog: switch on in part 5")
     @Test("descriptions longer than 2000 characters are rejected")
     void longDescriptionsAreRejected() {
         assertEquals(Triage.Priority.NORMAL, Triage.classify("x".repeat(2000), null, false));

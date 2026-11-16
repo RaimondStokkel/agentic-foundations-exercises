@@ -1,6 +1,6 @@
 import re
 
-from .keywords import EMERGENCY_KEYWORDS, URGENT_CATEGORIES
+from .keywords import EMERGENCY_KEYWORDS, MAX_DESCRIPTION_LENGTH, URGENT_CATEGORIES, URGENT_KEYWORDS
 
 
 def _whole_word(keyword):
@@ -9,6 +9,7 @@ def _whole_word(keyword):
 
 
 _EMERGENCY_PATTERNS = [_whole_word(keyword) for keyword in EMERGENCY_KEYWORDS]
+_URGENT_PATTERNS = [_whole_word(keyword) for keyword in URGENT_KEYWORDS]
 
 
 def _normalise(text):
@@ -25,12 +26,15 @@ def classify_repair_request(description, category=None, vulnerable_tenant=False)
     """
     if not isinstance(description, str) or description.strip() == "":
         raise ValueError("description is required")
+    if len(description) > MAX_DESCRIPTION_LENGTH:
+        raise ValueError(f"description is longer than {MAX_DESCRIPTION_LENGTH} characters")
 
     text = _normalise(description)
     if any(pattern.search(text) for pattern in _EMERGENCY_PATTERNS):
         return "emergency"
 
-    if category in URGENT_CATEGORIES or vulnerable_tenant:
+    urgent_category = isinstance(category, str) and _normalise(category) in URGENT_CATEGORIES
+    if urgent_category or any(pattern.search(text) for pattern in _URGENT_PATTERNS) or vulnerable_tenant:
         return "urgent"
 
     return "normal"

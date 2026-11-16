@@ -23,6 +23,12 @@ final class Keywords {
     // Categories that are urgent (respond within 24 hours) when there is no emergency.
     static final String[] URGENT_CATEGORIES = { "heating", "electricity", "lock" };
 
+    // Words in the description that make a request urgent, whatever the category.
+    static final String[] URGENT = { "no hot water", "geen warm water" };
+
+    // Longer descriptions are rejected, like empty ones.
+    static final int MAX_DESCRIPTION_LENGTH = 2000;
+
     private Keywords() {
     }
 }

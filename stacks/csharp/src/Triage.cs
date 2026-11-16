@@ -15,6 +15,7 @@ public static class Triage
     private static Regex WholeWord(string keyword) => new($@"(?<!\w){Regex.Escape(keyword)}(?!\w)");
 
     private static readonly Regex[] EmergencyPatterns = Keywords.Emergency.Select(WholeWord).ToArray();
+    private static readonly Regex[] UrgentPatterns = Keywords.Urgent.Select(WholeWord).ToArray();
 
     private static string Normalise(string text) => Regex.Replace(text.ToLowerInvariant(), @"\s+", " ").Trim();
 
@@ -29,13 +30,19 @@ public static class Triage
             throw new ArgumentException("description is required", nameof(description));
         }
 
+        if (description.Length > Keywords.MaxDescriptionLength)
+        {
+            throw new ArgumentException($"description is longer than {Keywords.MaxDescriptionLength} characters", nameof(description));
+        }
+
         var text = Normalise(description);
         if (EmergencyPatterns.Any(pattern => pattern.IsMatch(text)))
         {
             return Priority.Emergency;
         }
 
-        if ((category is not null && Keywords.UrgentCategories.Contains(category)) || vulnerableTenant)
+        var urgentCategory = category is not null && Keywords.UrgentCategories.Contains(Normalise(category));
+        if (urgentCategory || UrgentPatterns.Any(pattern => pattern.IsMatch(text)) || vulnerableTenant)
         {
             return Priority.Urgent;
         }
