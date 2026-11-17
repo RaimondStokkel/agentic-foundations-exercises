@@ -65,14 +65,19 @@ Create three custom agents in .github/agents/ in this folder, not in the reposit
 
 Approve the changes: the agents live in the harness folders, so your rules ask first.
 
-> **Tester focus (2 min):** type `Show me the agent files you made.` and check them against this list:
->
-> - The description says *when* to use the helper.
-> - The tools are a short list. The reviewer has no edit tool and no shell. The test-runner has no edit tool.
-> - The reply format is short and fixed.
-> - Only one agent writes code.
+## 2. Check them against the list (2 min)
 
-## 2. Watch the agent delegate (8 min)
+**Type in your agent:** `Show me the agent files you made.` Check them against this list:
+
+- The description says *when* to use the helper.
+- The tools are a short list. The reviewer has no edit tool and no shell. The test-runner has no edit tool.
+- The reply format is short and fixed.
+- Only one agent writes code.
+
+> **Tester focus:** a file that doesn't match the list is a bug in the harness. Tell the agent what is wrong and ask
+> it to fix the file.
+
+## 3. Watch the agent delegate (8 min)
 
 The agent loads its helpers when a session starts. Start a **new session** in your stack folder:
 
@@ -85,13 +90,15 @@ The agent loads its helpers when a session starts. Start a **new session** in yo
 Watch the main conversation. It gets a short summary from each helper. The test output and the files the reviewer read
 stay in the helpers' own context windows.
 
+## 4. Fix the blocking findings (3 min)
+
 **What did the reviewer say?** If it found a blocking problem, **type in your agent:** `Fix the blocking findings.`
 Then watch the agent call the helpers again.
 
 > **Tester focus:** the reviewer is your automated colleague. Ask the agent to add one check of your own to the
-> reviewer, for example "every acceptance criterion has a test". Run step 2 again. Does it find what you would find?
+> reviewer, for example "every acceptance criterion has a test". Run step 3 again. Does it find what you would find?
 
-## 3. Commit (1 min)
+## 5. Commit (1 min)
 
 **Type in your agent:**
 

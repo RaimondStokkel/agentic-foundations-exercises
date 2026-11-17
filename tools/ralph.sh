@@ -46,7 +46,7 @@ else
 fi
 
 for f in ralph/PROMPT.md ralph/fix_plan.md; do
-  [ -f "$f" ] || { echo "Missing $f. Block 3, step 3 shows how to write it." >&2; exit 2; }
+  [ -f "$f" ] || { echo "Missing $f. Part 5, step 2 shows how to get it." >&2; exit 2; }
 done
 if [ -n "$(git status --porcelain -- .)" ]; then
   echo "Commit your changes first: a rollback would throw them away." >&2

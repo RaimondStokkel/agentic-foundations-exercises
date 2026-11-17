@@ -49,7 +49,7 @@ The text the agent writes between its steps is the "thought". Every tool call it
 
 When it is done, compare with your prediction. **How many steps did it take? Which observation changed its plan?**
 
-Your agent's steps will differ from your neighbour's, and from a second run: the path is not deterministic. The result
+Your agent's steps will differ from a colleague's, and from a second run: the path is not deterministic. The result
 is what you can test, and that is what steps 4 and 6 do.
 
 ## 4. Check the result (5 min)
