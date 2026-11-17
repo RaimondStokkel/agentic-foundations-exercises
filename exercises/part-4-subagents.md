@@ -20,6 +20,8 @@ changes the code.
   model: running tests needs no deep thinking.
 - The **reviewer** reads the code and the tests and gives a verdict. It can't edit or run anything.
 
+Paste the block for your agent as a whole. You don't need to understand every line: the agent turns it into the files.
+
 **Claude desktop app. Type in your agent:**
 
 ```text

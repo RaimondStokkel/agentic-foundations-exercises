@@ -52,16 +52,14 @@ How you set rules depends on your agent.
 **Claude desktop app.** Rules live in a file in your project. **Type in your agent:**
 
 ```text
-Create .claude/settings.json with these permission rules. Use the test command from README.md.
-allow: the test command as Bash and as PowerShell, and Edit(./src/**)
-ask: Edit(./tests/**), Edit(./.claude/**), Edit(./.github/**), Edit(./hooks/**),
-     and git commit as Bash and as PowerShell
-deny: Read(./.env), Read(./.env.*), Read(./data/**), git push as Bash and as PowerShell, and WebFetch
-Show me the file when you are done.
+Create .claude/settings.json with permission rules that match these decisions:
+- allow: running the tests (see README.md) and editing files in src/
+- ask first: editing tests/, .claude/, .github/ or hooks/, and git commit
+- deny: reading .env and anything in data/, git push, and fetching web pages
+Write every shell rule for both Bash and PowerShell. Show me the file.
 ```
 
-`deny` beats `ask`, and `ask` beats `allow`. Rules are written for Bash and for PowerShell, because on Windows the
-agent can use both.
+Claude asks before it writes this file: approve it. If two rules match, deny wins over ask, and ask wins over allow.
 
 **Copilot, Agents window.** There is no rules file. You choose a level in the permissions picker under the prompt.
 Keep **Manual permissions**: it asks before most commands and edits. No level says "never". For a real no, you need the
@@ -81,43 +79,26 @@ from now on.
 > `read(.env)` stops its read tool, but not a shell command such as `cat .env`. The Agents window has no such rule.
 > That is a job for the hook.
 
-## 3. Add a guard hook (8 min)
+## 3. Switch on the guard hook (5 min)
 
-> **Developer focus:** read the hook the agent writes. Would you trust it in your own repository?
-
-The hook reads every tool call before it runs, and denies the call when it mentions a push, `.env` or the tenant export.
+A hook is a small script that the harness runs before every tool call. It can say no, whatever the model wants. The
+repo has a ready-made, tested one: it blocks every call that mentions a git push, `.env` or the tenant export.
 
 **Type in your agent:**
 
 ```text
-Write a guard hook in hooks/: guard.mjs for a JavaScript project, guard.py for Python,
-or guard.ps1 (Windows PowerShell 5.1) for C# or Java.
-It reads one tool call as JSON from stdin. The arguments are in "tool_input" (Claude Code)
-or "toolArgs" (Copilot, sometimes as a JSON string).
-Deny the call when its arguments mention a git push (also git -C . push, git -C "my folder" push,
-git.exe push and git 'push'), a file named .env, or "tenant-export". Also deny when the input is not
-valid JSON. Start every deny reason with "Blocked by harness guard:".
-Let a call through when it only hands a brief to a subagent (tool name Agent, Task or task).
-To deny for Claude Code: write the reason to stderr and exit with code 2.
-To deny for Copilot (the input has "toolName"): print
-{"permissionDecision":"deny","permissionDecisionReason":"<the reason>"} and exit 0.
-Otherwise exit 0 without output.
-Test the hook by piping sample tool calls into it: a git -C . push and a cat .env must be denied,
-the test command must pass. Show me the results.
-When the tests pass, register the hook for every tool call:
-- Claude Code: in .claude/settings.json, under hooks, PreToolUse, matcher "*", a command hook with timeout 10.
-- Copilot: in .github/hooks/guard.json in this folder, not in the repository root:
-  {"version": 1, "hooks": {"preToolUse": [a command hook with timeoutSec 10]}}.
+Switch on the ready-made guard hook from the git tag block-2-solution: take the folders hooks/
+and .github/hooks/ from that tag, and copy the "hooks" part of its .claude/settings.json into
+our .claude/settings.json (create the file if it is missing). Then explain in plain words
+what the hook blocks.
 ```
 
 If the agent asks to change `.claude/`, `.github/` or `hooks/`, approve it. Note that this is the harness: in Claude,
 from now on changing it always needs your approval.
 
-> **Tester focus:** with Node.js installed, **type in your agent:**
-> `Run node ../../tools/test-guard.mjs followed by the hook command, and show me the result.`
-> It sends 33 tricky tool calls to the hook. Every failing case is a hole: ask the agent to close it.
+> **Developer focus:** ask the agent to show you the hook. Would you trust it in your own repository?
 
-## 4. Start fresh, then try to break it (6 min)
+## 4. Start fresh, then try to break it (9 min)
 
 The agent loads rules and hooks when a session starts. **Start a new session in your stack folder** (Claude: **+ New**;
 Agents window: **New Session**; CLI: `/exit` and start again with your flags).

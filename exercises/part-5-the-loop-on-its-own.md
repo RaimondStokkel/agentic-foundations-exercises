@@ -32,40 +32,21 @@ Run the tests and tell me how many fail. Then commit with the message: Part 5: s
 
 Approve the test change. **You should see:** 3 failing tests.
 
-## 2. Write the plan and the prompt (4 min)
+## 2. Get the plan and the prompt (4 min)
+
+The loop needs two small files: a **plan** with one item per backlog test (the memory), and a **prompt** that every
+round gets (the instructions). Both are ready-made in the repo.
 
 **Type in your agent:**
 
 ```text
-Create two files with exactly this content, then commit them with the message: Part 5: plan and prompt
-
-File ralph/fix_plan.md:
-# Fix plan
-
-One item per round.
-
-- [ ] Category ignores case and extra spaces: " Heating " is an urgent category (test: "category ignores case and extra spaces")
-- [ ] No hot water is urgent, whatever the category, also in Dutch (test: "no hot water is urgent, also in Dutch")
-- [ ] Descriptions longer than 2000 characters are rejected like empty ones; exactly 2000 is fine (test: "descriptions longer than 2000 characters are rejected")
-
-## Rules
-
-- Change src/ only, plus this plan (tick your item and add a note). The tests in tests/ are the judge: never edit them.
-- Keep every test that passes now passing.
-
-## Notes for the next round
-
-File ralph/PROMPT.md:
-You are one round of a loop on this project. You start with no memory: everything you need is in the files.
-
-1. Read ralph/fix_plan.md. Pick the FIRST unchecked item and do only that item.
-2. Change files in src/ only, plus ralph/fix_plan.md in step 4. Never edit tests/ or the harness (.claude/, .github/, hooks/).
-3. Run the test command from README.md. Every test that passed before must still pass.
-4. When the test for your item passes, tick the item in ralph/fix_plan.md and add one line under "Notes for the next round".
-5. Stop. Do not start the next item and do not commit: whoever runs the loop makes the checkpoint.
+Take the folder ralph/ from the git tag block-3-solution and commit it with the message:
+Part 5: plan and prompt. Then show me ralph/fix_plan.md and ralph/PROMPT.md.
 ```
 
-> **Tester focus:** read the plan. Does each item say the same as its test? Is a boundary missing?
+Read both. Where the prompt says "the loop script", that is you in step 3.
+
+> **Tester focus:** does each plan item say the same as its test? Is a boundary missing?
 
 ## 3. Be the loop (10 min)
 
@@ -127,10 +108,6 @@ The script does what you did in step 3. It starts a fresh agent run per round, r
 there is progress and rolls back when there isn't, and checks that `tests/` and the harness are untouched. It stops
 when the plan is done or after 5 rounds. When we tested it, it finished the backlog in 3 rounds with Claude Code
 (Python, Java) and Copilot (C#, Python).
-
-> **Developer focus:** the script compares the *number* of failing tests (see the `shortcut:` comment in
-> `tools/ralph.sh`). Fixing two tests while breaking one still counts as progress. Make it compare the test names.
-> `bash tools/test-ralph.sh` (from the repo root) tests the script without calling a model.
 
 ## Stuck or behind?
 
