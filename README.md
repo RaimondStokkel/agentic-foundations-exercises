@@ -22,7 +22,9 @@ Agents window, or the Copilot CLI). They are for **developers in any stack** and
 | [4. Subagents](exercises/part-4-subagents.md) | Helpers with their own context and only the tools they need | 20 min |
 | [5. The loop on its own](exercises/part-5-the-loop-on-its-own.md) | A loop with a fresh context per round, tests as the judge and commits as checkpoints | 20 min |
 
-In the session, the trainer explains each part with a few slides first. Then you do the part.
+**In the session** (Teams): everyone works alone, on their own laptop. The trainer explains a topic with a few
+slides, then you do the next part in your agent, following its file. Thumbs-up in Teams when you are done; raise your
+hand when you are stuck. [Part 0](exercises/part-0-setup.md) explains how it works.
 
 ## Your agent
 
@@ -36,7 +38,7 @@ All need a licence. **No licence?** Tell the trainer before the session.
 
 ## Developers and testers
 
-Developers and testers do the same parts. Some steps say who leads:
+Developers and testers do every step of the same parts. Some steps have a note for one of them:
 
 - **Developer focus:** the rules, the helpers and how the agent got there.
 - **Tester focus:** what "done" means, what could go wrong, and proof that the boundaries hold.
@@ -56,7 +58,7 @@ real repository is the next session (5 Jan).
 
 ## Solutions
 
-The reference solutions are git tags. Every part has a "Behind?" step that takes over the solution through the chat.
+The reference solutions are git tags. Every part ends with a "Stuck or behind?" step that takes over the solution through your agent.
 
 | Part | Tag |
 |---|---|

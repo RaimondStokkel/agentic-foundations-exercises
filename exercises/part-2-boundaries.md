@@ -17,10 +17,11 @@ From weak to strong:
 
 ## 1. Decide first (5 min)
 
-> **Tester focus: you lead this step.** You write the tests before anything is built, as for any other feature.
+> **Tester focus:** this is a test plan. You decide the expected result before anything is built, as for any other
+> feature.
 
 For each request below, decide what the agent should do: **allow**, **ask** you first, or **deny**. Write your answers
-down, on paper or in the meeting chat.
+down for yourself. The trainer asks for a few of them in the Teams chat.
 
 | # | Someone asks the agent | Your decision |
 |---|---|---|
@@ -48,7 +49,7 @@ H10: deny. Disagree? Good: discuss it. H2 is debatable on a repository you don't
 
 How you set rules depends on your agent.
 
-**Claude desktop app.** Rules live in a file in your project. **Type in the chat:**
+**Claude desktop app.** Rules live in a file in your project. **Type in your agent:**
 
 ```text
 Create .claude/settings.json with these permission rules. Use the test command from README.md.
@@ -82,11 +83,11 @@ from now on.
 
 ## 3. Add a guard hook (8 min)
 
-> **Developer focus: you lead this step.**
+> **Developer focus:** read the hook the agent writes. Would you trust it in your own repository?
 
 The hook reads every tool call before it runs, and denies the call when it mentions a push, `.env` or the tenant export.
 
-**Type in the chat:**
+**Type in your agent:**
 
 ```text
 Write a guard hook in hooks/: guard.mjs for a JavaScript project, guard.py for Python,
@@ -112,7 +113,7 @@ When the tests pass, register the hook for every tool call:
 If the agent asks to change `.claude/`, `.github/` or `hooks/`, approve it. Note that this is the harness: in Claude,
 from now on changing it always needs your approval.
 
-> **Tester focus:** with Node.js installed, **type in the chat:**
+> **Tester focus:** with Node.js installed, **type in your agent:**
 > `Run node ../../tools/test-guard.mjs followed by the hook command, and show me the result.`
 > It sends 33 tricky tool calls to the hook. Every failing case is a hole: ask the agent to close it.
 
@@ -121,7 +122,7 @@ from now on changing it always needs your approval.
 The agent loads rules and hooks when a session starts. **Start a new session in your stack folder** (Claude: **+ New**;
 Agents window: **New Session**; CLI: `/exit` and start again with your flags).
 
-First, **type in the chat:**
+First, **type in your agent:**
 
 ```text
 Add a git remote called sandbox that points to ./no-such-remote.
@@ -140,7 +141,7 @@ Code even tried to *write* a script that reads `.env`, and the guard blocked wri
 
 ## 5. Commit (1 min)
 
-**Type in the chat:**
+**Type in your agent:**
 
 ```text
 Commit the rules and the hook with the message: Part 2: permission rules and a guard hook
@@ -157,9 +158,10 @@ Commit the rules and the hook with the message: Part 2: permission rules and a g
 - Too many "ask" rules make people click yes without reading. Which of your asks could be an allow, and which a deny?
 - What would your guard block in your own repository?
 
-## Behind?
+## Stuck or behind?
 
-**Type in the chat:**
+Stuck: raise your hand in Teams, or post in the Teams chat.
+Out of time? **Type in your agent:**
 
 ```text
 Take .claude, .github and hooks from the git tag block-2-solution and commit them with the message:

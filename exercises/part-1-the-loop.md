@@ -22,7 +22,7 @@ asking for a tool.
 
 ## 2. Predict (3 min)
 
-Before you start the agent, write down your answers, on paper or in the meeting chat:
+Before you start the agent, post your answers in the Teams chat. Type them, then send on the trainer's 3-2-1:
 
 - What will the agent do first?
 - How many steps (tool calls) will it need?
@@ -33,7 +33,7 @@ Before you start the agent, write down your answers, on paper or in the meeting 
 
 ## 3. Watch one loop (7 min)
 
-**Type in the chat:**
+**Type in your agent:**
 
 ```text
 Fix the failing priority test without changing the public API.
@@ -54,7 +54,7 @@ is what you can test, and that is what steps 4 and 6 do.
 
 ## 4. Check the result (5 min)
 
-**Type in the chat:**
+**Type in your agent:**
 
 ```text
 Which files did you change? Then, without changing any files, classify these three requests
@@ -85,16 +85,17 @@ from the full specification:
 | Copilot, Agents window | Open the **Changes** view (**Last Turn**) to see what changed. Then type: `Undo all changes in src and tests with git restore and git clean.` |
 | Copilot CLI | Type `/rewind`. Pick the turn before your task and restore the files and the conversation |
 
-**Type in the chat:** `Run the tests.` You should be back to 1 failing test.
+**Type in your agent:** `Run the tests.` You should be back to 1 failing test.
 
 > **Good to know:** a checkpoint undoes the agent's file edits. It does not undo commands it ran, a push, a deployment
 > or a message it sent. That is why part 2 exists.
 
 ## 6. Steer with acceptance criteria (5 min)
 
-> **Tester focus: you lead this step.** Turn what you found in step 4 into acceptance criteria.
+> **Tester focus:** turning findings into acceptance criteria is your craft, so be strict. Everyone writes them here,
+> from what you found in step 4.
 
-**Type in the chat** (add your own criteria):
+**Type in your agent** (add your own criteria):
 
 ```text
 Fix the failing priority test without changing the public API.
@@ -111,7 +112,7 @@ Compare with the first run: the number of steps, the files it touched, and wheth
 
 ## 7. Commit (1 min)
 
-**Type in the chat:**
+**Type in your agent:**
 
 ```text
 Commit all changes with the message: Part 1: classify Dutch and mixed-case emergencies
@@ -131,9 +132,10 @@ Approve the commit. From now on the agent commits, but only when you ask.
 - What did the acceptance criteria change?
 - Where in this loop would you want a check that the agent cannot skip? (Part 2.)
 
-## Behind?
+## Stuck or behind?
 
-**Type in the chat:**
+Stuck: raise your hand in Teams, or post in the Teams chat.
+Out of time? **Type in your agent:**
 
 ```text
 Take src and tests from the git tag block-1-solution, run the tests,

@@ -13,7 +13,7 @@ nothing between rounds. Its memory is a plan file and git, as in part 3.
 
 ## 1. Switch on the backlog (4 min)
 
-> **Tester focus: you lead this step.** The tests are the judge. A weak judge lets bad code through.
+> **Tester focus:** the tests are the judge. A weak judge lets bad code through.
 
 The backlog has three requirements. Their tests are already in `tests/`, switched off (marked as backlog):
 
@@ -23,7 +23,7 @@ The backlog has three requirements. Their tests are already in `tests/`, switche
 | B2 | "No hot water" makes a request urgent, whatever the category, also in Dutch ("Geen warm water") |
 | B3 | A description over 2000 characters is rejected, like an empty one. Exactly 2000 is fine |
 
-**Type in the chat:**
+**Type in your agent:**
 
 ```text
 Switch on the three skipped backlog tests in tests/: remove only their skip markers and change nothing else.
@@ -34,7 +34,7 @@ Approve the test change. **You should see:** 3 failing tests.
 
 ## 2. Write the plan and the prompt (4 min)
 
-**Type in the chat:**
+**Type in your agent:**
 
 ```text
 Create two files with exactly this content, then commit them with the message: Part 5: plan and prompt
@@ -80,9 +80,9 @@ Let the agent work without asking for every edit:
 Then do **one round per plan item**, three rounds in all:
 
 1. Start a **new session** in your stack folder. That is the fresh context.
-2. **Type in the chat:** `Read ralph/PROMPT.md and follow its instructions exactly.` If it asks to run the tests,
+2. **Type in your agent:** `Read ralph/PROMPT.md and follow its instructions exactly.` If it asks to run the tests,
    approve it.
-3. When it stops, **type in the chat:** `Run the tests, and show me git status.`
+3. When it stops, **type in your agent:** `Run the tests, and show me git status.`
 4. **Judge.** Fewer failing tests, and nothing changed in `tests/`, `.claude/`, `.github/` or `hooks/`?
    - Yes: **type** `Commit everything with the message: loop round 1` (2, 3).
    - No: **type** `Throw away all changes since the last commit.` Then try the round again.
@@ -91,7 +91,7 @@ A round takes one or two minutes. Every round leaves a note in the plan, and the
 
 ## 4. Review what the loop did (2 min)
 
-**Type in the chat:**
+**Type in your agent:**
 
 ```text
 Write the changes to src/ since the commit "Part 5: plan and prompt" to notes/loop.diff.
@@ -132,9 +132,10 @@ when the plan is done or after 5 rounds. When we tested it, it finished the back
 > `tools/ralph.sh`). Fixing two tests while breaking one still counts as progress. Make it compare the test names.
 > `bash tools/test-ralph.sh` (from the repo root) tests the script without calling a model.
 
-## Behind?
+## Stuck or behind?
 
-**Type in the chat:**
+Stuck: raise your hand in Teams, or post in the Teams chat.
+Out of time? **Type in your agent:**
 
 ```text
 Take src, tests and ralph from the git tag block-3-solution and commit them with the message:

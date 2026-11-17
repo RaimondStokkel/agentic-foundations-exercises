@@ -1,7 +1,17 @@
 # Part 0: Set up
 
 **10 minutes. Best done before the session.** You put the exercise code on your computer and open it in your agent.
-From here on you only type in the agent's chat and approve what it asks.
+From here on you only type in your agent and approve what it asks.
+
+## How the session works
+
+- You join the Teams meeting and work on your own laptop. The trainer explains a topic with a few slides, then
+  everyone does the next part on their own.
+- Open each part's file in your browser, on GitHub. It has every step, so you don't need the shared screen while you
+  work. Make the Teams window small, or put it on a second screen.
+- **"Type in your agent"** means the chat of Claude or Copilot. **"The Teams chat"** means the meeting chat.
+- Done with a part: a thumbs-up reaction in Teams. Stuck: raise your hand, or post in the Teams chat. The trainer may
+  ask you to share your screen.
 
 ## What you need
 
@@ -13,7 +23,7 @@ From here on you only type in the agent's chat and approve what it asks.
 - **One of these:** Node.js 20+, Python 3.10+, .NET SDK 8+ or JDK 11+. Not sure what you have? The agent checks it
   for you in step 2.
 
-No licence? Tell the trainer before the session.
+No licence? Tell the trainer before the session: without one you can only follow along in the Teams chat.
 
 ## 1. Open an empty folder in your agent (3 min)
 
@@ -29,7 +39,7 @@ If the agent asks whether you trust the folder, say yes.
 
 ## 2. Let the agent fetch the code (4 min)
 
-**Type in the chat:**
+**Type in your agent:**
 
 ```text
 Clone https://github.com/RaimondStokkel/agentic-foundations-exercises.git into this folder
@@ -62,7 +72,7 @@ Start a new session in `agentic-foundations-exercises\stacks\<your stack>`:
 | Copilot, Agents window | **New Session**, **This Computer**, your stack folder, **Copilot**, **Agent** |
 | Copilot CLI | Type `/exit`. Then `cd agentic-foundations-exercises\stacks\python` (your stack) and `copilot` |
 
-**Type in the chat:**
+**Type in your agent:**
 
 ```text
 Run the tests as README.md describes and tell me how many pass, fail and are skipped.
@@ -78,8 +88,8 @@ Run the tests as README.md describes and tell me how many pass, fail and are ski
 
 ## Stuck?
 
-- **The clone fails:** check that Git is installed (`git --version` in a terminal), or ask the trainer.
-- **None of Node.js, Python, .NET or Java is installed:** install Python or Node.js, or pair with a colleague.
+- **The clone fails:** check that Git is installed (`git --version` in a terminal), or raise your hand in Teams.
+- **None of Node.js, Python, .NET or Java is installed:** install Python or Node.js before the session (ask IT if you can't).
 - **The tests don't run:** type `Why do the tests not run? Explain it in simple words.` The agent is good at this.
 
 Next: [Part 1: The loop](part-1-the-loop.md)

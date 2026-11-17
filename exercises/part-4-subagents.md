@@ -14,13 +14,13 @@ changes the code.
 
 ## 1. Make two helpers (6 min)
 
-> **Developer focus: you lead this step.**
+> **Developer focus:** the tools list of each helper is its boundary. Read it before you approve the file.
 
 - The **test-runner** runs the tests and reports in a few lines. It has no edit tool, and it runs on a cheaper, faster
   model: running tests needs no deep thinking.
 - The **reviewer** reads the code and the tests and gives a verdict. It can't edit or run anything.
 
-**Claude desktop app. Type in the chat:**
+**Claude desktop app. Type in your agent:**
 
 ```text
 Create two subagents in .claude/agents/ in this folder.
@@ -40,7 +40,7 @@ Create two subagents in .claude/agents/ in this folder.
    Blocking (file:line - problem - fix, or none), Suggestions (not blocking, at most 3).
 ```
 
-**Copilot (Agents window and CLI). Type in the chat:**
+**Copilot (Agents window and CLI). Type in your agent:**
 
 ```text
 Create three custom agents in .github/agents/ in this folder, not in the repository root.
@@ -83,7 +83,7 @@ The agent loads its helpers when a session starts. Start a **new session** in yo
 Watch the main conversation. It gets a short summary from each helper. The test output and the files the reviewer read
 stay in the helpers' own context windows.
 
-**What did the reviewer say?** If it found a blocking problem, **type in the chat:** `Fix the blocking findings.`
+**What did the reviewer say?** If it found a blocking problem, **type in your agent:** `Fix the blocking findings.`
 Then watch the agent call the helpers again.
 
 > **Tester focus:** the reviewer is your automated colleague. Ask the agent to add one check of your own to the
@@ -91,7 +91,7 @@ Then watch the agent call the helpers again.
 
 ## 3. Commit (1 min)
 
-**Type in the chat:**
+**Type in your agent:**
 
 ```text
 Commit all changes with the message: Part 4: test-runner and reviewer subagents
@@ -107,9 +107,10 @@ Commit all changes with the message: Part 4: test-runner and reviewer subagents
 - Which jobs in your own work could a read-only helper do?
 - The helper only knows its brief. What must the main agent put in that brief?
 
-## Behind?
+## Stuck or behind?
 
-**Type in the chat:**
+Stuck: raise your hand in Teams, or post in the Teams chat.
+Out of time? **Type in your agent:**
 
 ```text
 Take .claude/agents and .github/agents from the git tag block-3-solution and commit them

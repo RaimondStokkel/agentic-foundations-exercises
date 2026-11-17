@@ -13,7 +13,7 @@ accurate. Files are its long-term memory: a new session starts with an empty win
 
 ## 1. The heavy way (4 min)
 
-Start a **new session** in your stack folder. **Type in the chat:**
+Start a **new session** in your stack folder. **Type in your agent:**
 
 ```text
 Last night's pipeline failed. Read logs/nightly-test-run.log and tell me
@@ -34,7 +34,7 @@ The log comes from the JavaScript build of the service, so it names `test/triage
 
 ## 2. The lean way (3 min)
 
-Start a **new session**. **Type in the chat:**
+Start a **new session**. **Type in your agent:**
 
 ```text
 Search logs/nightly-test-run.log for failed tests ("not ok") and summarise them in 3 lines.
@@ -44,13 +44,13 @@ Check the context again. Same answer, a fraction of the context. Searching beats
 
 ## 3. Memory on disk (5 min)
 
-In the same session, **type in the chat:**
+In the same session, **type in your agent:**
 
 ```text
 Write what you found to notes/progress.md, in at most 5 lines.
 ```
 
-Start a **new session**. **Type in the chat:**
+Start a **new session**. **Type in your agent:**
 
 ```text
 Read notes/progress.md and answer from that file only, without opening the log:
