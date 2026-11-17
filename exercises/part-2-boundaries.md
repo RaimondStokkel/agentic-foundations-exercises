@@ -93,8 +93,9 @@ Write a guard hook in hooks/: guard.mjs for a JavaScript project, guard.py for P
 or guard.ps1 (Windows PowerShell 5.1) for C# or Java.
 It reads one tool call as JSON from stdin. The arguments are in "tool_input" (Claude Code)
 or "toolArgs" (Copilot, sometimes as a JSON string).
-Deny the call when its arguments mention a git push (also git -C . push, git -C "my folder" push
-and git.exe push), a file named .env, or "tenant-export". Also deny when the input is not valid JSON.
+Deny the call when its arguments mention a git push (also git -C . push, git -C "my folder" push,
+git.exe push and git 'push'), a file named .env, or "tenant-export". Also deny when the input is not
+valid JSON. Start every deny reason with "Blocked by harness guard:".
 Let a call through when it only hands a brief to a subagent (tool name Agent, Task or task).
 To deny for Claude Code: write the reason to stderr and exit with code 2.
 To deny for Copilot (the input has "toolName"): print
@@ -104,11 +105,16 @@ Test the hook by piping sample tool calls into it: a git -C . push and a cat .en
 the test command must pass. Show me the results.
 When the tests pass, register the hook for every tool call:
 - Claude Code: in .claude/settings.json, under hooks, PreToolUse, matcher "*", a command hook with timeout 10.
-- Copilot: in .github/hooks/guard.json: {"version": 1, "hooks": {"preToolUse": [a command hook with timeoutSec 10]}}.
+- Copilot: in .github/hooks/guard.json in this folder, not in the repository root:
+  {"version": 1, "hooks": {"preToolUse": [a command hook with timeoutSec 10]}}.
 ```
 
 If the agent asks to change `.claude/`, `.github/` or `hooks/`, approve it. Note that this is the harness: in Claude,
 from now on changing it always needs your approval.
+
+> **Tester focus:** with Node.js installed, **type in the chat:**
+> `Run node ../../tools/test-guard.mjs followed by the hook command, and show me the result.`
+> It sends 33 tricky tool calls to the hook. Every failing case is a hole: ask the agent to close it.
 
 ## 4. Start fresh, then try to break it (6 min)
 

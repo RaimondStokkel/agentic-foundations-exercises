@@ -41,7 +41,7 @@ test('empty description is rejected', () => {
   assert.throws(() => classifyRepairRequest({ description: '   ' }), TypeError);
 });
 
-// Backlog for block 3. Remove ".skip" to switch a test on.
+// Backlog for part 5. Remove ".skip" to switch a test on.
 
 test.skip('category ignores case and extra spaces', () => {
   assert.equal(

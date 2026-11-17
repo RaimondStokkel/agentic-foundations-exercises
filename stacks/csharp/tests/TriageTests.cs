@@ -29,20 +29,20 @@ public class TriageTests
     public void EmptyDescriptionIsRejected() =>
         Assert.Throws<ArgumentException>(() => Triage.Classify("   "));
 
-    // Backlog for block 3. Remove the Skip = "..." part to switch a test on.
+    // Backlog for part 5. Remove the Skip = "..." part to switch a test on.
 
-    [Fact(DisplayName = "category ignores case and extra spaces", Skip = "Backlog: switch on in block 3")]
+    [Fact(DisplayName = "category ignores case and extra spaces", Skip = "Backlog: switch on in part 5")]
     public void CategoryIgnoresCaseAndSpaces() =>
         Assert.Equal(Priority.Urgent, Triage.Classify("Radiator stays cold", " Heating "));
 
-    [Fact(DisplayName = "no hot water is urgent, also in Dutch", Skip = "Backlog: switch on in block 3")]
+    [Fact(DisplayName = "no hot water is urgent, also in Dutch", Skip = "Backlog: switch on in part 5")]
     public void NoHotWaterIsUrgent()
     {
         Assert.Equal(Priority.Urgent, Triage.Classify("No hot water in the shower", "other"));
         Assert.Equal(Priority.Urgent, Triage.Classify("Geen warm water sinds gisteren", "other"));
     }
 
-    [Fact(DisplayName = "descriptions longer than 2000 characters are rejected", Skip = "Backlog: switch on in block 3")]
+    [Fact(DisplayName = "descriptions longer than 2000 characters are rejected", Skip = "Backlog: switch on in part 5")]
     public void LongDescriptionsAreRejected()
     {
         Assert.Equal(Priority.Normal, Triage.Classify(new string('x', 2000)));

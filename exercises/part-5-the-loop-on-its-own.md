@@ -80,7 +80,8 @@ Let the agent work without asking for every edit:
 Then do **one round per plan item**, three rounds in all:
 
 1. Start a **new session** in your stack folder. That is the fresh context.
-2. **Type in the chat:** `Read ralph/PROMPT.md and follow its instructions exactly.`
+2. **Type in the chat:** `Read ralph/PROMPT.md and follow its instructions exactly.` If it asks to run the tests,
+   approve it.
 3. When it stops, **type in the chat:** `Run the tests, and show me git status.`
 4. **Judge.** Fewer failing tests, and nothing changed in `tests/`, `.claude/`, `.github/` or `hooks/`?
    - Yes: **type** `Commit everything with the message: loop round 1` (2, 3).

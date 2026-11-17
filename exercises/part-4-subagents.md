@@ -22,7 +22,7 @@ changes the code.
 **Claude desktop app. Type in the chat:**
 
 ```text
-Create two subagents in .claude/agents/.
+Create two subagents in .claude/agents/ in this folder.
 1. test-runner.md: tools Bash, PowerShell, Read, Grep, Glob; model haiku; maxTurns 10.
    Description: "Runs the test suite and reports failures in a short summary. Use proactively for every
    test run, and to dig through long logs. Never edits files."
@@ -42,7 +42,7 @@ Create two subagents in .claude/agents/.
 **Copilot (Agents window and CLI). Type in the chat:**
 
 ```text
-Create three custom agents in .github/agents/.
+Create three custom agents in .github/agents/ in this folder, not in the repository root.
 1. triage-lead.agent.md: name Triage Lead; tools ['read', 'search', 'edit', 'agent', 'todo'], so no terminal.
    It fixes bugs in this triage service. It delegates every test run to the Test Runner agent and every
    review to the Reviewer agent. It never edits tests/ and never touches .env or data/.

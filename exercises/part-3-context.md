@@ -30,6 +30,8 @@ Then look at how full the context window is:
 
 The log has 649 lines. **Did the agent read all of them, or search?**
 
+The log comes from the JavaScript build of the service, so it names `test/triage.test.js` in every stack. That is fine.
+
 ## 2. The lean way (3 min)
 
 Start a **new session**. **Type in the chat:**
@@ -51,7 +53,8 @@ Write what you found to notes/progress.md, in at most 5 lines.
 Start a **new session**. **Type in the chat:**
 
 ```text
-Read notes/progress.md. Which test failed last night, and is it related to our fix?
+Read notes/progress.md and answer from that file only, without opening the log:
+which test failed last night, and is it related to our fix?
 ```
 
 The new session knows the answer without reading the log. The notes file is the memory. Part 5 uses exactly this:

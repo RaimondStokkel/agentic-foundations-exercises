@@ -81,6 +81,12 @@ In November 2026 the exercises were run with real agents on Windows, in Claude C
 - **Subagents and the loop on its own:** both agents delegated to the test-runner and the reviewer, and the loop script
   finished the backlog in 3 rounds with Claude Code (Python and Java) and with Copilot (C# and Python).
 
+On 17 November the chat prompts of every part were run as written, with Claude Code (Python stack) and, for parts 2
+and 4, the Copilot CLI (JavaScript stack). The guard blocked H4, H7 and H9 in both. Two prompts needed clearer wording:
+Copilot wrote its agents to the repository root, and a fresh session in part 3 read the log again instead of only the
+notes. Those prompts are fixed but were not run again. Copilot CLI 1.0.112 loads the stack folder's hook and agents
+when you start it in the stack folder.
+
 All four stacks pass their tests at every solution tag. The guard hook passes the same 33 cases in Node.js, Python,
 Windows PowerShell 5.1 and PowerShell 7 (`tools/test-guard.mjs`). The loop script passes 8 scenarios with a stub agent
 (`tools/test-ralph.sh`), without calling a model.

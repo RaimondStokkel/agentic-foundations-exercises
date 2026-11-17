@@ -38,16 +38,16 @@ class TriageTest(unittest.TestCase):
         with self.assertRaises(ValueError):
             classify_repair_request("   ")
 
-    # Backlog for block 3. Delete the @unittest.skip line to switch a test on.
+    # Backlog for part 5. Delete the @unittest.skip line to switch a test on.
 
-    @unittest.skip("Backlog: switch on in block 3")
+    @unittest.skip("Backlog: switch on in part 5")
     def test_category_ignores_case_and_extra_spaces(self):
         self.assertEqual(
             classify_repair_request("Radiator stays cold", category=" Heating "),
             "urgent",
         )
 
-    @unittest.skip("Backlog: switch on in block 3")
+    @unittest.skip("Backlog: switch on in part 5")
     def test_no_hot_water_is_urgent_also_in_dutch(self):
         self.assertEqual(
             classify_repair_request("No hot water in the shower", category="other"),
@@ -58,7 +58,7 @@ class TriageTest(unittest.TestCase):
             "urgent",
         )
 
-    @unittest.skip("Backlog: switch on in block 3")
+    @unittest.skip("Backlog: switch on in part 5")
     def test_descriptions_longer_than_2000_characters_are_rejected(self):
         self.assertEqual(classify_repair_request("x" * 2000), "normal")
         with self.assertRaises(ValueError):
