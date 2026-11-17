@@ -49,6 +49,9 @@ The text the agent writes between its steps is the "thought". Every tool call it
 
 When it is done, compare with your prediction. **How many steps did it take? Which observation changed its plan?**
 
+Your agent's steps will differ from your neighbour's, and from a second run: the path is not deterministic. The result
+is what you can test, and that is what steps 4 and 6 do.
+
 ## 4. Check the result (5 min)
 
 **Type in the chat:**
@@ -71,9 +74,10 @@ requirement was not met.
 > **Tester focus:** did the agent change anything in `tests/`? A test that passes because its expectation was changed
 > proves nothing. Then pick one wrong answer above and decide: is this a bug, or a requirement nobody wrote down?
 
-## 5. Undo with a checkpoint (3 min)
+## 5. Undo the incomplete fix (3 min)
 
-Take the agent's work back:
+The first fix passes the test but misses the requirement. Take it back with a **checkpoint**, so step 6 starts clean
+from the full specification:
 
 | Agent | How |
 |---|---|

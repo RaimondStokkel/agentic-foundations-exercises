@@ -12,11 +12,12 @@ A **subagent** is a helper with its own context window, its own tools and its ow
 returns a short summary. The rule of thumb: **many readers, one writer.** Helpers search, test and review. One agent
 changes the code.
 
-## 1. Make two helpers (8 min)
+## 1. Make two helpers (6 min)
 
 > **Developer focus: you lead this step.**
 
-- The **test-runner** runs the tests and reports in a few lines. It has no edit tool.
+- The **test-runner** runs the tests and reports in a few lines. It has no edit tool, and it runs on a cheaper, faster
+  model: running tests needs no deep thinking.
 - The **reviewer** reads the code and the tests and gives a verdict. It can't edit or run anything.
 
 **Claude desktop app. Type in the chat:**
@@ -62,7 +63,7 @@ Create three custom agents in .github/agents/ in this folder, not in the reposit
 
 Approve the changes: the agents live in the harness folders, so your rules ask first.
 
-> **Tester focus:** type `Show me the agent files you made.` and check them against this list:
+> **Tester focus (2 min):** type `Show me the agent files you made.` and check them against this list:
 >
 > - The description says *when* to use the helper.
 > - The tools are a short list. The reviewer has no edit tool and no shell. The test-runner has no edit tool.
