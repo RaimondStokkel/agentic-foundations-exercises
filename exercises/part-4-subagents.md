@@ -1,0 +1,120 @@
+# Part 4: Subagents
+
+**20 minutes.** You give the agent two helpers, each with its own context window and only the tools it needs.
+Then you watch the agent hand work to them.
+
+| | |
+|---|---|
+| You start with | Your part 2 commit (and part 3's notes) |
+| You end with | A test-runner and a reviewer, committed, and one run where the agent delegated to both |
+
+A **subagent** is a helper with its own context window, its own tools and its own model. It gets a short brief and
+returns a short summary. The rule of thumb: **many readers, one writer.** Helpers search, test and review. One agent
+changes the code.
+
+## 1. Make two helpers (8 min)
+
+> **Developer focus: you lead this step.**
+
+- The **test-runner** runs the tests and reports in a few lines. It has no edit tool.
+- The **reviewer** reads the code and the tests and gives a verdict. It can't edit or run anything.
+
+**Claude desktop app. Type in the chat:**
+
+```text
+Create two subagents in .claude/agents/.
+1. test-runner.md: tools Bash, PowerShell, Read, Grep, Glob; model haiku; maxTurns 10.
+   Description: "Runs the test suite and reports failures in a short summary. Use proactively for every
+   test run, and to dig through long logs. Never edits files."
+   Instructions: run exactly the test command from README.md, from the current folder; never change files;
+   search long logs instead of reading them whole. Reply in at most 8 lines: PASS n / FAIL n / SKIPPED n,
+   then per failure: test name, expected vs actual, file:line.
+2. reviewer.md: tools Read, Grep, Glob; model sonnet.
+   Description: "Read-only code reviewer. Use proactively after any code change. Never edits files."
+   Instructions: you cannot run git, so the caller gives you the changed files or a diff file.
+   Check: public API unchanged; no test deleted, skipped or weakened; edge cases covered (capitals,
+   Dutch and English, extra spaces, keywords inside longer words such as "Fireplace").
+   Only a blocking defect (wrong behaviour, a weakened test, a changed API, a missed requirement) makes the
+   verdict CHANGES NEEDED. Reply in at most 12 lines: Verdict (APPROVE or CHANGES NEEDED),
+   Blocking (file:line - problem - fix, or none), Suggestions (not blocking, at most 3).
+```
+
+**Copilot (Agents window and CLI). Type in the chat:**
+
+```text
+Create three custom agents in .github/agents/.
+1. triage-lead.agent.md: name Triage Lead; tools ['read', 'search', 'edit', 'agent', 'todo'], so no terminal.
+   It fixes bugs in this triage service. It delegates every test run to the Test Runner agent and every
+   review to the Reviewer agent. It never edits tests/ and never touches .env or data/.
+   It fixes every blocking finding before it finishes; suggestions are optional.
+2. test-runner.agent.md: name Test Runner; tools ['execute', 'read', 'search']; user-invocable: false.
+   It runs exactly the test command from README.md, never changes files, searches long logs instead of
+   reading them whole, and replies in at most 8 lines: PASS n / FAIL n / SKIPPED n, then per failure:
+   test name, expected vs actual, file:line.
+3. reviewer.agent.md: name Reviewer; tools ['read', 'search']; user-invocable: false.
+   It cannot run git, so the caller gives it the changed files or a diff file.
+   Check: public API unchanged; no test deleted, skipped or weakened; edge cases covered (capitals,
+   Dutch and English, extra spaces, keywords inside longer words such as "Fireplace").
+   Only a blocking defect (wrong behaviour, a weakened test, a changed API, a missed requirement) makes the
+   verdict CHANGES NEEDED. Reply in at most 12 lines: Verdict (APPROVE or CHANGES NEEDED),
+   Blocking (file:line - problem - fix, or none), Suggestions (not blocking, at most 3).
+```
+
+Approve the changes: the agents live in the harness folders, so your rules ask first.
+
+> **Tester focus:** type `Show me the agent files you made.` and check them against this list:
+>
+> - The description says *when* to use the helper.
+> - The tools are a short list. The reviewer has no edit tool and no shell. The test-runner has no edit tool.
+> - The reply format is short and fixed.
+> - Only one agent writes code.
+
+## 2. Watch the agent delegate (8 min)
+
+The agent loads its helpers when a session starts. Start a **new session** in your stack folder:
+
+| Agent | How, and what to type |
+|---|---|
+| Claude desktop app | **+ New**, then: `Use the test-runner subagent to run the tests. Then ask the reviewer subagent to review src/ against the tests.` |
+| Copilot, Agents window | **New Session** in your stack folder, **Copilot** target. Pick **Triage Lead** in the **Agent** dropdown, then: `Run the tests and get a review of src/.` |
+| Copilot CLI | `/exit`, then start with your flags plus `--agent triage-lead`. Then: `Run the tests and get a review of src/.` |
+
+Watch the main conversation. It gets a short summary from each helper. The test output and the files the reviewer read
+stay in the helpers' own context windows.
+
+**What did the reviewer say?** If it found a blocking problem, **type in the chat:** `Fix the blocking findings.`
+Then watch the agent call the helpers again.
+
+> **Tester focus:** the reviewer is your automated colleague. Ask the agent to add one check of your own to the
+> reviewer, for example "every acceptance criterion has a test". Run step 2 again. Does it find what you would find?
+
+## 3. Commit (1 min)
+
+**Type in the chat:**
+
+```text
+Commit all changes with the message: Part 4: test-runner and reviewer subagents
+```
+
+## Done when
+
+- [ ] The main agent delegated a test run and a review.
+- [ ] The helpers are committed.
+
+## Think about
+
+- Which jobs in your own work could a read-only helper do?
+- The helper only knows its brief. What must the main agent put in that brief?
+
+## Behind?
+
+**Type in the chat:**
+
+```text
+Take .claude/agents and .github/agents from the git tag block-3-solution and commit them
+with the message: Part 4 from the solution
+```
+
+Then start a new session, so the helpers load.
+
+Next: [Part 5: The loop on its own](part-5-the-loop-on-its-own.md)

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Ralph loop (block 3): one fresh, non-interactive agent run per plan item.
+# Ralph loop (part 5, extra): one fresh, non-interactive agent run per plan item.
 #
 # The script (the harness), not the model, decides what counts as progress:
 #   tests and harness untouched, AND (fewer failing tests,
@@ -12,7 +12,7 @@
 #   bash ../../tools/ralph.sh 5 copilot
 #   bash ../../tools/ralph.sh 5 claude --model sonnet
 #
-# It needs ralph/PROMPT.md and ralph/fix_plan.md in your stack folder (block 3 shows how).
+# It needs ralph/PROMPT.md and ralph/fix_plan.md in your stack folder (part 5 shows how).
 # A rollback throws away every uncommitted change in your stack folder, so it refuses
 # to start with uncommitted changes. Use a branch you can throw away.
 set -u

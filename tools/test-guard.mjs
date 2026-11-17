@@ -1,4 +1,4 @@
-// Runs a guard hook (block 2) against a table of tool calls: what it must deny, and what it must let through.
+// Runs a guard hook (part 2) against a table of tool calls: what it must deny, and what it must let through.
 // Usage, from a stack folder with the hooks/ of block-2-solution: node ../../tools/test-guard.mjs node hooks/guard.mjs
 //   (or: python hooks/guard.py, or: powershell -NoProfile -ExecutionPolicy Bypass -File hooks/guard.ps1)
 import { spawnSync } from 'node:child_process';
