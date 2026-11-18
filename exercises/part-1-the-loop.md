@@ -1,6 +1,6 @@
 # Part 1: The loop
 
-**25 minutes.** You watch the agent think, act and observe. Then you steer it with acceptance criteria and undo its
+**22 minutes.** You watch the agent think, act and observe. Then you steer it with acceptance criteria and undo its
 work with a checkpoint.
 
 | | |
@@ -31,7 +31,7 @@ Before you start the agent, post your answers in the Teams chat. Type them, then
 > **Tester focus:** also write down what could go wrong. Two classics: the agent changes the *test* instead of the
 > code, or the fix passes the test but breaks something nobody tested.
 
-## 3. Watch one loop (7 min)
+## 3. Watch one loop (5 min)
 
 **Type in your agent:**
 
@@ -52,7 +52,7 @@ When it is done, compare with your prediction. **How many steps did it take? Whi
 Your agent's steps will differ from a colleague's, and from a second run: the path is not deterministic. The result
 is what you can test, and that is what steps 4 and 6 do.
 
-## 4. Check the result (5 min)
+## 4. Check the result (4 min)
 
 **Type in your agent:**
 

@@ -1,6 +1,6 @@
 # Part 5: The loop on its own
 
-**20 minutes.** The agent works through a backlog one item at a time, every round with a fresh context. The tests are
+**18 minutes.** The agent works through a backlog one item at a time, every round with a fresh context. The tests are
 the judge, git commits are the checkpoints, and you are the loop.
 
 | | |
@@ -48,7 +48,7 @@ Read both. Where the prompt says "the loop script", that is you in step 3.
 
 > **Tester focus:** does each plan item say the same as its test? Is a boundary missing?
 
-## 3. Be the loop (10 min)
+## 3. Be the loop (8 min)
 
 Let the agent work without asking for every edit:
 
