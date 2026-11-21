@@ -40,7 +40,8 @@ PY
   printf '# Fix plan\n\n- [ ] a\n- [ ] b\n- [ ] c\n\n## Notes for the next iteration\n' > ralph/fix_plan.md
   [ "${PRECHECK:-}" = 1 ] && sed -i 's/^- \[ \]/- [x]/' ralph/fix_plan.md
   echo "prompt" > ralph/PROMPT.md
-  printf '**/ralph/log-*.txt\n' > .gitignore
+  # Python writes cache files into tests/ when the tests run; they are not an edit by the agent.
+  printf '**/ralph/log-*.txt\n__pycache__/\n' > .gitignore
   git add -A; git commit -qm start
   printf '%s\n' "$@" > "$WORK/$name.script"; rm -f "$WORK/$name.count"
   STUB_SCRIPT="$WORK/$name.script" STUB_COUNT="$WORK/$name.count" PATH="$STUBDIR:$PATH" \

@@ -42,8 +42,8 @@ If the agent asks whether you trust the folder, say yes.
 **Type in your agent:**
 
 ```text
-Clone https://github.com/RaimondStokkel/agentic-foundations-exercises.git into this folder
-and create a branch called my-harness in it.
+Clone https://github.com/RaimondStokkel/agentic-foundations-exercises.git into a new folder named
+agentic-foundations-exercises inside the folder I opened. Create a branch called my-harness in the clone.
 Then check which of these are installed and tell me their versions: git, node, python, dotnet, java.
 ```
 
@@ -59,12 +59,18 @@ developer: the exercises are about the agent, not the code.
 | dotnet | `stacks\csharp` |
 | java | `stacks\java` |
 
+**Type in your agent**, with your own stack:
+
+```text
+I chose Python. Print the full path of the stack folder I should open in my next session.
+```
+
 ## 3. Open your stack folder (3 min)
 
 From now on, **your stack folder is the project**. The agent reads its rules and helpers from the folder you open, so
 always open the stack folder, not the folder above it.
 
-Start a new session in `agentic-foundations-exercises\stacks\<your stack>`:
+Start a new session in `agentic-foundations-exercises\stacks\<your stack>`, the path the agent just printed:
 
 | Agent | How |
 |---|---|
@@ -79,7 +85,7 @@ Run the tests as README.md describes and tell me how many pass, fail and are ski
 ```
 
 **You should see:** 9 tests. 5 pass, 1 fails (a Dutch gas smell is not seen as an emergency) and 3 are skipped
-(the backlog for part 5).
+(the backlog for part 5). The failing test is there on purpose: seeing it fail means your setup works.
 
 ## Done when
 

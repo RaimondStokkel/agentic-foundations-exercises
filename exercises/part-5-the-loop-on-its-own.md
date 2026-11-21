@@ -63,12 +63,15 @@ Then do **one round per plan item**, three rounds in all:
 1. Start a **new session** in your stack folder. That is the fresh context.
 2. **Type in your agent:** `Read ralph/PROMPT.md and follow its instructions exactly.` If it asks to run the tests,
    approve it.
-3. When it stops, **type in your agent:** `Run the tests, and show me git status.`
-4. **Judge.** Fewer failing tests, and nothing changed in `tests/`, `.claude/`, `.github/` or `hooks/`?
+3. When it stops, **type in your agent:** `Run the tests, list the failing tests by name, and show me git status.`
+4. **Judge.** Fewer failing tests, no test failing that passed before, and nothing changed in `tests/`, `.claude/`,
+   `.github/` or `hooks/`?
    - Yes: **type** `Commit everything with the message: loop round 1` (2, 3).
    - No: **type** `Throw away all changes since the last commit.` Then try the round again.
 
 A round takes one or two minutes. Every round leaves a note in the plan, and the next round reads it.
+A good run goes from 3 failing tests to 2, then 1, then 0. Look at the names as well as the count: a lower count can
+hide a test that broke.
 
 ## 4. Review what the loop did (2 min)
 

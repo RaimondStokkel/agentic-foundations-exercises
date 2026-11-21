@@ -74,6 +74,9 @@ Approve the changes: the agents live in the harness folders, so your rules ask f
 - The reply format is short and fixed.
 - Only one agent writes code.
 
+> **Developer focus:** the reviewer can only read and search. The test-runner also has a shell. Which of the two is
+> technically unable to change a file, and which one only promises not to?
+
 > **Tester focus:** a file that doesn't match the list is a bug in the harness. Tell the agent what is wrong and ask
 > it to fix the file.
 
@@ -99,6 +102,15 @@ Then watch the agent call the helpers again.
 > reviewer, for example "every acceptance criterion has a test". Run step 3 again. Does it find what you would find?
 
 ## 5. Commit (1 min)
+
+**Copilot users, switch agents first.** Triage Lead has no terminal, so it cannot commit.
+
+| Agent | How |
+|---|---|
+| Copilot, Agents window | Pick the normal **Agent** in the **Agent** dropdown |
+| Copilot CLI | `/exit`, then start with your flags from part 2, without `--agent triage-lead` |
+
+Stay with the normal Agent for part 5.
 
 **Type in your agent:**
 

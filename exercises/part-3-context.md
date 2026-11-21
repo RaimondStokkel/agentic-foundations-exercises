@@ -28,7 +28,8 @@ Then look at how full the context window is:
 | Copilot, Agents window | Look at how the agent read the log: the whole file or a search? |
 | Copilot CLI | Type `/context` |
 
-The log has 649 lines. **Did the agent read all of them, or search?**
+The log has 649 lines. **Did the agent read all of them, or search?** If your agent searched already, that is a
+valid outcome. In step 2, compare how much text each session pulled in, and whether each found enough to answer.
 
 The log comes from the JavaScript build of the service, so it names `test/triage.test.js` in every stack. That is fine.
 
@@ -37,7 +38,8 @@ The log comes from the JavaScript build of the service, so it names `test/triage
 Start a **new session**. **Type in your agent:**
 
 ```text
-Search logs/nightly-test-run.log for failed tests ("not ok") and summarise them in 3 lines.
+Search logs/nightly-test-run.log for "not ok". Read the matching line and the few lines around it.
+Which test failed? What was expected, and what actually happened?
 ```
 
 Check the context again. Same answer, a fraction of the context. Searching beats reading everything.
@@ -47,14 +49,17 @@ Check the context again. Same answer, a fraction of the context. Searching beats
 In the same session, **type in your agent:**
 
 ```text
-Write what you found to notes/progress.md, in at most 5 lines.
+Check what we changed in part 1. Then write to notes/progress.md, in at most 5 lines:
+the test that failed, what was expected and what happened, and whether this is the problem our fix solves.
 ```
+
+The next session knows only what is in this file, so the notes must hold everything it needs.
 
 Start a **new session**. **Type in your agent:**
 
 ```text
-Read notes/progress.md and answer from that file only, without opening the log:
-which test failed last night, and is it related to our fix?
+Read only notes/progress.md. Which test failed last night, what happened,
+and how does it relate to our part 1 fix?
 ```
 
 The new session knows the answer without reading the log. The notes file is the memory. Part 5 uses exactly this:
@@ -62,6 +67,8 @@ every round of the loop starts fresh and reads its memory from a file.
 
 > **Tester focus:** compare the answer of the new session with the answer from step 1. What did the notes leave out?
 > A summary always loses something. The same happens when an agent compacts its own context.
+> Then check the evidence: does the log say which version of the code it tested? If not, the notes should not claim
+> more than the log shows.
 
 ## Done when
 

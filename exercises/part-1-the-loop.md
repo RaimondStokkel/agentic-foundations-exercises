@@ -46,6 +46,8 @@ Before you approve a step, say what you expect it to return. Keep a short tally 
 | 1 | | | |
 
 The text the agent writes between its steps is the "thought". Every tool call it shows you is an "action".
+Some agents write nothing before a tool call. Then fill in the first column yourself: what do you expect this step
+to tell you?
 
 When it is done, compare with your prediction. **How many steps did it take? Which observation changed its plan?**
 
@@ -71,13 +73,18 @@ When we tested this, both Claude Code and Copilot fixed the failing test in abou
 "Fireplace door is loose" an emergency, and missed "GAS   SMELL" with the extra spaces. The test passed, but the
 requirement was not met.
 
+Compare your three results with the right answers. Did one differ? Write that example down: it is something the
+passing test missed. Were all three right? Then your agent found a more complete fix at its first try. Go on with
+step 5 either way: you practise undoing an edit, and in step 6 you turn the examples into tests that catch the
+mistake if it ever comes back.
+
 > **Tester focus:** did the agent change anything in `tests/`? A test that passes because its expectation was changed
 > proves nothing. Then pick one wrong answer above and decide: is this a bug, or a requirement nobody wrote down?
 
 ## 5. Undo the incomplete fix (3 min)
 
-The first fix passes the test but misses the requirement. Take it back with a **checkpoint**, so step 6 starts clean
-from the full specification:
+A first fix that passes the test can still miss the requirement. Take yours back with a **checkpoint**, so step 6
+starts clean from the full specification:
 
 | Agent | How |
 |---|---|
