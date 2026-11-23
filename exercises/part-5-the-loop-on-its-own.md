@@ -66,7 +66,7 @@ Let the agent work without asking for every edit:
 Then do **one round per plan item**, three rounds in all:
 
 1. Start a **new session** in your stack folder. That is the fresh context. GitHub Copilot App: pick your stack
-   folder, not `agentic-foundations-exercises`.
+   folder, not `agentic-foundations-exercises`, and check **Current checkout** and **Always ask** before you type.
 2. **Type in your agent:** `Read ralph/PROMPT.md and follow its instructions exactly.` If it asks to run the tests,
    approve it.
 3. When it stops, **type in your agent:** `Run the tests, list the failing tests by name, say which plan item you

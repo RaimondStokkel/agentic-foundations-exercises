@@ -9,7 +9,7 @@ work with a checkpoint.
 | You end with | The failing test fixed, a test for each of your acceptance criteria, committed |
 
 A new session for this part? Start it in your stack folder, the path you wrote down in part 0, never in
-`agentic-foundations-exercises`.
+`agentic-foundations-exercises`. GitHub Copilot App: check **Current checkout** and **Always ask** before you type.
 
 An agent is a model in a loop. Every turn it **thinks** (what do I know, what next?), **acts** (asks for one tool:
 read a file, run the tests, edit a file) and **observes** (reads what came back). It stops when it answers without
@@ -97,7 +97,7 @@ starts clean from the full specification:
 | Agent | How |
 |---|---|
 | Claude desktop app | Type `/rewind`. Pick the point before your task and choose **Restore code and conversation**. No `/rewind` in your app? Type: `Undo all changes in src and tests with git restore and git clean.` Then start a new session in your stack folder (**+ New**) and choose **Manual** again |
-| GitHub Copilot App | The app has no rewind. Type: `Undo all changes in src and tests with git restore and git clean.` Then start a new session: **+** next to **Sessions**, your stack folder (not `agentic-foundations-exercises`), **Current checkout** |
+| GitHub Copilot App | The app has no rewind. Type: `Undo all changes in src and tests with git restore and git clean.` Then start a new session: **+** next to **Sessions**, your stack folder (not `agentic-foundations-exercises`), **Current checkout**, and **Always ask** |
 | Copilot CLI | Type `/rewind`. Pick your task prompt: Copilot goes back to just before it. Choose **Conversation + files** |
 
 **Type in your agent:** `Run the tests.` You should be back to 1 failing test, in your stack only. Tests of more than

@@ -31,7 +31,7 @@ hand when you are stuck. [Part 0](exercises/part-0-setup.md) explains how it wor
 | Agent | Where |
 |---|---|
 | Claude | The **Code** tab of the Claude desktop app, a local session on your computer |
-| GitHub Copilot App | The desktop app: a session on **This computer** in your stack folder, with **Current checkout**. Add the stack folder itself with **Open local folder** |
+| GitHub Copilot App | The desktop app: a session on **This computer** in your stack folder, with **Current checkout** and **Tool permissions** set to **Always ask**. Add the stack folder itself with **Open local folder** |
 | GitHub Copilot CLI | `copilot` in a terminal |
 
 All need a licence. **No licence?** Tell the trainer before the session.

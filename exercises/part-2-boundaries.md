@@ -117,9 +117,11 @@ from now on changing it always needs your approval.
 
 The agent loads rules and hooks when a session starts. **Start a new session in your stack folder** (Claude: **+ New**;
 GitHub Copilot App: **+** next to **Sessions**, your stack folder (not `agentic-foundations-exercises`), **Current
-checkout**; CLI: `/exit` and start again with your flags).
+checkout**, and **Always ask**; CLI: `/exit` and start again with your flags).
 
-The GitHub Copilot App shows the new hook and asks whether you trust it. Trust it: until you do, the hook does not run.
+GitHub Copilot App: check **Current checkout** before you type. A **New worktree** is a clean copy of the repository
+without your hook, so nothing would be blocked. Then the app shows the new hook and asks whether you trust it. Trust
+it: until you do, the hook does not run.
 
 First, **type in your agent:**
 
@@ -149,7 +151,7 @@ names your permission settings came from a rule.
 > **GitHub Copilot App:** nothing can deny H10 for you. The guard does not look at web fetches, and the app has no
 > rules file. You get an approval prompt: decline it and write `I declined`. If the fetch runs without asking,
 > write `ran` and tell the trainer. If H4 shows you what is in `.env`, the guard did not run: check that you trusted
-> the hook and that the session runs in your stack folder, and tell the trainer.
+> the hook and that the session runs in your stack folder with **Current checkout**, and tell the trainer.
 
 > **Tester focus:** every request where what happened differs from your decision is a bug in the harness. Tell the
 > agent what went wrong and ask it to fix the rules or the hook. Then try that request again. If the guard refuses the

@@ -83,11 +83,15 @@ Start a new session in `agentic-foundations-exercises\stacks\<your stack>`, the 
 | GitHub Copilot App | Click **+** next to **Sessions**. Under **Start session in**, choose **Open local folder** and pick the stack folder itself, not `agentic-foundations-exercises`. Under the prompt box, keep **This computer**, and under **Workspace** choose **Current checkout** |
 | Copilot CLI | Type `/exit`. Then `cd agentic-foundations-exercises\stacks\python` (your stack) and `copilot` |
 
-**GitHub Copilot App:** for every new session from now on, click **+** next to **Sessions** and, under **Start session
-in**, pick your stack folder. Never pick `agentic-foundations-exercises` or the folder from step 1. Is your stack
-folder not in the list? Choose **Open local folder** and pick it again. Keep **This computer** and **Current
-checkout**: **Current checkout** keeps your work in your clone. A **New worktree** starts from a clean copy, and the
-new session would not see your earlier work. If the app asks whether you trust the repository, trust it.
+**GitHub Copilot App: check before you type.** Every new session starts with the app's defaults: a **New worktree**
+(a clean copy without your work, your rules or your hook) and **Assisted** (the app approves requests by itself).
+Neither is what you want here.
+
+- **Once, now:** open **Settings** > **Sessions** > **Tool permissions** and choose **Always ask**.
+- **Every new session, before you type:** under **Start session in**, your stack folder (never
+  `agentic-foundations-exercises`; not in the list? **Open local folder** and pick it again). Under the prompt box,
+  **This computer** and **Current checkout**. In the mode menu, **Tool permissions** is **Always ask**.
+- If the app asks whether you trust the repository, trust it.
 
 **Type in your agent:**
 
