@@ -62,9 +62,13 @@ Write every shell rule for both Bash and PowerShell. Show me the file.
 
 Claude asks before it writes this file: approve it. If two rules match, deny wins over ask, and ask wins over allow.
 
-**GitHub Copilot App.** There is no rules file. You choose a level under **Tool permissions** in the mode menu under
-the prompt. Keep **Always ask**: it asks before edits, web fetches and commands that change something. No level
-says "never". For a real no, you need the hook in step 3.
+**GitHub Copilot App.** Nothing to type in this step: the app has no rules file. Do only this:
+
+1. Click the mode menu under the prompt. Check that **Tool permissions** is set to **Always ask**. That is the
+   strictest level: the app asks before every edit, every web fetch and every command that changes something.
+2. Know its limit: no level says "never". At most, the app asks you. A real no comes from the hook in step 3.
+
+Then go on to step 3.
 
 **Copilot CLI.** Rules are flags you give when you start it. Type `/exit`, then start it again with your own test
 tool instead of `python` (`npm`, `python`, `dotnet` or `java`):
