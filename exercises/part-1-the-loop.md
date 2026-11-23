@@ -19,7 +19,7 @@ This is the loop **inside** the agent. Part 5 puts a second loop **around** it.
 | Agent | How |
 |---|---|
 | Claude desktop app | In the mode selector under the prompt box, choose **Manual** |
-| GitHub Copilot App | Click the mode menu under the prompt, point to **Tool permissions** and choose **Ask every time**. Keep the mode on **Interactive**. To keep this for every new session, also set **Settings** > **Sessions** > **Tool permissions** to **Ask every time** |
+| GitHub Copilot App | Click the mode menu under the prompt, point to **Tool permissions** and choose **Always ask**. Keep the mode on **Interactive**. To keep this for every new session, also set **Settings** > **Sessions** > **Tool permissions** to **Always ask** |
 | Copilot CLI | Nothing to do: it asks before it runs a command or changes a file |
 
 ## 2. Predict (3 min)
