@@ -8,9 +8,8 @@ work with a checkpoint.
 | You start with | Part 0 done: a session in your stack folder, 1 failing test |
 | You end with | The failing test fixed, a test for each of your acceptance criteria, committed |
 
-A new session for this part? Start it in your stack folder, the path you wrote down in part 0, never in
-`agentic-foundations-exercises`. GitHub Copilot App: before you type, click **New worktree**, choose **Current checkout**, and check
-**Always ask**.
+A new session for this part? Start it in your stack folder, as in [part 0](part-0-setup.md#how-to-start-a-new-session), never in
+`agentic-foundations-exercises`. GitHub Copilot App: before you type, check the bar under the prompt box: your stack folder, **This computer**, **Current checkout** (not **New worktree**).
 
 An agent is a model in a loop. Every turn it **thinks** (what do I know, what next?), **acts** (asks for one tool:
 read a file, run the tests, edit a file) and **observes** (reads what came back). It stops when it answers without
@@ -98,7 +97,7 @@ starts clean from the full specification:
 | Agent | How |
 |---|---|
 | Claude desktop app | Type `/rewind`. Pick the point before your task and choose **Restore code and conversation**. No `/rewind` in your app? Type: `Undo all changes in src and tests with git restore and git clean.` Then start a new session in your stack folder (**+ New**) and choose **Manual** again |
-| GitHub Copilot App | The app has no rewind. Type: `Undo all changes in src and tests with git restore and git clean.` Then start a new session: **+** next to **Sessions**, your stack folder (not `agentic-foundations-exercises`), click **New worktree** and choose **Current checkout**, and check **Always ask** |
+| GitHub Copilot App | The app has no rewind. Type: `Undo all changes in src and tests with git restore and git clean.` Then start a new session ([how](part-0-setup.md#how-to-start-a-new-session)). Before you type, check the bar under the prompt box: your stack folder, **This computer**, **Current checkout** (not **New worktree**) |
 | Copilot CLI | Type `/rewind`. Pick your task prompt: Copilot goes back to just before it. Choose **Conversation + files** |
 
 **Type in your agent:** `Run the tests.` You should be back to 1 failing test, in your stack only. Tests of more than
@@ -160,8 +159,7 @@ Approve the commit. From now on the agent commits, but only when you ask.
 Stuck: raise your hand in Teams, or post in the Teams chat.
 
 **The agent names or changes other stacks?** Then the session runs in the wrong folder. Start a new session in your
-stack folder, the path you wrote down in part 0 (GitHub Copilot App: pick your stack folder, not
-`agentic-foundations-exercises`). Did it change files there? **Type in the new session:**
+stack folder, as in [part 0](part-0-setup.md#how-to-start-a-new-session). Did it change files there? **Type in the new session:**
 `Undo every change outside this folder with git restore and git clean.`
 
 Out of time? **Type in your agent:**

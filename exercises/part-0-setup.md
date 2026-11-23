@@ -75,23 +75,35 @@ may work on all four.
 From now on, **your stack folder is the project**. The agent reads its rules and helpers from the folder you open, so
 always open the stack folder, not the folder above it.
 
-Start a new session in `agentic-foundations-exercises\stacks\<your stack>`, the path you wrote down:
+### How to start a new session
+
+You start one now, and again whenever a part says "start a new session". Do it the same way every time, in your stack
+folder `agentic-foundations-exercises\stacks\<your stack>`, the path you wrote down:
 
 | Agent | How |
 |---|---|
 | Claude desktop app | Click **+ New** (or press Ctrl+N). Choose **Local**, then **Open folder…** and your stack folder |
-| GitHub Copilot App | Click **+** next to **Sessions**. Under **Start session in**, choose **Open local folder** and pick the stack folder itself, not `agentic-foundations-exercises`. Under the prompt box, keep **This computer**, then click **New worktree** and choose **Current checkout** |
-| Copilot CLI | Type `/exit`. Then `cd agentic-foundations-exercises\stacks\python` (your stack) and `copilot` |
+| GitHub Copilot App | Click **+** next to **Sessions**. Then check the bar under the prompt box before you type: see below |
+| Copilot CLI | Type `/exit`. Then `cd agentic-foundations-exercises\stacks\python` (your stack) and `copilot`. From part 2 on, add your flags |
 
-**GitHub Copilot App: check before you type.** Every new session starts with the app's defaults: a **New worktree**
-(a clean copy without your work, your rules or your hook) and **Assisted** (the app approves requests by itself).
-Neither is what you want here.
+**GitHub Copilot App: check the bar under the prompt box before you type.** It shows three things, and each must be
+right:
 
-- **Once, now:** open **Settings** > **Sessions** > **Tool permissions** and choose **Always ask**.
-- **Every new session, before you type:** under **Start session in**, your stack folder (never
-  `agentic-foundations-exercises`; not in the list? **Open local folder** and pick it again). Under the prompt box,
-  **This computer**, then click **New worktree** and choose **Current checkout**. In the mode menu, **Tool permissions** is **Always ask**.
-- If the app asks whether you trust the repository, trust it.
+| In the bar | Must show | If not |
+|---|---|---|
+| Folder | `agentic-foundations-exercises / stacks/<your stack>` | Click it and pick your stack folder. Not in the list? Choose **Open local folder** and pick it |
+| Where it runs | **This computer** | Click it and choose **This computer** |
+| Workspace | **Current checkout** | It says **New worktree**? Click it and choose **Current checkout** |
+
+Why not **New worktree**? A worktree is a second copy of the repository, in another folder. The app makes it from
+`main`, so your earlier work, your rules and your hook are not in it, and what the agent changes there never reaches
+your own folder. **Current checkout** means: work in your own folder. Every part needs that.
+
+Also set this **once, now**: **Settings** > **Sessions** > **Tool permissions** > **Always ask**. Then every new
+session asks you before it acts, instead of letting the app decide (**Assisted**). If the app asks whether you trust
+the repository, trust it.
+
+Start a new session in your stack folder now.
 
 **Type in your agent:**
 
@@ -117,7 +129,6 @@ goes for every later part: an agent that names or changes another stack is in th
 - **None of Node.js, Python, .NET or Java is installed:** install Python or Node.js before the session (ask IT if you can't).
 - **The tests don't run:** type `Why do the tests not run? Explain it in simple words.` The agent is good at this.
 - **The agent names or changes other stacks:** the session runs in the wrong folder. Start a new session in the stack
-  folder you wrote down. GitHub Copilot App: pick your stack folder under **Start session in**, not
-  `agentic-foundations-exercises`.
+  folder you wrote down, as in [How to start a new session](#how-to-start-a-new-session).
 
 Next: [Part 1: The loop](part-1-the-loop.md)

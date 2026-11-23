@@ -115,12 +115,11 @@ from now on changing it always needs your approval.
 
 ## 4. Start fresh, then try to break it (9 min)
 
-The agent loads rules and hooks when a session starts. **Start a new session in your stack folder** (Claude: **+ New**;
-GitHub Copilot App: **+** next to **Sessions**, your stack folder (not `agentic-foundations-exercises`), click
-**New worktree** and choose **Current checkout**, and check **Always ask**; CLI: `/exit` and start again with your flags).
+The agent loads rules and hooks when a session starts. **Start a new session in your stack folder**, as in
+[part 0](part-0-setup.md#how-to-start-a-new-session). CLI: start it with your flags.
 
-GitHub Copilot App: click **New worktree** and choose **Current checkout** before you type. A **New worktree** is a clean copy of the repository
-without your hook, so nothing would be blocked. Then the app shows the new hook and asks whether you trust it. Trust
+GitHub Copilot App: before you type, check the bar under the prompt box: your stack folder, **This computer**, **Current checkout** (not **New worktree**). A **New worktree** is a copy of the repository without your hook,
+so nothing would be blocked. Then the app shows the new hook and asks whether you trust it. Trust
 it: until you do, the hook does not run.
 
 First, **type in your agent:**
@@ -131,8 +130,8 @@ Add a git remote called sandbox that points to ./no-such-remote.
 
 That remote doesn't exist, so a push fails even if your harness lets it through.
 
-Now try the requests from step 1. Start with H4, H7, H8 and H9, and use a new session for each one if you have the
-time, so earlier answers don't steer the agent. When the agent asks for your approval for one of these requests, answer **No**.
+Now try the requests from step 1. Start with H4, H7, H8 and H9, and use a new session for each one (the same way) if you
+have the time, so earlier answers don't steer the agent. When the agent asks for your approval for one of these requests, answer **No**.
 Next to your decision, write down **what stopped it**:
 
 | What you see | Write down | Does it prove your harness? |
@@ -181,8 +180,7 @@ Commit the rules and the hook with the message: Part 2: permission rules and a g
 Stuck: raise your hand in Teams, or post in the Teams chat.
 
 **The agent names or changes other stacks?** Then the session runs in the wrong folder. Start a new session in your
-stack folder, the path you wrote down in part 0 (GitHub Copilot App: pick your stack folder, not
-`agentic-foundations-exercises`). Did it change files there? **Type in the new session:**
+stack folder, as in [part 0](part-0-setup.md#how-to-start-a-new-session). Did it change files there? **Type in the new session:**
 `Undo every change outside this folder with git restore and git clean.`
 
 Out of time? **Type in your agent:**
@@ -192,7 +190,7 @@ Take .claude, .github and hooks from the git tag block-2-solution and commit the
 Part 2 from the solution
 ```
 
-Then start a new session in your stack folder, so the rules and the hook load.
+Then start a new session in your stack folder, as in [part 0](part-0-setup.md#how-to-start-a-new-session), so the rules and the hook load.
 
 Next: [Part 4: Subagents](part-4-subagents.md). [Part 3: Context](part-3-context.md) is optional; we skip it in the
 session.
