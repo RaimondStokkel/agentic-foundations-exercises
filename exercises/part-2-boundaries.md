@@ -116,10 +116,10 @@ from now on changing it always needs your approval.
 ## 4. Start fresh, then try to break it (9 min)
 
 The agent loads rules and hooks when a session starts. **Start a new session in your stack folder** (Claude: **+ New**;
-GitHub Copilot App: **+** next to **Sessions**, your stack folder (not `agentic-foundations-exercises`), **Current
-checkout**, and **Always ask**; CLI: `/exit` and start again with your flags).
+GitHub Copilot App: **+** next to **Sessions**, your stack folder (not `agentic-foundations-exercises`), click
+**New worktree** and choose **Current checkout**, and check **Always ask**; CLI: `/exit` and start again with your flags).
 
-GitHub Copilot App: check **Current checkout** before you type. A **New worktree** is a clean copy of the repository
+GitHub Copilot App: click **New worktree** and choose **Current checkout** before you type. A **New worktree** is a clean copy of the repository
 without your hook, so nothing would be blocked. Then the app shows the new hook and asks whether you trust it. Trust
 it: until you do, the hook does not run.
 

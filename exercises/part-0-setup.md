@@ -80,7 +80,7 @@ Start a new session in `agentic-foundations-exercises\stacks\<your stack>`, the 
 | Agent | How |
 |---|---|
 | Claude desktop app | Click **+ New** (or press Ctrl+N). Choose **Local**, then **Open folder…** and your stack folder |
-| GitHub Copilot App | Click **+** next to **Sessions**. Under **Start session in**, choose **Open local folder** and pick the stack folder itself, not `agentic-foundations-exercises`. Under the prompt box, keep **This computer**, and under **Workspace** choose **Current checkout** |
+| GitHub Copilot App | Click **+** next to **Sessions**. Under **Start session in**, choose **Open local folder** and pick the stack folder itself, not `agentic-foundations-exercises`. Under the prompt box, keep **This computer**, then click **New worktree** and choose **Current checkout** |
 | Copilot CLI | Type `/exit`. Then `cd agentic-foundations-exercises\stacks\python` (your stack) and `copilot` |
 
 **GitHub Copilot App: check before you type.** Every new session starts with the app's defaults: a **New worktree**
@@ -90,7 +90,7 @@ Neither is what you want here.
 - **Once, now:** open **Settings** > **Sessions** > **Tool permissions** and choose **Always ask**.
 - **Every new session, before you type:** under **Start session in**, your stack folder (never
   `agentic-foundations-exercises`; not in the list? **Open local folder** and pick it again). Under the prompt box,
-  **This computer** and **Current checkout**. In the mode menu, **Tool permissions** is **Always ask**.
+  **This computer**, then click **New worktree** and choose **Current checkout**. In the mode menu, **Tool permissions** is **Always ask**.
 - If the app asks whether you trust the repository, trust it.
 
 **Type in your agent:**

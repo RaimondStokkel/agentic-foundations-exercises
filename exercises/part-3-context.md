@@ -9,8 +9,8 @@ context window, find a leaner way, and give the agent a memory that survives a n
 | You start with | Your part 2 commit |
 | You end with | A short notes file that a fresh session can pick up |
 
-Every new session in this part starts in your stack folder. GitHub Copilot App: check **Current checkout** and
-**Always ask** before you type, as in part 0.
+Every new session in this part starts in your stack folder. GitHub Copilot App: before you type, click **New worktree**,
+choose **Current checkout**, and check **Always ask**, as in part 0.
 
 Everything the agent reads stays in its **context window**: its working memory. A full window makes it slower and less
 accurate. Files are its long-term memory: a new session starts with an empty window, but the files are still there.

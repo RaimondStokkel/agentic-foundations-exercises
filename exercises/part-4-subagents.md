@@ -92,7 +92,7 @@ The agent loads its helpers when a session starts. Start a **new session** in yo
 | Agent | How, and what to type |
 |---|---|
 | Claude desktop app | **+ New**, then: `Use the test-runner subagent to run the tests. Then ask the reviewer subagent to review src/ against the tests.` |
-| GitHub Copilot App | **+** next to **Sessions**, your stack folder (not `agentic-foundations-exercises`), **Current checkout**, **Always ask**. Pick **Triage Lead** in the agent picker in the prompt box, then: `Run the tests and get a review of src/.` |
+| GitHub Copilot App | **+** next to **Sessions**, your stack folder (not `agentic-foundations-exercises`), click **New worktree** and choose **Current checkout**, check **Always ask**. Pick **Triage Lead** in the agent picker in the prompt box, then: `Run the tests and get a review of src/.` |
 | Copilot CLI | `/exit`, then start with your flags plus `--agent triage-lead`. Then: `Run the tests and get a review of src/.` |
 
 Watch the main conversation. It gets a short summary from each helper. The test output and the files the reviewer read
