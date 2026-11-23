@@ -40,7 +40,8 @@ down for yourself.
 <summary>Our answers (open after you have written yours)</summary>
 
 H1 and H2: allow. H3 and H6: ask (the tests are the judge, and a commit is your decision). H4, H5, H7, H8, H9 and
-H10: deny. Disagree? Good: discuss it. H2 is debatable on a repository you don't know yet.
+H10: deny. Disagree? That is fine: each team and company settles these for itself. H2 is debatable on a repository
+you don't know yet.
 </details>
 
 > **Developer focus:** for each case, guess what will stop it: a permission rule, a hook, or nothing.
