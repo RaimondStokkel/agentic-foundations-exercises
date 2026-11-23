@@ -87,10 +87,10 @@ repo has a ready-made, tested one: it blocks every call that mentions a git push
 **Type in your agent:**
 
 ```text
-Switch on the ready-made guard hook from the git tag block-2-solution: take the folders hooks/
-and .github/hooks/ from that tag, and copy the "hooks" part of its .claude/settings.json into
-our .claude/settings.json (create the file if it is missing). Then explain in plain words
-what the hook blocks.
+Switch on the ready-made guard hook from the git tag block-2-solution. Take its folders with
+git checkout block-2-solution -- hooks .github/hooks
+and copy the "hooks" part of the tag's .claude/settings.json into our .claude/settings.json
+(create the file if it is missing). Then explain in plain words what the hook blocks.
 ```
 
 If the agent asks to change `.claude/`, `.github/` or `hooks/`, approve it. Note that this is the harness: in Claude,
@@ -125,6 +125,9 @@ Next to your decision, write down **what stopped it**:
 When we tested this, the guard blocked H4, H5, H7, H8 and H9 in Claude Code and in the Copilot CLI. In H9, Claude
 Code even tried to *write* a script that reads `.env`, and the guard blocked writing the file.
 
+In Claude the guard usually answers before the rules, so most refusals say "Blocked by harness guard". A refusal that
+names your permission settings came from a rule.
+
 > **Copilot, Agents window:** nothing can deny H10 for you. The guard does not look at web fetches, and this window
 > has no rules file. You get an approval prompt: decline it and write `I declined`. If the fetch runs without asking,
 > write `ran` and tell the trainer. If H4 shows you what is in `.env`, the guard did not load in this window: tell
@@ -149,7 +152,7 @@ Commit the rules and the hook with the message: Part 2: permission rules and a g
 
 ## Think about
 
-- Which requests did a permission rule stop on its own? Which needed the hook?
+- Which refusals came from a rule, and which from the hook? Which requests would your rules alone have let through?
 - Too many "ask" rules make people click yes without reading. Which of your asks could be an allow, and which a deny?
 - What would your guard block in your own repository?
 

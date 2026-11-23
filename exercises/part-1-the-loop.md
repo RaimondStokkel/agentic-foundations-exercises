@@ -68,8 +68,9 @@ and tell me the priority of each:
 3. "Fireplace door is loose", no category
 ```
 
-**The right answers:** 1 is an emergency (capitals and extra spaces don't matter). 2 is urgent: "brand" (fire) is
-only part of a longer word. 3 is normal: "fire" is only part of "Fireplace".
+**The right answers:** 1 is an emergency (capitals and extra spaces don't matter). 2 is urgent: a lock is urgent,
+and "Brandweer" is not a fire, even if your agent added "brand" (fire) as a keyword. 3 is normal: "fire" is only
+part of "Fireplace".
 
 When we tested this, both Claude Code and Copilot fixed the failing test in about 30 seconds. Both fixes still made
 "Fireplace door is loose" an emergency, and missed "GAS   SMELL" with the extra spaces. The test passed, but the
