@@ -20,7 +20,7 @@ Last night's pipeline failed. Read logs/nightly-test-run.log and tell me
 if the failure is related to our fix.
 ```
 
-Then look at how full the context window is:
+Then look at how full the context window is, and note what you see:
 
 | Agent | How |
 |---|---|
@@ -42,7 +42,11 @@ Search logs/nightly-test-run.log for "not ok". Read the matching line and the fe
 Which test failed? What was expected, and what actually happened?
 ```
 
-Check the context again. Same answer, a fraction of the context. Searching beats reading everything.
+Check the context again and compare it with step 1. Same answer, and the search added only a fraction of what
+reading the log added. Searching beats reading everything.
+
+The total differs less than you may expect. A new session is not empty: the harness's own instructions and tools are
+already in the window. `/context` shows the parts.
 
 ## 3. Memory on disk (5 min)
 
@@ -52,6 +56,9 @@ In the same session, **type in your agent:**
 Check what we changed in part 1. Then write to notes/progress.md, in at most 5 lines:
 the test that failed, what was expected and what happened, and whether this is the problem our fix solves.
 ```
+
+The agent may ask for approval a few times: to look at git, to run the tests, or to create the file. Approve the new
+file. For the others, approve or decline: both work.
 
 The next session knows only what is in this file, so the notes must hold everything it needs.
 

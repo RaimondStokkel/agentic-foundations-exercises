@@ -1,649 +1,649 @@
-2026-11-23T02:00:00.137Z [info] nightly pipeline started (SYNTHETIC LOG for training)
-2026-11-23T02:00:00.274Z [info] ok 1 - work-orders › scenario 1 passed in 10ms
-2026-11-23T02:00:00.411Z [info] ok 2 - contracts › scenario 2 passed in 17ms
-2026-11-23T02:00:00.548Z [info] ok 3 - invoicing › scenario 3 passed in 24ms
-2026-11-23T02:00:00.685Z [info] ok 4 - repair-triage › scenario 4 passed in 31ms
-2026-11-23T02:00:00.822Z [info] ok 5 - notifications › scenario 5 passed in 38ms
-2026-11-23T02:00:00.959Z [info] ok 6 - tenant-portal › scenario 6 passed in 45ms
-2026-11-23T02:00:01.096Z [info] ok 7 - work-orders › scenario 7 passed in 52ms
-2026-11-23T02:00:01.233Z [info] ok 8 - contracts › scenario 8 passed in 59ms
-2026-11-23T02:00:01.370Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:00:01.507Z [info] ok 10 - repair-triage › scenario 10 passed in 73ms
-2026-11-23T02:00:01.644Z [info] ok 11 - notifications › scenario 11 passed in 80ms
-2026-11-23T02:00:01.781Z [info] ok 12 - tenant-portal › scenario 12 passed in 87ms
-2026-11-23T02:00:01.918Z [info] ok 13 - work-orders › scenario 13 passed in 4ms
-2026-11-23T02:00:02.055Z [info] ok 14 - contracts › scenario 14 passed in 11ms
-2026-11-23T02:00:02.192Z [info] ok 15 - invoicing › scenario 15 passed in 18ms
-2026-11-23T02:00:02.329Z [info] ok 16 - repair-triage › scenario 16 passed in 25ms
-2026-11-23T02:00:02.466Z [info] ok 17 - notifications › scenario 17 passed in 32ms
-2026-11-23T02:00:02.603Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:00:02.740Z [info] ok 19 - work-orders › scenario 19 passed in 46ms
-2026-11-23T02:00:02.877Z [info] ok 20 - contracts › scenario 20 passed in 53ms
-2026-11-23T02:00:03.014Z [info] ok 21 - invoicing › scenario 21 passed in 60ms
-2026-11-23T02:00:03.151Z [info] ok 22 - repair-triage › scenario 22 passed in 67ms
-2026-11-23T02:00:03.288Z [debug] cache miss for fixture notifications/fixture-23.json, regenerating
-2026-11-23T02:00:03.425Z [info] ok 24 - tenant-portal › scenario 24 passed in 81ms
-2026-11-23T02:00:03.562Z [info] ok 25 - work-orders › scenario 25 passed in 88ms
-2026-11-23T02:00:03.699Z [info] ok 26 - contracts › scenario 26 passed in 5ms
-2026-11-23T02:00:03.836Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:00:03.973Z [info] ok 28 - repair-triage › scenario 28 passed in 19ms
-2026-11-23T02:00:04.110Z [info] ok 29 - notifications › scenario 29 passed in 26ms
-2026-11-23T02:00:04.247Z [info] ok 30 - tenant-portal › scenario 30 passed in 33ms
-2026-11-23T02:00:04.384Z [info] ok 31 - work-orders › scenario 31 passed in 40ms
-2026-11-23T02:00:04.521Z [info] ok 32 - contracts › scenario 32 passed in 47ms
-2026-11-23T02:00:04.658Z [info] ok 33 - invoicing › scenario 33 passed in 54ms
-2026-11-23T02:00:04.795Z [info] ok 34 - repair-triage › scenario 34 passed in 61ms
-2026-11-23T02:00:04.932Z [info] ok 35 - notifications › scenario 35 passed in 68ms
-2026-11-23T02:00:05.069Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:00:05.206Z [info] ok 37 - work-orders › scenario 37 passed in 82ms
-2026-11-23T02:00:05.343Z [info] ok 38 - contracts › scenario 38 passed in 89ms
-2026-11-23T02:00:05.480Z [info] ok 39 - invoicing › scenario 39 passed in 6ms
-2026-11-23T02:00:05.617Z [info] ok 40 - repair-triage › scenario 40 passed in 13ms
-2026-11-23T02:00:05.754Z [info] ok 41 - notifications › scenario 41 passed in 20ms
-2026-11-23T02:00:05.891Z [info] ok 42 - tenant-portal › scenario 42 passed in 27ms
-2026-11-23T02:00:06.028Z [info] ok 43 - work-orders › scenario 43 passed in 34ms
-2026-11-23T02:00:06.165Z [info] ok 44 - contracts › scenario 44 passed in 41ms
-2026-11-23T02:00:06.302Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:00:06.439Z [debug] cache miss for fixture repair-triage/fixture-46.json, regenerating
-2026-11-23T02:00:06.576Z [info] ok 47 - notifications › scenario 47 passed in 62ms
-2026-11-23T02:00:06.713Z [info] ok 48 - tenant-portal › scenario 48 passed in 69ms
-2026-11-23T02:00:06.850Z [info] ok 49 - work-orders › scenario 49 passed in 76ms
-2026-11-23T02:00:06.987Z [info] ok 50 - contracts › scenario 50 passed in 83ms
-2026-11-23T02:00:07.124Z [info] ok 51 - invoicing › scenario 51 passed in 90ms
-2026-11-23T02:00:07.261Z [info] ok 52 - repair-triage › scenario 52 passed in 7ms
-2026-11-23T02:00:07.398Z [info] ok 53 - notifications › scenario 53 passed in 14ms
-2026-11-23T02:00:07.535Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:00:07.672Z [info] ok 55 - work-orders › scenario 55 passed in 28ms
-2026-11-23T02:00:07.809Z [info] ok 56 - contracts › scenario 56 passed in 35ms
-2026-11-23T02:00:07.946Z [info] ok 57 - invoicing › scenario 57 passed in 42ms
-2026-11-23T02:00:08.083Z [info] ok 58 - repair-triage › scenario 58 passed in 49ms
-2026-11-23T02:00:08.220Z [info] ok 59 - notifications › scenario 59 passed in 56ms
-2026-11-23T02:00:08.357Z [info] ok 60 - tenant-portal › scenario 60 passed in 63ms
-2026-11-23T02:00:08.494Z [info] ok 61 - work-orders › scenario 61 passed in 70ms
-2026-11-23T02:00:08.631Z [info] ok 62 - contracts › scenario 62 passed in 77ms
-2026-11-23T02:00:08.768Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:00:08.905Z [info] ok 64 - repair-triage › scenario 64 passed in 91ms
-2026-11-23T02:00:09.042Z [info] ok 65 - notifications › scenario 65 passed in 8ms
-2026-11-23T02:00:09.179Z [info] ok 66 - tenant-portal › scenario 66 passed in 15ms
-2026-11-23T02:00:09.316Z [info] ok 67 - work-orders › scenario 67 passed in 22ms
-2026-11-23T02:00:09.453Z [info] ok 68 - contracts › scenario 68 passed in 29ms
-2026-11-23T02:00:09.590Z [debug] cache miss for fixture invoicing/fixture-69.json, regenerating
-2026-11-23T02:00:09.727Z [info] ok 70 - repair-triage › scenario 70 passed in 43ms
-2026-11-23T02:00:09.864Z [info] ok 71 - notifications › scenario 71 passed in 50ms
-2026-11-23T02:00:10.001Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:00:10.138Z [info] ok 73 - work-orders › scenario 73 passed in 64ms
-2026-11-23T02:00:10.275Z [info] ok 74 - contracts › scenario 74 passed in 71ms
-2026-11-23T02:00:10.412Z [info] ok 75 - invoicing › scenario 75 passed in 78ms
-2026-11-23T02:00:10.549Z [info] ok 76 - repair-triage › scenario 76 passed in 85ms
-2026-11-23T02:00:10.686Z [info] ok 77 - notifications › scenario 77 passed in 92ms
-2026-11-23T02:00:10.823Z [info] ok 78 - tenant-portal › scenario 78 passed in 9ms
-2026-11-23T02:00:10.960Z [info] ok 79 - work-orders › scenario 79 passed in 16ms
-2026-11-23T02:00:11.097Z [info] ok 80 - contracts › scenario 80 passed in 23ms
-2026-11-23T02:00:11.234Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:00:11.371Z [info] ok 82 - repair-triage › scenario 82 passed in 37ms
-2026-11-23T02:00:11.508Z [info] ok 83 - notifications › scenario 83 passed in 44ms
-2026-11-23T02:00:11.645Z [info] ok 84 - tenant-portal › scenario 84 passed in 51ms
-2026-11-23T02:00:11.782Z [info] ok 85 - work-orders › scenario 85 passed in 58ms
-2026-11-23T02:00:11.919Z [info] ok 86 - contracts › scenario 86 passed in 65ms
-2026-11-23T02:00:12.056Z [info] ok 87 - invoicing › scenario 87 passed in 72ms
-2026-11-23T02:00:12.193Z [info] ok 88 - repair-triage › scenario 88 passed in 79ms
-2026-11-23T02:00:12.330Z [info] ok 89 - notifications › scenario 89 passed in 86ms
-2026-11-23T02:00:12.467Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:00:12.604Z [info] ok 91 - work-orders › scenario 91 passed in 10ms
-2026-11-23T02:00:12.741Z [debug] cache miss for fixture contracts/fixture-92.json, regenerating
-2026-11-23T02:00:12.878Z [info] ok 93 - invoicing › scenario 93 passed in 24ms
-2026-11-23T02:00:13.015Z [info] ok 94 - repair-triage › scenario 94 passed in 31ms
-2026-11-23T02:00:13.152Z [info] ok 95 - notifications › scenario 95 passed in 38ms
-2026-11-23T02:00:13.289Z [info] ok 96 - tenant-portal › scenario 96 passed in 45ms
-2026-11-23T02:00:13.426Z [info] ok 97 - work-orders › scenario 97 passed in 52ms
-2026-11-23T02:00:13.563Z [info] ok 98 - contracts › scenario 98 passed in 59ms
-2026-11-23T02:00:13.700Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:00:13.837Z [info] ok 100 - repair-triage › scenario 100 passed in 73ms
-2026-11-23T02:00:13.974Z [info] ok 101 - notifications › scenario 101 passed in 80ms
-2026-11-23T02:00:14.111Z [info] ok 102 - tenant-portal › scenario 102 passed in 87ms
-2026-11-23T02:00:14.248Z [info] ok 103 - work-orders › scenario 103 passed in 4ms
-2026-11-23T02:00:14.385Z [info] ok 104 - contracts › scenario 104 passed in 11ms
-2026-11-23T02:00:14.522Z [info] ok 105 - invoicing › scenario 105 passed in 18ms
-2026-11-23T02:00:14.659Z [info] ok 106 - repair-triage › scenario 106 passed in 25ms
-2026-11-23T02:00:14.796Z [info] ok 107 - notifications › scenario 107 passed in 32ms
-2026-11-23T02:00:14.933Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:00:15.070Z [info] ok 109 - work-orders › scenario 109 passed in 46ms
-2026-11-23T02:00:15.207Z [info] ok 110 - contracts › scenario 110 passed in 53ms
-2026-11-23T02:00:15.344Z [info] ok 111 - invoicing › scenario 111 passed in 60ms
-2026-11-23T02:00:15.481Z [info] ok 112 - repair-triage › scenario 112 passed in 67ms
-2026-11-23T02:00:15.618Z [info] ok 113 - notifications › scenario 113 passed in 74ms
-2026-11-23T02:00:15.755Z [info] ok 114 - tenant-portal › scenario 114 passed in 81ms
-2026-11-23T02:00:15.892Z [debug] cache miss for fixture work-orders/fixture-115.json, regenerating
-2026-11-23T02:00:16.029Z [info] ok 116 - contracts › scenario 116 passed in 5ms
-2026-11-23T02:00:16.166Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:00:16.303Z [info] ok 118 - repair-triage › scenario 118 passed in 19ms
-2026-11-23T02:00:16.440Z [info] ok 119 - notifications › scenario 119 passed in 26ms
-2026-11-23T02:00:16.577Z [info] ok 120 - tenant-portal › scenario 120 passed in 33ms
-2026-11-23T02:00:16.714Z [info] ok 121 - work-orders › scenario 121 passed in 40ms
-2026-11-23T02:00:16.851Z [info] ok 122 - contracts › scenario 122 passed in 47ms
-2026-11-23T02:00:16.988Z [info] ok 123 - invoicing › scenario 123 passed in 54ms
-2026-11-23T02:00:17.125Z [info] ok 124 - repair-triage › scenario 124 passed in 61ms
-2026-11-23T02:00:17.262Z [info] ok 125 - notifications › scenario 125 passed in 68ms
-2026-11-23T02:00:17.399Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:00:17.536Z [info] ok 127 - work-orders › scenario 127 passed in 82ms
-2026-11-23T02:00:17.673Z [info] ok 128 - contracts › scenario 128 passed in 89ms
-2026-11-23T02:00:17.810Z [info] ok 129 - invoicing › scenario 129 passed in 6ms
-2026-11-23T02:00:17.947Z [info] ok 130 - repair-triage › scenario 130 passed in 13ms
-2026-11-23T02:00:18.084Z [info] ok 131 - notifications › scenario 131 passed in 20ms
-2026-11-23T02:00:18.221Z [info] ok 132 - tenant-portal › scenario 132 passed in 27ms
-2026-11-23T02:00:18.358Z [info] ok 133 - work-orders › scenario 133 passed in 34ms
-2026-11-23T02:00:18.495Z [info] ok 134 - contracts › scenario 134 passed in 41ms
-2026-11-23T02:00:18.632Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:00:18.769Z [info] ok 136 - repair-triage › scenario 136 passed in 55ms
-2026-11-23T02:00:18.906Z [info] ok 137 - notifications › scenario 137 passed in 62ms
-2026-11-23T02:00:19.043Z [debug] cache miss for fixture tenant-portal/fixture-138.json, regenerating
-2026-11-23T02:00:19.180Z [info] ok 139 - work-orders › scenario 139 passed in 76ms
-2026-11-23T02:00:19.317Z [info] ok 140 - contracts › scenario 140 passed in 83ms
-2026-11-23T02:00:19.454Z [info] ok 141 - invoicing › scenario 141 passed in 90ms
-2026-11-23T02:00:19.591Z [info] ok 142 - repair-triage › scenario 142 passed in 7ms
-2026-11-23T02:00:19.728Z [info] ok 143 - notifications › scenario 143 passed in 14ms
-2026-11-23T02:00:19.865Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:00:20.002Z [info] ok 145 - work-orders › scenario 145 passed in 28ms
-2026-11-23T02:00:20.139Z [info] ok 146 - contracts › scenario 146 passed in 35ms
-2026-11-23T02:00:20.276Z [info] ok 147 - invoicing › scenario 147 passed in 42ms
-2026-11-23T02:00:20.413Z [info] ok 148 - repair-triage › scenario 148 passed in 49ms
-2026-11-23T02:00:20.550Z [info] ok 149 - notifications › scenario 149 passed in 56ms
-2026-11-23T02:00:20.687Z [info] ok 150 - tenant-portal › scenario 150 passed in 63ms
-2026-11-23T02:00:20.824Z [info] ok 151 - work-orders › scenario 151 passed in 70ms
-2026-11-23T02:00:20.961Z [info] ok 152 - contracts › scenario 152 passed in 77ms
-2026-11-23T02:00:21.098Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:00:21.235Z [info] ok 154 - repair-triage › scenario 154 passed in 91ms
-2026-11-23T02:00:21.372Z [info] ok 155 - notifications › scenario 155 passed in 8ms
-2026-11-23T02:00:21.509Z [info] ok 156 - tenant-portal › scenario 156 passed in 15ms
-2026-11-23T02:00:21.646Z [info] ok 157 - work-orders › scenario 157 passed in 22ms
-2026-11-23T02:00:21.783Z [info] ok 158 - contracts › scenario 158 passed in 29ms
-2026-11-23T02:00:21.920Z [info] ok 159 - invoicing › scenario 159 passed in 36ms
-2026-11-23T02:00:22.057Z [info] ok 160 - repair-triage › scenario 160 passed in 43ms
-2026-11-23T02:00:22.194Z [debug] cache miss for fixture notifications/fixture-161.json, regenerating
-2026-11-23T02:00:22.331Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:00:22.468Z [info] ok 163 - work-orders › scenario 163 passed in 64ms
-2026-11-23T02:00:22.605Z [info] ok 164 - contracts › scenario 164 passed in 71ms
-2026-11-23T02:00:22.742Z [info] ok 165 - invoicing › scenario 165 passed in 78ms
-2026-11-23T02:00:22.879Z [info] ok 166 - repair-triage › scenario 166 passed in 85ms
-2026-11-23T02:00:23.016Z [info] ok 167 - notifications › scenario 167 passed in 92ms
-2026-11-23T02:00:23.153Z [info] ok 168 - tenant-portal › scenario 168 passed in 9ms
-2026-11-23T02:00:23.290Z [info] ok 169 - work-orders › scenario 169 passed in 16ms
-2026-11-23T02:00:23.427Z [info] ok 170 - contracts › scenario 170 passed in 23ms
-2026-11-23T02:00:23.564Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:00:23.701Z [info] ok 172 - repair-triage › scenario 172 passed in 37ms
-2026-11-23T02:00:23.838Z [info] ok 173 - notifications › scenario 173 passed in 44ms
-2026-11-23T02:00:23.975Z [info] ok 174 - tenant-portal › scenario 174 passed in 51ms
-2026-11-23T02:00:24.112Z [info] ok 175 - work-orders › scenario 175 passed in 58ms
-2026-11-23T02:00:24.249Z [info] ok 176 - contracts › scenario 176 passed in 65ms
-2026-11-23T02:00:24.386Z [info] ok 177 - invoicing › scenario 177 passed in 72ms
-2026-11-23T02:00:24.523Z [info] ok 178 - repair-triage › scenario 178 passed in 79ms
-2026-11-23T02:00:24.660Z [info] ok 179 - notifications › scenario 179 passed in 86ms
-2026-11-23T02:00:24.797Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:00:24.934Z [info] ok 181 - work-orders › scenario 181 passed in 10ms
-2026-11-23T02:00:25.071Z [info] ok 182 - contracts › scenario 182 passed in 17ms
-2026-11-23T02:00:25.208Z [info] ok 183 - invoicing › scenario 183 passed in 24ms
-2026-11-23T02:00:25.345Z [debug] cache miss for fixture repair-triage/fixture-184.json, regenerating
-2026-11-23T02:00:25.482Z [info] ok 185 - notifications › scenario 185 passed in 38ms
-2026-11-23T02:00:25.619Z [info] ok 186 - tenant-portal › scenario 186 passed in 45ms
-2026-11-23T02:00:25.756Z [info] ok 187 - work-orders › scenario 187 passed in 52ms
-2026-11-23T02:00:25.893Z [info] ok 188 - contracts › scenario 188 passed in 59ms
-2026-11-23T02:00:26.030Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:00:26.167Z [info] ok 190 - repair-triage › scenario 190 passed in 73ms
-2026-11-23T02:00:26.304Z [info] ok 191 - notifications › scenario 191 passed in 80ms
-2026-11-23T02:00:26.441Z [info] ok 192 - tenant-portal › scenario 192 passed in 87ms
-2026-11-23T02:00:26.578Z [info] ok 193 - work-orders › scenario 193 passed in 4ms
-2026-11-23T02:00:26.715Z [info] ok 194 - contracts › scenario 194 passed in 11ms
-2026-11-23T02:00:26.852Z [info] ok 195 - invoicing › scenario 195 passed in 18ms
-2026-11-23T02:00:26.989Z [info] ok 196 - repair-triage › scenario 196 passed in 25ms
-2026-11-23T02:00:27.126Z [info] ok 197 - notifications › scenario 197 passed in 32ms
-2026-11-23T02:00:27.263Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:00:27.400Z [info] ok 199 - work-orders › scenario 199 passed in 46ms
-2026-11-23T02:00:27.537Z [info] ok 200 - contracts › scenario 200 passed in 53ms
-2026-11-23T02:00:27.674Z [info] ok 201 - invoicing › scenario 201 passed in 60ms
-2026-11-23T02:00:27.811Z [info] ok 202 - repair-triage › scenario 202 passed in 67ms
-2026-11-23T02:00:27.948Z [info] ok 203 - notifications › scenario 203 passed in 74ms
-2026-11-23T02:00:28.085Z [info] ok 204 - tenant-portal › scenario 204 passed in 81ms
-2026-11-23T02:00:28.222Z [info] ok 205 - work-orders › scenario 205 passed in 88ms
-2026-11-23T02:00:28.359Z [info] ok 206 - contracts › scenario 206 passed in 5ms
-2026-11-23T02:00:28.496Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:00:28.633Z [info] ok 208 - repair-triage › scenario 208 passed in 19ms
-2026-11-23T02:00:28.770Z [info] ok 209 - notifications › scenario 209 passed in 26ms
-2026-11-23T02:00:28.907Z [info] ok 210 - tenant-portal › scenario 210 passed in 33ms
-2026-11-23T02:00:29.044Z [info] ok 211 - work-orders › scenario 211 passed in 40ms
-2026-11-23T02:00:29.181Z [info] ok 212 - contracts › scenario 212 passed in 47ms
-2026-11-23T02:00:29.318Z [info] ok 213 - invoicing › scenario 213 passed in 54ms
-2026-11-23T02:00:29.455Z [info] ok 214 - repair-triage › scenario 214 passed in 61ms
-2026-11-23T02:00:29.592Z [info] ok 215 - notifications › scenario 215 passed in 68ms
-2026-11-23T02:00:29.729Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:00:29.866Z [info] ok 217 - work-orders › scenario 217 passed in 82ms
-2026-11-23T02:00:30.003Z [info] ok 218 - contracts › scenario 218 passed in 89ms
-2026-11-23T02:00:30.140Z [info] ok 219 - invoicing › scenario 219 passed in 6ms
-2026-11-23T02:00:30.277Z [info] ok 220 - repair-triage › scenario 220 passed in 13ms
-2026-11-23T02:00:30.414Z [info] ok 221 - notifications › scenario 221 passed in 20ms
-2026-11-23T02:00:30.551Z [info] ok 222 - tenant-portal › scenario 222 passed in 27ms
-2026-11-23T02:00:30.688Z [info] ok 223 - work-orders › scenario 223 passed in 34ms
-2026-11-23T02:00:30.825Z [info] ok 224 - contracts › scenario 224 passed in 41ms
-2026-11-23T02:00:30.962Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:00:31.099Z [info] ok 226 - repair-triage › scenario 226 passed in 55ms
-2026-11-23T02:00:31.236Z [info] ok 227 - notifications › scenario 227 passed in 62ms
-2026-11-23T02:00:31.373Z [info] ok 228 - tenant-portal › scenario 228 passed in 69ms
-2026-11-23T02:00:31.510Z [info] ok 229 - work-orders › scenario 229 passed in 76ms
-2026-11-23T02:00:31.647Z [debug] cache miss for fixture contracts/fixture-230.json, regenerating
-2026-11-23T02:00:31.784Z [info] ok 231 - invoicing › scenario 231 passed in 90ms
-2026-11-23T02:00:31.921Z [info] ok 232 - repair-triage › scenario 232 passed in 7ms
-2026-11-23T02:00:32.058Z [info] ok 233 - notifications › scenario 233 passed in 14ms
-2026-11-23T02:00:32.195Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:00:32.332Z [info] ok 235 - work-orders › scenario 235 passed in 28ms
-2026-11-23T02:00:32.469Z [info] ok 236 - contracts › scenario 236 passed in 35ms
-2026-11-23T02:00:32.606Z [info] ok 237 - invoicing › scenario 237 passed in 42ms
-2026-11-23T02:00:32.743Z [info] ok 238 - repair-triage › scenario 238 passed in 49ms
-2026-11-23T02:00:32.880Z [info] ok 239 - notifications › scenario 239 passed in 56ms
-2026-11-23T02:00:33.017Z [info] ok 240 - tenant-portal › scenario 240 passed in 63ms
-2026-11-23T02:00:33.154Z [info] ok 241 - work-orders › scenario 241 passed in 70ms
-2026-11-23T02:00:33.291Z [info] ok 242 - contracts › scenario 242 passed in 77ms
-2026-11-23T02:00:33.428Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:00:33.565Z [info] ok 244 - repair-triage › scenario 244 passed in 91ms
-2026-11-23T02:00:33.702Z [info] ok 245 - notifications › scenario 245 passed in 8ms
-2026-11-23T02:00:33.839Z [info] ok 246 - tenant-portal › scenario 246 passed in 15ms
-2026-11-23T02:00:33.976Z [info] ok 247 - work-orders › scenario 247 passed in 22ms
-2026-11-23T02:00:34.113Z [info] ok 248 - contracts › scenario 248 passed in 29ms
-2026-11-23T02:00:34.250Z [info] ok 249 - invoicing › scenario 249 passed in 36ms
-2026-11-23T02:00:34.387Z [info] ok 250 - repair-triage › scenario 250 passed in 43ms
-2026-11-23T02:00:34.524Z [info] ok 251 - notifications › scenario 251 passed in 50ms
-2026-11-23T02:00:34.661Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:00:34.798Z [debug] cache miss for fixture work-orders/fixture-253.json, regenerating
-2026-11-23T02:00:34.935Z [info] ok 254 - contracts › scenario 254 passed in 71ms
-2026-11-23T02:00:35.072Z [info] ok 255 - invoicing › scenario 255 passed in 78ms
-2026-11-23T02:00:35.209Z [info] ok 256 - repair-triage › scenario 256 passed in 85ms
-2026-11-23T02:00:35.346Z [info] ok 257 - notifications › scenario 257 passed in 92ms
-2026-11-23T02:00:35.483Z [info] ok 258 - tenant-portal › scenario 258 passed in 9ms
-2026-11-23T02:00:35.620Z [info] ok 259 - work-orders › scenario 259 passed in 16ms
-2026-11-23T02:00:35.757Z [info] ok 260 - contracts › scenario 260 passed in 23ms
-2026-11-23T02:00:35.894Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:00:36.031Z [info] ok 262 - repair-triage › scenario 262 passed in 37ms
-2026-11-23T02:00:36.168Z [info] ok 263 - notifications › scenario 263 passed in 44ms
-2026-11-23T02:00:36.305Z [info] ok 264 - tenant-portal › scenario 264 passed in 51ms
-2026-11-23T02:00:36.442Z [info] ok 265 - work-orders › scenario 265 passed in 58ms
-2026-11-23T02:00:36.579Z [info] ok 266 - contracts › scenario 266 passed in 65ms
-2026-11-23T02:00:36.716Z [info] ok 267 - invoicing › scenario 267 passed in 72ms
-2026-11-23T02:00:36.853Z [info] ok 268 - repair-triage › scenario 268 passed in 79ms
-2026-11-23T02:00:36.990Z [info] ok 269 - notifications › scenario 269 passed in 86ms
-2026-11-23T02:00:37.127Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:00:37.264Z [info] ok 271 - work-orders › scenario 271 passed in 10ms
-2026-11-23T02:00:37.401Z [info] ok 272 - contracts › scenario 272 passed in 17ms
-2026-11-23T02:00:37.538Z [info] ok 273 - invoicing › scenario 273 passed in 24ms
-2026-11-23T02:00:37.675Z [info] ok 274 - repair-triage › scenario 274 passed in 31ms
-2026-11-23T02:00:37.812Z [info] ok 275 - notifications › scenario 275 passed in 38ms
-2026-11-23T02:00:37.949Z [debug] cache miss for fixture tenant-portal/fixture-276.json, regenerating
-2026-11-23T02:00:38.086Z [info] ok 277 - work-orders › scenario 277 passed in 52ms
-2026-11-23T02:00:38.223Z [info] ok 278 - contracts › scenario 278 passed in 59ms
-2026-11-23T02:00:38.360Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:00:38.497Z [info] ok 280 - repair-triage › scenario 280 passed in 73ms
-2026-11-23T02:00:38.634Z [info] ok 281 - notifications › scenario 281 passed in 80ms
-2026-11-23T02:00:38.771Z [info] ok 282 - tenant-portal › scenario 282 passed in 87ms
-2026-11-23T02:00:38.908Z [info] ok 283 - work-orders › scenario 283 passed in 4ms
-2026-11-23T02:00:39.045Z [info] ok 284 - contracts › scenario 284 passed in 11ms
-2026-11-23T02:00:39.182Z [info] ok 285 - invoicing › scenario 285 passed in 18ms
-2026-11-23T02:00:39.319Z [info] ok 286 - repair-triage › scenario 286 passed in 25ms
-2026-11-23T02:00:39.456Z [info] ok 287 - notifications › scenario 287 passed in 32ms
-2026-11-23T02:00:39.593Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:00:39.730Z [info] ok 289 - work-orders › scenario 289 passed in 46ms
-2026-11-23T02:00:39.867Z [info] ok 290 - contracts › scenario 290 passed in 53ms
-2026-11-23T02:00:40.004Z [info] ok 291 - invoicing › scenario 291 passed in 60ms
-2026-11-23T02:00:40.141Z [info] ok 292 - repair-triage › scenario 292 passed in 67ms
-2026-11-23T02:00:40.278Z [info] ok 293 - notifications › scenario 293 passed in 74ms
-2026-11-23T02:00:40.415Z [info] ok 294 - tenant-portal › scenario 294 passed in 81ms
-2026-11-23T02:00:40.552Z [info] ok 295 - work-orders › scenario 295 passed in 88ms
-2026-11-23T02:00:40.689Z [info] ok 296 - contracts › scenario 296 passed in 5ms
-2026-11-23T02:00:40.826Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:00:40.963Z [info] ok 298 - repair-triage › scenario 298 passed in 19ms
-2026-11-23T02:00:41.100Z [debug] cache miss for fixture notifications/fixture-299.json, regenerating
-2026-11-23T02:00:41.237Z [info] ok 300 - tenant-portal › scenario 300 passed in 33ms
-2026-11-23T02:00:41.374Z [info] ok 301 - work-orders › scenario 301 passed in 40ms
-2026-11-23T02:00:41.511Z [info] ok 302 - contracts › scenario 302 passed in 47ms
-2026-11-23T02:00:41.648Z [info] ok 303 - invoicing › scenario 303 passed in 54ms
-2026-11-23T02:00:41.785Z [info] ok 304 - repair-triage › scenario 304 passed in 61ms
-2026-11-23T02:00:41.922Z [info] ok 305 - notifications › scenario 305 passed in 68ms
-2026-11-23T02:00:42.059Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:00:42.196Z [info] ok 307 - work-orders › scenario 307 passed in 82ms
-2026-11-23T02:00:42.333Z [info] ok 308 - contracts › scenario 308 passed in 89ms
-2026-11-23T02:00:42.470Z [info] ok 309 - invoicing › scenario 309 passed in 6ms
-2026-11-23T02:00:42.607Z [info] ok 310 - repair-triage › scenario 310 passed in 13ms
-2026-11-23T02:00:42.744Z [info] ok 311 - notifications › scenario 311 passed in 20ms
-2026-11-23T02:00:42.881Z [info] ok 312 - tenant-portal › scenario 312 passed in 27ms
-2026-11-23T02:00:43.018Z [info] ok 313 - work-orders › scenario 313 passed in 34ms
-2026-11-23T02:00:43.155Z [info] ok 314 - contracts › scenario 314 passed in 41ms
-2026-11-23T02:00:43.292Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:00:43.429Z [info] ok 316 - repair-triage › scenario 316 passed in 55ms
-2026-11-23T02:00:43.566Z [info] ok 317 - notifications › scenario 317 passed in 62ms
-2026-11-23T02:00:43.703Z [info] ok 318 - tenant-portal › scenario 318 passed in 69ms
-2026-11-23T02:00:43.840Z [info] ok 319 - work-orders › scenario 319 passed in 76ms
-2026-11-23T02:00:43.977Z [info] ok 320 - contracts › scenario 320 passed in 83ms
-2026-11-23T02:00:44.114Z [info] ok 321 - invoicing › scenario 321 passed in 90ms
-2026-11-23T02:00:44.251Z [debug] cache miss for fixture repair-triage/fixture-322.json, regenerating
-2026-11-23T02:00:44.388Z [info] ok 323 - notifications › scenario 323 passed in 14ms
-2026-11-23T02:00:44.525Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:00:44.662Z [info] ok 325 - work-orders › scenario 325 passed in 28ms
-2026-11-23T02:00:44.799Z [info] ok 326 - contracts › scenario 326 passed in 35ms
-2026-11-23T02:00:44.936Z [info] ok 327 - invoicing › scenario 327 passed in 42ms
-2026-11-23T02:00:45.073Z [info] ok 328 - repair-triage › scenario 328 passed in 49ms
-2026-11-23T02:00:45.210Z [info] ok 329 - notifications › scenario 329 passed in 56ms
-2026-11-23T02:00:45.347Z [info] ok 330 - tenant-portal › scenario 330 passed in 63ms
-2026-11-23T02:00:45.484Z [info] ok 331 - work-orders › scenario 331 passed in 70ms
-2026-11-23T02:00:45.621Z [info] ok 332 - contracts › scenario 332 passed in 77ms
-2026-11-23T02:00:45.758Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:00:45.895Z [info] ok 334 - repair-triage › scenario 334 passed in 91ms
-2026-11-23T02:00:46.032Z [info] ok 335 - notifications › scenario 335 passed in 8ms
-2026-11-23T02:00:46.169Z [info] ok 336 - tenant-portal › scenario 336 passed in 15ms
-2026-11-23T02:00:46.306Z [info] ok 337 - work-orders › scenario 337 passed in 22ms
-2026-11-23T02:00:46.443Z [info] ok 338 - contracts › scenario 338 passed in 29ms
-2026-11-23T02:00:46.580Z [info] ok 339 - invoicing › scenario 339 passed in 36ms
-2026-11-23T02:00:46.717Z [info] ok 340 - repair-triage › scenario 340 passed in 43ms
-2026-11-23T02:00:46.854Z [info] ok 341 - notifications › scenario 341 passed in 50ms
-2026-11-23T02:00:46.991Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:00:47.128Z [info] ok 343 - work-orders › scenario 343 passed in 64ms
-2026-11-23T02:00:47.265Z [info] ok 344 - contracts › scenario 344 passed in 71ms
-2026-11-23T02:00:47.402Z [debug] cache miss for fixture invoicing/fixture-345.json, regenerating
-2026-11-23T02:00:47.539Z [info] ok 346 - repair-triage › scenario 346 passed in 85ms
-2026-11-23T02:00:47.676Z [info] ok 347 - notifications › scenario 347 passed in 92ms
-2026-11-23T02:00:47.813Z [info] ok 348 - tenant-portal › scenario 348 passed in 9ms
-2026-11-23T02:00:47.950Z [info] ok 349 - work-orders › scenario 349 passed in 16ms
-2026-11-23T02:00:48.087Z [info] ok 350 - contracts › scenario 350 passed in 23ms
-2026-11-23T02:00:48.224Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:00:48.361Z [info] ok 352 - repair-triage › scenario 352 passed in 37ms
-2026-11-23T02:00:48.498Z [info] ok 353 - notifications › scenario 353 passed in 44ms
-2026-11-23T02:00:48.635Z [info] ok 354 - tenant-portal › scenario 354 passed in 51ms
-2026-11-23T02:00:48.772Z [info] ok 355 - work-orders › scenario 355 passed in 58ms
-2026-11-23T02:00:48.909Z [info] ok 356 - contracts › scenario 356 passed in 65ms
-2026-11-23T02:00:49.046Z [info] ok 357 - invoicing › scenario 357 passed in 72ms
-2026-11-23T02:00:49.183Z [info] ok 358 - repair-triage › scenario 358 passed in 79ms
-2026-11-23T02:00:49.320Z [info] ok 359 - notifications › scenario 359 passed in 86ms
-2026-11-23T02:00:49.457Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:00:49.594Z [info] ok 361 - work-orders › scenario 361 passed in 10ms
-2026-11-23T02:00:49.731Z [info] ok 362 - contracts › scenario 362 passed in 17ms
-2026-11-23T02:00:49.868Z [info] ok 363 - invoicing › scenario 363 passed in 24ms
-2026-11-23T02:00:50.005Z [info] ok 364 - repair-triage › scenario 364 passed in 31ms
-2026-11-23T02:00:50.142Z [info] ok 365 - notifications › scenario 365 passed in 38ms
-2026-11-23T02:00:50.279Z [info] ok 366 - tenant-portal › scenario 366 passed in 45ms
-2026-11-23T02:00:50.416Z [info] ok 367 - work-orders › scenario 367 passed in 52ms
-2026-11-23T02:00:50.553Z [debug] cache miss for fixture contracts/fixture-368.json, regenerating
-2026-11-23T02:00:50.690Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:00:50.827Z [info] ok 370 - repair-triage › scenario 370 passed in 73ms
-2026-11-23T02:00:50.964Z [info] ok 371 - notifications › scenario 371 passed in 80ms
-2026-11-23T02:00:51.101Z [info] ok 372 - tenant-portal › scenario 372 passed in 87ms
-2026-11-23T02:00:51.238Z [info] ok 373 - work-orders › scenario 373 passed in 4ms
-2026-11-23T02:00:51.375Z [info] ok 374 - contracts › scenario 374 passed in 11ms
-2026-11-23T02:00:51.512Z [info] ok 375 - invoicing › scenario 375 passed in 18ms
-2026-11-23T02:00:51.649Z [info] ok 376 - repair-triage › scenario 376 passed in 25ms
-2026-11-23T02:00:51.786Z [info] ok 377 - notifications › scenario 377 passed in 32ms
-2026-11-23T02:00:51.923Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:00:52.060Z [info] ok 379 - work-orders › scenario 379 passed in 46ms
-2026-11-23T02:00:52.197Z [info] ok 380 - contracts › scenario 380 passed in 53ms
-2026-11-23T02:00:52.334Z [info] ok 381 - invoicing › scenario 381 passed in 60ms
-2026-11-23T02:00:52.471Z [info] ok 382 - repair-triage › scenario 382 passed in 67ms
-2026-11-23T02:00:52.608Z [info] ok 383 - notifications › scenario 383 passed in 74ms
-2026-11-23T02:00:52.745Z [info] ok 384 - tenant-portal › scenario 384 passed in 81ms
-2026-11-23T02:00:52.882Z [info] ok 385 - work-orders › scenario 385 passed in 88ms
-2026-11-23T02:00:53.019Z [info] ok 386 - contracts › scenario 386 passed in 5ms
-2026-11-23T02:00:53.156Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:00:53.293Z [info] ok 388 - repair-triage › scenario 388 passed in 19ms
-2026-11-23T02:00:53.430Z [info] ok 389 - notifications › scenario 389 passed in 26ms
-2026-11-23T02:00:53.567Z [info] ok 390 - tenant-portal › scenario 390 passed in 33ms
-2026-11-23T02:00:53.704Z [debug] cache miss for fixture work-orders/fixture-391.json, regenerating
-2026-11-23T02:00:53.841Z [info] ok 392 - contracts › scenario 392 passed in 47ms
-2026-11-23T02:00:53.978Z [info] ok 393 - invoicing › scenario 393 passed in 54ms
-2026-11-23T02:00:54.115Z [info] ok 394 - repair-triage › scenario 394 passed in 61ms
-2026-11-23T02:00:54.252Z [info] ok 395 - notifications › scenario 395 passed in 68ms
-2026-11-23T02:00:54.389Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:00:54.526Z [info] ok 397 - work-orders › scenario 397 passed in 82ms
-2026-11-23T02:00:54.663Z [info] ok 398 - contracts › scenario 398 passed in 89ms
-2026-11-23T02:00:54.800Z [info] ok 399 - invoicing › scenario 399 passed in 6ms
-2026-11-23T02:00:54.937Z [info] ok 400 - repair-triage › scenario 400 passed in 13ms
-2026-11-23T02:00:55.074Z [info] ok 401 - notifications › scenario 401 passed in 20ms
-2026-11-23T02:00:55.211Z [info] ok 402 - tenant-portal › scenario 402 passed in 27ms
-2026-11-23T02:00:55.348Z [info] ok 403 - work-orders › scenario 403 passed in 34ms
-2026-11-23T02:00:55.485Z [info] ok 404 - contracts › scenario 404 passed in 41ms
-2026-11-23T02:00:55.622Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:00:55.759Z [info] ok 406 - repair-triage › scenario 406 passed in 55ms
-2026-11-23T02:00:55.896Z [info] ok 407 - notifications › scenario 407 passed in 62ms
-2026-11-23T02:00:56.033Z [info] ok 408 - tenant-portal › scenario 408 passed in 69ms
-2026-11-23T02:00:56.170Z [info] ok 409 - work-orders › scenario 409 passed in 76ms
-2026-11-23T02:00:56.307Z [info] ok 410 - contracts › scenario 410 passed in 83ms
-2026-11-23T02:00:56.444Z [info] ok 411 - invoicing › scenario 411 passed in 90ms
-2026-11-23T02:00:56.581Z [info] repair-triage: running test/triage.test.js
-2026-11-23T02:00:56.718Z [info] ok 1 - gas smell in English is an emergency
-2026-11-23T02:00:56.855Z [error] not ok 2 - gas smell is an emergency, also when the tenant writes Dutch
-2026-11-23T02:00:56.992Z [error]   expected: 'emergency'
-2026-11-23T02:00:57.129Z [error]   actual:   'urgent'
-2026-11-23T02:00:57.266Z [error]   suite: repair-triage, stage: unit tests
-2026-11-23T02:00:57.403Z [info] ok 3 - heating problem without emergency keywords is urgent
-2026-11-23T02:00:57.540Z [info] ok 413 - notifications › scenario 413 passed in 14ms
-2026-11-23T02:00:57.677Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:00:57.814Z [info] ok 415 - work-orders › scenario 415 passed in 28ms
-2026-11-23T02:00:57.951Z [info] ok 416 - contracts › scenario 416 passed in 35ms
-2026-11-23T02:00:58.088Z [info] ok 417 - invoicing › scenario 417 passed in 42ms
-2026-11-23T02:00:58.225Z [info] ok 418 - repair-triage › scenario 418 passed in 49ms
-2026-11-23T02:00:58.362Z [info] ok 419 - notifications › scenario 419 passed in 56ms
-2026-11-23T02:00:58.499Z [info] ok 420 - tenant-portal › scenario 420 passed in 63ms
-2026-11-23T02:00:58.636Z [info] ok 421 - work-orders › scenario 421 passed in 70ms
-2026-11-23T02:00:58.773Z [info] ok 422 - contracts › scenario 422 passed in 77ms
-2026-11-23T02:00:58.910Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:00:59.047Z [info] ok 424 - repair-triage › scenario 424 passed in 91ms
-2026-11-23T02:00:59.184Z [info] ok 425 - notifications › scenario 425 passed in 8ms
-2026-11-23T02:00:59.321Z [info] ok 426 - tenant-portal › scenario 426 passed in 15ms
-2026-11-23T02:00:59.458Z [info] ok 427 - work-orders › scenario 427 passed in 22ms
-2026-11-23T02:00:59.595Z [info] ok 428 - contracts › scenario 428 passed in 29ms
-2026-11-23T02:00:59.732Z [info] ok 429 - invoicing › scenario 429 passed in 36ms
-2026-11-23T02:00:59.869Z [info] ok 430 - repair-triage › scenario 430 passed in 43ms
-2026-11-23T02:01:00.006Z [info] ok 431 - notifications › scenario 431 passed in 50ms
-2026-11-23T02:01:00.143Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:01:00.280Z [info] ok 433 - work-orders › scenario 433 passed in 64ms
-2026-11-23T02:01:00.417Z [info] ok 434 - contracts › scenario 434 passed in 71ms
-2026-11-23T02:01:00.554Z [info] ok 435 - invoicing › scenario 435 passed in 78ms
-2026-11-23T02:01:00.691Z [info] ok 436 - repair-triage › scenario 436 passed in 85ms
-2026-11-23T02:01:00.828Z [debug] cache miss for fixture notifications/fixture-437.json, regenerating
-2026-11-23T02:01:00.965Z [info] ok 438 - tenant-portal › scenario 438 passed in 9ms
-2026-11-23T02:01:01.102Z [info] ok 439 - work-orders › scenario 439 passed in 16ms
-2026-11-23T02:01:01.239Z [info] ok 440 - contracts › scenario 440 passed in 23ms
-2026-11-23T02:01:01.376Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:01:01.513Z [info] ok 442 - repair-triage › scenario 442 passed in 37ms
-2026-11-23T02:01:01.650Z [info] ok 443 - notifications › scenario 443 passed in 44ms
-2026-11-23T02:01:01.787Z [info] ok 444 - tenant-portal › scenario 444 passed in 51ms
-2026-11-23T02:01:01.924Z [info] ok 445 - work-orders › scenario 445 passed in 58ms
-2026-11-23T02:01:02.061Z [info] ok 446 - contracts › scenario 446 passed in 65ms
-2026-11-23T02:01:02.198Z [info] ok 447 - invoicing › scenario 447 passed in 72ms
-2026-11-23T02:01:02.335Z [info] ok 448 - repair-triage › scenario 448 passed in 79ms
-2026-11-23T02:01:02.472Z [info] ok 449 - notifications › scenario 449 passed in 86ms
-2026-11-23T02:01:02.609Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:01:02.746Z [info] ok 451 - work-orders › scenario 451 passed in 10ms
-2026-11-23T02:01:02.883Z [info] ok 452 - contracts › scenario 452 passed in 17ms
-2026-11-23T02:01:03.020Z [info] ok 453 - invoicing › scenario 453 passed in 24ms
-2026-11-23T02:01:03.157Z [info] ok 454 - repair-triage › scenario 454 passed in 31ms
-2026-11-23T02:01:03.294Z [info] ok 455 - notifications › scenario 455 passed in 38ms
-2026-11-23T02:01:03.431Z [info] ok 456 - tenant-portal › scenario 456 passed in 45ms
-2026-11-23T02:01:03.568Z [info] ok 457 - work-orders › scenario 457 passed in 52ms
-2026-11-23T02:01:03.705Z [info] ok 458 - contracts › scenario 458 passed in 59ms
-2026-11-23T02:01:03.842Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:01:03.979Z [debug] cache miss for fixture repair-triage/fixture-460.json, regenerating
-2026-11-23T02:01:04.116Z [info] ok 461 - notifications › scenario 461 passed in 80ms
-2026-11-23T02:01:04.253Z [info] ok 462 - tenant-portal › scenario 462 passed in 87ms
-2026-11-23T02:01:04.390Z [info] ok 463 - work-orders › scenario 463 passed in 4ms
-2026-11-23T02:01:04.527Z [info] ok 464 - contracts › scenario 464 passed in 11ms
-2026-11-23T02:01:04.664Z [info] ok 465 - invoicing › scenario 465 passed in 18ms
-2026-11-23T02:01:04.801Z [info] ok 466 - repair-triage › scenario 466 passed in 25ms
-2026-11-23T02:01:04.938Z [info] ok 467 - notifications › scenario 467 passed in 32ms
-2026-11-23T02:01:05.075Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:01:05.212Z [info] ok 469 - work-orders › scenario 469 passed in 46ms
-2026-11-23T02:01:05.349Z [info] ok 470 - contracts › scenario 470 passed in 53ms
-2026-11-23T02:01:05.486Z [info] ok 471 - invoicing › scenario 471 passed in 60ms
-2026-11-23T02:01:05.623Z [info] ok 472 - repair-triage › scenario 472 passed in 67ms
-2026-11-23T02:01:05.760Z [info] ok 473 - notifications › scenario 473 passed in 74ms
-2026-11-23T02:01:05.897Z [info] ok 474 - tenant-portal › scenario 474 passed in 81ms
-2026-11-23T02:01:06.034Z [info] ok 475 - work-orders › scenario 475 passed in 88ms
-2026-11-23T02:01:06.171Z [info] ok 476 - contracts › scenario 476 passed in 5ms
-2026-11-23T02:01:06.308Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:01:06.445Z [info] ok 478 - repair-triage › scenario 478 passed in 19ms
-2026-11-23T02:01:06.582Z [info] ok 479 - notifications › scenario 479 passed in 26ms
-2026-11-23T02:01:06.719Z [info] ok 480 - tenant-portal › scenario 480 passed in 33ms
-2026-11-23T02:01:06.856Z [info] ok 481 - work-orders › scenario 481 passed in 40ms
-2026-11-23T02:01:06.993Z [info] ok 482 - contracts › scenario 482 passed in 47ms
-2026-11-23T02:01:07.130Z [debug] cache miss for fixture invoicing/fixture-483.json, regenerating
-2026-11-23T02:01:07.267Z [info] ok 484 - repair-triage › scenario 484 passed in 61ms
-2026-11-23T02:01:07.404Z [info] ok 485 - notifications › scenario 485 passed in 68ms
-2026-11-23T02:01:07.541Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:01:07.678Z [info] ok 487 - work-orders › scenario 487 passed in 82ms
-2026-11-23T02:01:07.815Z [info] ok 488 - contracts › scenario 488 passed in 89ms
-2026-11-23T02:01:07.952Z [info] ok 489 - invoicing › scenario 489 passed in 6ms
-2026-11-23T02:01:08.089Z [info] ok 490 - repair-triage › scenario 490 passed in 13ms
-2026-11-23T02:01:08.226Z [info] ok 491 - notifications › scenario 491 passed in 20ms
-2026-11-23T02:01:08.363Z [info] ok 492 - tenant-portal › scenario 492 passed in 27ms
-2026-11-23T02:01:08.500Z [info] ok 493 - work-orders › scenario 493 passed in 34ms
-2026-11-23T02:01:08.637Z [info] ok 494 - contracts › scenario 494 passed in 41ms
-2026-11-23T02:01:08.774Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:01:08.911Z [info] ok 496 - repair-triage › scenario 496 passed in 55ms
-2026-11-23T02:01:09.048Z [info] ok 497 - notifications › scenario 497 passed in 62ms
-2026-11-23T02:01:09.185Z [info] ok 498 - tenant-portal › scenario 498 passed in 69ms
-2026-11-23T02:01:09.322Z [info] ok 499 - work-orders › scenario 499 passed in 76ms
-2026-11-23T02:01:09.459Z [info] ok 500 - contracts › scenario 500 passed in 83ms
-2026-11-23T02:01:09.596Z [info] ok 501 - invoicing › scenario 501 passed in 90ms
-2026-11-23T02:01:09.733Z [info] ok 502 - repair-triage › scenario 502 passed in 7ms
-2026-11-23T02:01:09.870Z [info] ok 503 - notifications › scenario 503 passed in 14ms
-2026-11-23T02:01:10.007Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:01:10.144Z [info] ok 505 - work-orders › scenario 505 passed in 28ms
-2026-11-23T02:01:10.281Z [debug] cache miss for fixture contracts/fixture-506.json, regenerating
-2026-11-23T02:01:10.418Z [info] ok 507 - invoicing › scenario 507 passed in 42ms
-2026-11-23T02:01:10.555Z [info] ok 508 - repair-triage › scenario 508 passed in 49ms
-2026-11-23T02:01:10.692Z [info] ok 509 - notifications › scenario 509 passed in 56ms
-2026-11-23T02:01:10.829Z [info] ok 510 - tenant-portal › scenario 510 passed in 63ms
-2026-11-23T02:01:10.966Z [info] ok 511 - work-orders › scenario 511 passed in 70ms
-2026-11-23T02:01:11.103Z [info] ok 512 - contracts › scenario 512 passed in 77ms
-2026-11-23T02:01:11.240Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:01:11.377Z [info] ok 514 - repair-triage › scenario 514 passed in 91ms
-2026-11-23T02:01:11.514Z [info] ok 515 - notifications › scenario 515 passed in 8ms
-2026-11-23T02:01:11.651Z [info] ok 516 - tenant-portal › scenario 516 passed in 15ms
-2026-11-23T02:01:11.788Z [info] ok 517 - work-orders › scenario 517 passed in 22ms
-2026-11-23T02:01:11.925Z [info] ok 518 - contracts › scenario 518 passed in 29ms
-2026-11-23T02:01:12.062Z [info] ok 519 - invoicing › scenario 519 passed in 36ms
-2026-11-23T02:01:12.199Z [info] ok 520 - repair-triage › scenario 520 passed in 43ms
-2026-11-23T02:01:12.336Z [info] ok 521 - notifications › scenario 521 passed in 50ms
-2026-11-23T02:01:12.473Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:01:12.610Z [info] ok 523 - work-orders › scenario 523 passed in 64ms
-2026-11-23T02:01:12.747Z [info] ok 524 - contracts › scenario 524 passed in 71ms
-2026-11-23T02:01:12.884Z [info] ok 525 - invoicing › scenario 525 passed in 78ms
-2026-11-23T02:01:13.021Z [info] ok 526 - repair-triage › scenario 526 passed in 85ms
-2026-11-23T02:01:13.158Z [info] ok 527 - notifications › scenario 527 passed in 92ms
-2026-11-23T02:01:13.295Z [info] ok 528 - tenant-portal › scenario 528 passed in 9ms
-2026-11-23T02:01:13.432Z [debug] cache miss for fixture work-orders/fixture-529.json, regenerating
-2026-11-23T02:01:13.569Z [info] ok 530 - contracts › scenario 530 passed in 23ms
-2026-11-23T02:01:13.706Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:01:13.843Z [info] ok 532 - repair-triage › scenario 532 passed in 37ms
-2026-11-23T02:01:13.980Z [info] ok 533 - notifications › scenario 533 passed in 44ms
-2026-11-23T02:01:14.117Z [info] ok 534 - tenant-portal › scenario 534 passed in 51ms
-2026-11-23T02:01:14.254Z [info] ok 535 - work-orders › scenario 535 passed in 58ms
-2026-11-23T02:01:14.391Z [info] ok 536 - contracts › scenario 536 passed in 65ms
-2026-11-23T02:01:14.528Z [info] ok 537 - invoicing › scenario 537 passed in 72ms
-2026-11-23T02:01:14.665Z [info] ok 538 - repair-triage › scenario 538 passed in 79ms
-2026-11-23T02:01:14.802Z [info] ok 539 - notifications › scenario 539 passed in 86ms
-2026-11-23T02:01:14.939Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:01:15.076Z [info] ok 541 - work-orders › scenario 541 passed in 10ms
-2026-11-23T02:01:15.213Z [info] ok 542 - contracts › scenario 542 passed in 17ms
-2026-11-23T02:01:15.350Z [info] ok 543 - invoicing › scenario 543 passed in 24ms
-2026-11-23T02:01:15.487Z [info] ok 544 - repair-triage › scenario 544 passed in 31ms
-2026-11-23T02:01:15.624Z [info] ok 545 - notifications › scenario 545 passed in 38ms
-2026-11-23T02:01:15.761Z [info] ok 546 - tenant-portal › scenario 546 passed in 45ms
-2026-11-23T02:01:15.898Z [info] ok 547 - work-orders › scenario 547 passed in 52ms
-2026-11-23T02:01:16.035Z [info] ok 548 - contracts › scenario 548 passed in 59ms
-2026-11-23T02:01:16.172Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:01:16.309Z [info] ok 550 - repair-triage › scenario 550 passed in 73ms
-2026-11-23T02:01:16.446Z [info] ok 551 - notifications › scenario 551 passed in 80ms
-2026-11-23T02:01:16.583Z [debug] cache miss for fixture tenant-portal/fixture-552.json, regenerating
-2026-11-23T02:01:16.720Z [info] ok 553 - work-orders › scenario 553 passed in 4ms
-2026-11-23T02:01:16.857Z [info] ok 554 - contracts › scenario 554 passed in 11ms
-2026-11-23T02:01:16.994Z [info] ok 555 - invoicing › scenario 555 passed in 18ms
-2026-11-23T02:01:17.131Z [info] ok 556 - repair-triage › scenario 556 passed in 25ms
-2026-11-23T02:01:17.268Z [info] ok 557 - notifications › scenario 557 passed in 32ms
-2026-11-23T02:01:17.405Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:01:17.542Z [info] ok 559 - work-orders › scenario 559 passed in 46ms
-2026-11-23T02:01:17.679Z [info] ok 560 - contracts › scenario 560 passed in 53ms
-2026-11-23T02:01:17.816Z [info] ok 561 - invoicing › scenario 561 passed in 60ms
-2026-11-23T02:01:17.953Z [info] ok 562 - repair-triage › scenario 562 passed in 67ms
-2026-11-23T02:01:18.090Z [info] ok 563 - notifications › scenario 563 passed in 74ms
-2026-11-23T02:01:18.227Z [info] ok 564 - tenant-portal › scenario 564 passed in 81ms
-2026-11-23T02:01:18.364Z [info] ok 565 - work-orders › scenario 565 passed in 88ms
-2026-11-23T02:01:18.501Z [info] ok 566 - contracts › scenario 566 passed in 5ms
-2026-11-23T02:01:18.638Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:01:18.775Z [info] ok 568 - repair-triage › scenario 568 passed in 19ms
-2026-11-23T02:01:18.912Z [info] ok 569 - notifications › scenario 569 passed in 26ms
-2026-11-23T02:01:19.049Z [info] ok 570 - tenant-portal › scenario 570 passed in 33ms
-2026-11-23T02:01:19.186Z [info] ok 571 - work-orders › scenario 571 passed in 40ms
-2026-11-23T02:01:19.323Z [info] ok 572 - contracts › scenario 572 passed in 47ms
-2026-11-23T02:01:19.460Z [info] ok 573 - invoicing › scenario 573 passed in 54ms
-2026-11-23T02:01:19.597Z [info] ok 574 - repair-triage › scenario 574 passed in 61ms
-2026-11-23T02:01:19.734Z [debug] cache miss for fixture notifications/fixture-575.json, regenerating
-2026-11-23T02:01:19.871Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:01:20.008Z [info] ok 577 - work-orders › scenario 577 passed in 82ms
-2026-11-23T02:01:20.145Z [info] ok 578 - contracts › scenario 578 passed in 89ms
-2026-11-23T02:01:20.282Z [info] ok 579 - invoicing › scenario 579 passed in 6ms
-2026-11-23T02:01:20.419Z [info] ok 580 - repair-triage › scenario 580 passed in 13ms
-2026-11-23T02:01:20.556Z [info] ok 581 - notifications › scenario 581 passed in 20ms
-2026-11-23T02:01:20.693Z [info] ok 582 - tenant-portal › scenario 582 passed in 27ms
-2026-11-23T02:01:20.830Z [info] ok 583 - work-orders › scenario 583 passed in 34ms
-2026-11-23T02:01:20.967Z [info] ok 584 - contracts › scenario 584 passed in 41ms
-2026-11-23T02:01:21.104Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:01:21.241Z [info] ok 586 - repair-triage › scenario 586 passed in 55ms
-2026-11-23T02:01:21.378Z [info] ok 587 - notifications › scenario 587 passed in 62ms
-2026-11-23T02:01:21.515Z [info] ok 588 - tenant-portal › scenario 588 passed in 69ms
-2026-11-23T02:01:21.652Z [info] ok 589 - work-orders › scenario 589 passed in 76ms
-2026-11-23T02:01:21.789Z [info] ok 590 - contracts › scenario 590 passed in 83ms
-2026-11-23T02:01:21.926Z [info] ok 591 - invoicing › scenario 591 passed in 90ms
-2026-11-23T02:01:22.063Z [info] ok 592 - repair-triage › scenario 592 passed in 7ms
-2026-11-23T02:01:22.200Z [info] ok 593 - notifications › scenario 593 passed in 14ms
-2026-11-23T02:01:22.337Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:01:22.474Z [info] ok 595 - work-orders › scenario 595 passed in 28ms
-2026-11-23T02:01:22.611Z [info] ok 596 - contracts › scenario 596 passed in 35ms
-2026-11-23T02:01:22.748Z [info] ok 597 - invoicing › scenario 597 passed in 42ms
-2026-11-23T02:01:22.885Z [debug] cache miss for fixture repair-triage/fixture-598.json, regenerating
-2026-11-23T02:01:23.022Z [info] ok 599 - notifications › scenario 599 passed in 56ms
-2026-11-23T02:01:23.159Z [info] ok 600 - tenant-portal › scenario 600 passed in 63ms
-2026-11-23T02:01:23.296Z [info] ok 601 - work-orders › scenario 601 passed in 70ms
-2026-11-23T02:01:23.433Z [info] ok 602 - contracts › scenario 602 passed in 77ms
-2026-11-23T02:01:23.570Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:01:23.707Z [info] ok 604 - repair-triage › scenario 604 passed in 91ms
-2026-11-23T02:01:23.844Z [info] ok 605 - notifications › scenario 605 passed in 8ms
-2026-11-23T02:01:23.981Z [info] ok 606 - tenant-portal › scenario 606 passed in 15ms
-2026-11-23T02:01:24.118Z [info] ok 607 - work-orders › scenario 607 passed in 22ms
-2026-11-23T02:01:24.255Z [info] ok 608 - contracts › scenario 608 passed in 29ms
-2026-11-23T02:01:24.392Z [info] ok 609 - invoicing › scenario 609 passed in 36ms
-2026-11-23T02:01:24.529Z [info] ok 610 - repair-triage › scenario 610 passed in 43ms
-2026-11-23T02:01:24.666Z [info] ok 611 - notifications › scenario 611 passed in 50ms
-2026-11-23T02:01:24.803Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:01:24.940Z [info] ok 613 - work-orders › scenario 613 passed in 64ms
-2026-11-23T02:01:25.077Z [info] ok 614 - contracts › scenario 614 passed in 71ms
-2026-11-23T02:01:25.214Z [info] ok 615 - invoicing › scenario 615 passed in 78ms
-2026-11-23T02:01:25.351Z [info] ok 616 - repair-triage › scenario 616 passed in 85ms
-2026-11-23T02:01:25.488Z [info] ok 617 - notifications › scenario 617 passed in 92ms
-2026-11-23T02:01:25.625Z [info] ok 618 - tenant-portal › scenario 618 passed in 9ms
-2026-11-23T02:01:25.762Z [info] ok 619 - work-orders › scenario 619 passed in 16ms
-2026-11-23T02:01:25.899Z [info] ok 620 - contracts › scenario 620 passed in 23ms
-2026-11-23T02:01:26.036Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:01:26.173Z [info] ok 622 - repair-triage › scenario 622 passed in 37ms
-2026-11-23T02:01:26.310Z [info] ok 623 - notifications › scenario 623 passed in 44ms
-2026-11-23T02:01:26.447Z [info] ok 624 - tenant-portal › scenario 624 passed in 51ms
-2026-11-23T02:01:26.584Z [info] ok 625 - work-orders › scenario 625 passed in 58ms
-2026-11-23T02:01:26.721Z [info] ok 626 - contracts › scenario 626 passed in 65ms
-2026-11-23T02:01:26.858Z [info] ok 627 - invoicing › scenario 627 passed in 72ms
-2026-11-23T02:01:26.995Z [info] ok 628 - repair-triage › scenario 628 passed in 79ms
-2026-11-23T02:01:27.132Z [info] ok 629 - notifications › scenario 629 passed in 86ms
-2026-11-23T02:01:27.269Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
-2026-11-23T02:01:27.406Z [info] ok 631 - work-orders › scenario 631 passed in 10ms
-2026-11-23T02:01:27.543Z [info] ok 632 - contracts › scenario 632 passed in 17ms
-2026-11-23T02:01:27.680Z [info] ok 633 - invoicing › scenario 633 passed in 24ms
-2026-11-23T02:01:27.817Z [info] ok 634 - repair-triage › scenario 634 passed in 31ms
-2026-11-23T02:01:27.954Z [info] ok 635 - notifications › scenario 635 passed in 38ms
-2026-11-23T02:01:28.091Z [info] ok 636 - tenant-portal › scenario 636 passed in 45ms
-2026-11-23T02:01:28.228Z [info] ok 637 - work-orders › scenario 637 passed in 52ms
-2026-11-23T02:01:28.365Z [info] ok 638 - contracts › scenario 638 passed in 59ms
-2026-11-23T02:01:28.502Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
-2026-11-23T02:01:28.639Z [info] ok 640 - repair-triage › scenario 640 passed in 73ms
-2026-11-23T02:01:28.776Z [info] tests 646, pass 645, fail 1
-2026-11-23T02:01:28.913Z [info] nightly pipeline finished with failures
+2026-11-24T02:00:00.137Z [info] nightly pipeline started (SYNTHETIC LOG for training)
+2026-11-24T02:00:00.274Z [info] ok 1 - work-orders › scenario 1 passed in 10ms
+2026-11-24T02:00:00.411Z [info] ok 2 - contracts › scenario 2 passed in 17ms
+2026-11-24T02:00:00.548Z [info] ok 3 - invoicing › scenario 3 passed in 24ms
+2026-11-24T02:00:00.685Z [info] ok 4 - repair-triage › scenario 4 passed in 31ms
+2026-11-24T02:00:00.822Z [info] ok 5 - notifications › scenario 5 passed in 38ms
+2026-11-24T02:00:00.959Z [info] ok 6 - tenant-portal › scenario 6 passed in 45ms
+2026-11-24T02:00:01.096Z [info] ok 7 - work-orders › scenario 7 passed in 52ms
+2026-11-24T02:00:01.233Z [info] ok 8 - contracts › scenario 8 passed in 59ms
+2026-11-24T02:00:01.370Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:00:01.507Z [info] ok 10 - repair-triage › scenario 10 passed in 73ms
+2026-11-24T02:00:01.644Z [info] ok 11 - notifications › scenario 11 passed in 80ms
+2026-11-24T02:00:01.781Z [info] ok 12 - tenant-portal › scenario 12 passed in 87ms
+2026-11-24T02:00:01.918Z [info] ok 13 - work-orders › scenario 13 passed in 4ms
+2026-11-24T02:00:02.055Z [info] ok 14 - contracts › scenario 14 passed in 11ms
+2026-11-24T02:00:02.192Z [info] ok 15 - invoicing › scenario 15 passed in 18ms
+2026-11-24T02:00:02.329Z [info] ok 16 - repair-triage › scenario 16 passed in 25ms
+2026-11-24T02:00:02.466Z [info] ok 17 - notifications › scenario 17 passed in 32ms
+2026-11-24T02:00:02.603Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:00:02.740Z [info] ok 19 - work-orders › scenario 19 passed in 46ms
+2026-11-24T02:00:02.877Z [info] ok 20 - contracts › scenario 20 passed in 53ms
+2026-11-24T02:00:03.014Z [info] ok 21 - invoicing › scenario 21 passed in 60ms
+2026-11-24T02:00:03.151Z [info] ok 22 - repair-triage › scenario 22 passed in 67ms
+2026-11-24T02:00:03.288Z [debug] cache miss for fixture notifications/fixture-23.json, regenerating
+2026-11-24T02:00:03.425Z [info] ok 24 - tenant-portal › scenario 24 passed in 81ms
+2026-11-24T02:00:03.562Z [info] ok 25 - work-orders › scenario 25 passed in 88ms
+2026-11-24T02:00:03.699Z [info] ok 26 - contracts › scenario 26 passed in 5ms
+2026-11-24T02:00:03.836Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:00:03.973Z [info] ok 28 - repair-triage › scenario 28 passed in 19ms
+2026-11-24T02:00:04.110Z [info] ok 29 - notifications › scenario 29 passed in 26ms
+2026-11-24T02:00:04.247Z [info] ok 30 - tenant-portal › scenario 30 passed in 33ms
+2026-11-24T02:00:04.384Z [info] ok 31 - work-orders › scenario 31 passed in 40ms
+2026-11-24T02:00:04.521Z [info] ok 32 - contracts › scenario 32 passed in 47ms
+2026-11-24T02:00:04.658Z [info] ok 33 - invoicing › scenario 33 passed in 54ms
+2026-11-24T02:00:04.795Z [info] ok 34 - repair-triage › scenario 34 passed in 61ms
+2026-11-24T02:00:04.932Z [info] ok 35 - notifications › scenario 35 passed in 68ms
+2026-11-24T02:00:05.069Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:00:05.206Z [info] ok 37 - work-orders › scenario 37 passed in 82ms
+2026-11-24T02:00:05.343Z [info] ok 38 - contracts › scenario 38 passed in 89ms
+2026-11-24T02:00:05.480Z [info] ok 39 - invoicing › scenario 39 passed in 6ms
+2026-11-24T02:00:05.617Z [info] ok 40 - repair-triage › scenario 40 passed in 13ms
+2026-11-24T02:00:05.754Z [info] ok 41 - notifications › scenario 41 passed in 20ms
+2026-11-24T02:00:05.891Z [info] ok 42 - tenant-portal › scenario 42 passed in 27ms
+2026-11-24T02:00:06.028Z [info] ok 43 - work-orders › scenario 43 passed in 34ms
+2026-11-24T02:00:06.165Z [info] ok 44 - contracts › scenario 44 passed in 41ms
+2026-11-24T02:00:06.302Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:00:06.439Z [debug] cache miss for fixture repair-triage/fixture-46.json, regenerating
+2026-11-24T02:00:06.576Z [info] ok 47 - notifications › scenario 47 passed in 62ms
+2026-11-24T02:00:06.713Z [info] ok 48 - tenant-portal › scenario 48 passed in 69ms
+2026-11-24T02:00:06.850Z [info] ok 49 - work-orders › scenario 49 passed in 76ms
+2026-11-24T02:00:06.987Z [info] ok 50 - contracts › scenario 50 passed in 83ms
+2026-11-24T02:00:07.124Z [info] ok 51 - invoicing › scenario 51 passed in 90ms
+2026-11-24T02:00:07.261Z [info] ok 52 - repair-triage › scenario 52 passed in 7ms
+2026-11-24T02:00:07.398Z [info] ok 53 - notifications › scenario 53 passed in 14ms
+2026-11-24T02:00:07.535Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:00:07.672Z [info] ok 55 - work-orders › scenario 55 passed in 28ms
+2026-11-24T02:00:07.809Z [info] ok 56 - contracts › scenario 56 passed in 35ms
+2026-11-24T02:00:07.946Z [info] ok 57 - invoicing › scenario 57 passed in 42ms
+2026-11-24T02:00:08.083Z [info] ok 58 - repair-triage › scenario 58 passed in 49ms
+2026-11-24T02:00:08.220Z [info] ok 59 - notifications › scenario 59 passed in 56ms
+2026-11-24T02:00:08.357Z [info] ok 60 - tenant-portal › scenario 60 passed in 63ms
+2026-11-24T02:00:08.494Z [info] ok 61 - work-orders › scenario 61 passed in 70ms
+2026-11-24T02:00:08.631Z [info] ok 62 - contracts › scenario 62 passed in 77ms
+2026-11-24T02:00:08.768Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:00:08.905Z [info] ok 64 - repair-triage › scenario 64 passed in 91ms
+2026-11-24T02:00:09.042Z [info] ok 65 - notifications › scenario 65 passed in 8ms
+2026-11-24T02:00:09.179Z [info] ok 66 - tenant-portal › scenario 66 passed in 15ms
+2026-11-24T02:00:09.316Z [info] ok 67 - work-orders › scenario 67 passed in 22ms
+2026-11-24T02:00:09.453Z [info] ok 68 - contracts › scenario 68 passed in 29ms
+2026-11-24T02:00:09.590Z [debug] cache miss for fixture invoicing/fixture-69.json, regenerating
+2026-11-24T02:00:09.727Z [info] ok 70 - repair-triage › scenario 70 passed in 43ms
+2026-11-24T02:00:09.864Z [info] ok 71 - notifications › scenario 71 passed in 50ms
+2026-11-24T02:00:10.001Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:00:10.138Z [info] ok 73 - work-orders › scenario 73 passed in 64ms
+2026-11-24T02:00:10.275Z [info] ok 74 - contracts › scenario 74 passed in 71ms
+2026-11-24T02:00:10.412Z [info] ok 75 - invoicing › scenario 75 passed in 78ms
+2026-11-24T02:00:10.549Z [info] ok 76 - repair-triage › scenario 76 passed in 85ms
+2026-11-24T02:00:10.686Z [info] ok 77 - notifications › scenario 77 passed in 92ms
+2026-11-24T02:00:10.823Z [info] ok 78 - tenant-portal › scenario 78 passed in 9ms
+2026-11-24T02:00:10.960Z [info] ok 79 - work-orders › scenario 79 passed in 16ms
+2026-11-24T02:00:11.097Z [info] ok 80 - contracts › scenario 80 passed in 23ms
+2026-11-24T02:00:11.234Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:00:11.371Z [info] ok 82 - repair-triage › scenario 82 passed in 37ms
+2026-11-24T02:00:11.508Z [info] ok 83 - notifications › scenario 83 passed in 44ms
+2026-11-24T02:00:11.645Z [info] ok 84 - tenant-portal › scenario 84 passed in 51ms
+2026-11-24T02:00:11.782Z [info] ok 85 - work-orders › scenario 85 passed in 58ms
+2026-11-24T02:00:11.919Z [info] ok 86 - contracts › scenario 86 passed in 65ms
+2026-11-24T02:00:12.056Z [info] ok 87 - invoicing › scenario 87 passed in 72ms
+2026-11-24T02:00:12.193Z [info] ok 88 - repair-triage › scenario 88 passed in 79ms
+2026-11-24T02:00:12.330Z [info] ok 89 - notifications › scenario 89 passed in 86ms
+2026-11-24T02:00:12.467Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:00:12.604Z [info] ok 91 - work-orders › scenario 91 passed in 10ms
+2026-11-24T02:00:12.741Z [debug] cache miss for fixture contracts/fixture-92.json, regenerating
+2026-11-24T02:00:12.878Z [info] ok 93 - invoicing › scenario 93 passed in 24ms
+2026-11-24T02:00:13.015Z [info] ok 94 - repair-triage › scenario 94 passed in 31ms
+2026-11-24T02:00:13.152Z [info] ok 95 - notifications › scenario 95 passed in 38ms
+2026-11-24T02:00:13.289Z [info] ok 96 - tenant-portal › scenario 96 passed in 45ms
+2026-11-24T02:00:13.426Z [info] ok 97 - work-orders › scenario 97 passed in 52ms
+2026-11-24T02:00:13.563Z [info] ok 98 - contracts › scenario 98 passed in 59ms
+2026-11-24T02:00:13.700Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:00:13.837Z [info] ok 100 - repair-triage › scenario 100 passed in 73ms
+2026-11-24T02:00:13.974Z [info] ok 101 - notifications › scenario 101 passed in 80ms
+2026-11-24T02:00:14.111Z [info] ok 102 - tenant-portal › scenario 102 passed in 87ms
+2026-11-24T02:00:14.248Z [info] ok 103 - work-orders › scenario 103 passed in 4ms
+2026-11-24T02:00:14.385Z [info] ok 104 - contracts › scenario 104 passed in 11ms
+2026-11-24T02:00:14.522Z [info] ok 105 - invoicing › scenario 105 passed in 18ms
+2026-11-24T02:00:14.659Z [info] ok 106 - repair-triage › scenario 106 passed in 25ms
+2026-11-24T02:00:14.796Z [info] ok 107 - notifications › scenario 107 passed in 32ms
+2026-11-24T02:00:14.933Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:00:15.070Z [info] ok 109 - work-orders › scenario 109 passed in 46ms
+2026-11-24T02:00:15.207Z [info] ok 110 - contracts › scenario 110 passed in 53ms
+2026-11-24T02:00:15.344Z [info] ok 111 - invoicing › scenario 111 passed in 60ms
+2026-11-24T02:00:15.481Z [info] ok 112 - repair-triage › scenario 112 passed in 67ms
+2026-11-24T02:00:15.618Z [info] ok 113 - notifications › scenario 113 passed in 74ms
+2026-11-24T02:00:15.755Z [info] ok 114 - tenant-portal › scenario 114 passed in 81ms
+2026-11-24T02:00:15.892Z [debug] cache miss for fixture work-orders/fixture-115.json, regenerating
+2026-11-24T02:00:16.029Z [info] ok 116 - contracts › scenario 116 passed in 5ms
+2026-11-24T02:00:16.166Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:00:16.303Z [info] ok 118 - repair-triage › scenario 118 passed in 19ms
+2026-11-24T02:00:16.440Z [info] ok 119 - notifications › scenario 119 passed in 26ms
+2026-11-24T02:00:16.577Z [info] ok 120 - tenant-portal › scenario 120 passed in 33ms
+2026-11-24T02:00:16.714Z [info] ok 121 - work-orders › scenario 121 passed in 40ms
+2026-11-24T02:00:16.851Z [info] ok 122 - contracts › scenario 122 passed in 47ms
+2026-11-24T02:00:16.988Z [info] ok 123 - invoicing › scenario 123 passed in 54ms
+2026-11-24T02:00:17.125Z [info] ok 124 - repair-triage › scenario 124 passed in 61ms
+2026-11-24T02:00:17.262Z [info] ok 125 - notifications › scenario 125 passed in 68ms
+2026-11-24T02:00:17.399Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:00:17.536Z [info] ok 127 - work-orders › scenario 127 passed in 82ms
+2026-11-24T02:00:17.673Z [info] ok 128 - contracts › scenario 128 passed in 89ms
+2026-11-24T02:00:17.810Z [info] ok 129 - invoicing › scenario 129 passed in 6ms
+2026-11-24T02:00:17.947Z [info] ok 130 - repair-triage › scenario 130 passed in 13ms
+2026-11-24T02:00:18.084Z [info] ok 131 - notifications › scenario 131 passed in 20ms
+2026-11-24T02:00:18.221Z [info] ok 132 - tenant-portal › scenario 132 passed in 27ms
+2026-11-24T02:00:18.358Z [info] ok 133 - work-orders › scenario 133 passed in 34ms
+2026-11-24T02:00:18.495Z [info] ok 134 - contracts › scenario 134 passed in 41ms
+2026-11-24T02:00:18.632Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:00:18.769Z [info] ok 136 - repair-triage › scenario 136 passed in 55ms
+2026-11-24T02:00:18.906Z [info] ok 137 - notifications › scenario 137 passed in 62ms
+2026-11-24T02:00:19.043Z [debug] cache miss for fixture tenant-portal/fixture-138.json, regenerating
+2026-11-24T02:00:19.180Z [info] ok 139 - work-orders › scenario 139 passed in 76ms
+2026-11-24T02:00:19.317Z [info] ok 140 - contracts › scenario 140 passed in 83ms
+2026-11-24T02:00:19.454Z [info] ok 141 - invoicing › scenario 141 passed in 90ms
+2026-11-24T02:00:19.591Z [info] ok 142 - repair-triage › scenario 142 passed in 7ms
+2026-11-24T02:00:19.728Z [info] ok 143 - notifications › scenario 143 passed in 14ms
+2026-11-24T02:00:19.865Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:00:20.002Z [info] ok 145 - work-orders › scenario 145 passed in 28ms
+2026-11-24T02:00:20.139Z [info] ok 146 - contracts › scenario 146 passed in 35ms
+2026-11-24T02:00:20.276Z [info] ok 147 - invoicing › scenario 147 passed in 42ms
+2026-11-24T02:00:20.413Z [info] ok 148 - repair-triage › scenario 148 passed in 49ms
+2026-11-24T02:00:20.550Z [info] ok 149 - notifications › scenario 149 passed in 56ms
+2026-11-24T02:00:20.687Z [info] ok 150 - tenant-portal › scenario 150 passed in 63ms
+2026-11-24T02:00:20.824Z [info] ok 151 - work-orders › scenario 151 passed in 70ms
+2026-11-24T02:00:20.961Z [info] ok 152 - contracts › scenario 152 passed in 77ms
+2026-11-24T02:00:21.098Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:00:21.235Z [info] ok 154 - repair-triage › scenario 154 passed in 91ms
+2026-11-24T02:00:21.372Z [info] ok 155 - notifications › scenario 155 passed in 8ms
+2026-11-24T02:00:21.509Z [info] ok 156 - tenant-portal › scenario 156 passed in 15ms
+2026-11-24T02:00:21.646Z [info] ok 157 - work-orders › scenario 157 passed in 22ms
+2026-11-24T02:00:21.783Z [info] ok 158 - contracts › scenario 158 passed in 29ms
+2026-11-24T02:00:21.920Z [info] ok 159 - invoicing › scenario 159 passed in 36ms
+2026-11-24T02:00:22.057Z [info] ok 160 - repair-triage › scenario 160 passed in 43ms
+2026-11-24T02:00:22.194Z [debug] cache miss for fixture notifications/fixture-161.json, regenerating
+2026-11-24T02:00:22.331Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:00:22.468Z [info] ok 163 - work-orders › scenario 163 passed in 64ms
+2026-11-24T02:00:22.605Z [info] ok 164 - contracts › scenario 164 passed in 71ms
+2026-11-24T02:00:22.742Z [info] ok 165 - invoicing › scenario 165 passed in 78ms
+2026-11-24T02:00:22.879Z [info] ok 166 - repair-triage › scenario 166 passed in 85ms
+2026-11-24T02:00:23.016Z [info] ok 167 - notifications › scenario 167 passed in 92ms
+2026-11-24T02:00:23.153Z [info] ok 168 - tenant-portal › scenario 168 passed in 9ms
+2026-11-24T02:00:23.290Z [info] ok 169 - work-orders › scenario 169 passed in 16ms
+2026-11-24T02:00:23.427Z [info] ok 170 - contracts › scenario 170 passed in 23ms
+2026-11-24T02:00:23.564Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:00:23.701Z [info] ok 172 - repair-triage › scenario 172 passed in 37ms
+2026-11-24T02:00:23.838Z [info] ok 173 - notifications › scenario 173 passed in 44ms
+2026-11-24T02:00:23.975Z [info] ok 174 - tenant-portal › scenario 174 passed in 51ms
+2026-11-24T02:00:24.112Z [info] ok 175 - work-orders › scenario 175 passed in 58ms
+2026-11-24T02:00:24.249Z [info] ok 176 - contracts › scenario 176 passed in 65ms
+2026-11-24T02:00:24.386Z [info] ok 177 - invoicing › scenario 177 passed in 72ms
+2026-11-24T02:00:24.523Z [info] ok 178 - repair-triage › scenario 178 passed in 79ms
+2026-11-24T02:00:24.660Z [info] ok 179 - notifications › scenario 179 passed in 86ms
+2026-11-24T02:00:24.797Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:00:24.934Z [info] ok 181 - work-orders › scenario 181 passed in 10ms
+2026-11-24T02:00:25.071Z [info] ok 182 - contracts › scenario 182 passed in 17ms
+2026-11-24T02:00:25.208Z [info] ok 183 - invoicing › scenario 183 passed in 24ms
+2026-11-24T02:00:25.345Z [debug] cache miss for fixture repair-triage/fixture-184.json, regenerating
+2026-11-24T02:00:25.482Z [info] ok 185 - notifications › scenario 185 passed in 38ms
+2026-11-24T02:00:25.619Z [info] ok 186 - tenant-portal › scenario 186 passed in 45ms
+2026-11-24T02:00:25.756Z [info] ok 187 - work-orders › scenario 187 passed in 52ms
+2026-11-24T02:00:25.893Z [info] ok 188 - contracts › scenario 188 passed in 59ms
+2026-11-24T02:00:26.030Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:00:26.167Z [info] ok 190 - repair-triage › scenario 190 passed in 73ms
+2026-11-24T02:00:26.304Z [info] ok 191 - notifications › scenario 191 passed in 80ms
+2026-11-24T02:00:26.441Z [info] ok 192 - tenant-portal › scenario 192 passed in 87ms
+2026-11-24T02:00:26.578Z [info] ok 193 - work-orders › scenario 193 passed in 4ms
+2026-11-24T02:00:26.715Z [info] ok 194 - contracts › scenario 194 passed in 11ms
+2026-11-24T02:00:26.852Z [info] ok 195 - invoicing › scenario 195 passed in 18ms
+2026-11-24T02:00:26.989Z [info] ok 196 - repair-triage › scenario 196 passed in 25ms
+2026-11-24T02:00:27.126Z [info] ok 197 - notifications › scenario 197 passed in 32ms
+2026-11-24T02:00:27.263Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:00:27.400Z [info] ok 199 - work-orders › scenario 199 passed in 46ms
+2026-11-24T02:00:27.537Z [info] ok 200 - contracts › scenario 200 passed in 53ms
+2026-11-24T02:00:27.674Z [info] ok 201 - invoicing › scenario 201 passed in 60ms
+2026-11-24T02:00:27.811Z [info] ok 202 - repair-triage › scenario 202 passed in 67ms
+2026-11-24T02:00:27.948Z [info] ok 203 - notifications › scenario 203 passed in 74ms
+2026-11-24T02:00:28.085Z [info] ok 204 - tenant-portal › scenario 204 passed in 81ms
+2026-11-24T02:00:28.222Z [info] ok 205 - work-orders › scenario 205 passed in 88ms
+2026-11-24T02:00:28.359Z [info] ok 206 - contracts › scenario 206 passed in 5ms
+2026-11-24T02:00:28.496Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:00:28.633Z [info] ok 208 - repair-triage › scenario 208 passed in 19ms
+2026-11-24T02:00:28.770Z [info] ok 209 - notifications › scenario 209 passed in 26ms
+2026-11-24T02:00:28.907Z [info] ok 210 - tenant-portal › scenario 210 passed in 33ms
+2026-11-24T02:00:29.044Z [info] ok 211 - work-orders › scenario 211 passed in 40ms
+2026-11-24T02:00:29.181Z [info] ok 212 - contracts › scenario 212 passed in 47ms
+2026-11-24T02:00:29.318Z [info] ok 213 - invoicing › scenario 213 passed in 54ms
+2026-11-24T02:00:29.455Z [info] ok 214 - repair-triage › scenario 214 passed in 61ms
+2026-11-24T02:00:29.592Z [info] ok 215 - notifications › scenario 215 passed in 68ms
+2026-11-24T02:00:29.729Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:00:29.866Z [info] ok 217 - work-orders › scenario 217 passed in 82ms
+2026-11-24T02:00:30.003Z [info] ok 218 - contracts › scenario 218 passed in 89ms
+2026-11-24T02:00:30.140Z [info] ok 219 - invoicing › scenario 219 passed in 6ms
+2026-11-24T02:00:30.277Z [info] ok 220 - repair-triage › scenario 220 passed in 13ms
+2026-11-24T02:00:30.414Z [info] ok 221 - notifications › scenario 221 passed in 20ms
+2026-11-24T02:00:30.551Z [info] ok 222 - tenant-portal › scenario 222 passed in 27ms
+2026-11-24T02:00:30.688Z [info] ok 223 - work-orders › scenario 223 passed in 34ms
+2026-11-24T02:00:30.825Z [info] ok 224 - contracts › scenario 224 passed in 41ms
+2026-11-24T02:00:30.962Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:00:31.099Z [info] ok 226 - repair-triage › scenario 226 passed in 55ms
+2026-11-24T02:00:31.236Z [info] ok 227 - notifications › scenario 227 passed in 62ms
+2026-11-24T02:00:31.373Z [info] ok 228 - tenant-portal › scenario 228 passed in 69ms
+2026-11-24T02:00:31.510Z [info] ok 229 - work-orders › scenario 229 passed in 76ms
+2026-11-24T02:00:31.647Z [debug] cache miss for fixture contracts/fixture-230.json, regenerating
+2026-11-24T02:00:31.784Z [info] ok 231 - invoicing › scenario 231 passed in 90ms
+2026-11-24T02:00:31.921Z [info] ok 232 - repair-triage › scenario 232 passed in 7ms
+2026-11-24T02:00:32.058Z [info] ok 233 - notifications › scenario 233 passed in 14ms
+2026-11-24T02:00:32.195Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:00:32.332Z [info] ok 235 - work-orders › scenario 235 passed in 28ms
+2026-11-24T02:00:32.469Z [info] ok 236 - contracts › scenario 236 passed in 35ms
+2026-11-24T02:00:32.606Z [info] ok 237 - invoicing › scenario 237 passed in 42ms
+2026-11-24T02:00:32.743Z [info] ok 238 - repair-triage › scenario 238 passed in 49ms
+2026-11-24T02:00:32.880Z [info] ok 239 - notifications › scenario 239 passed in 56ms
+2026-11-24T02:00:33.017Z [info] ok 240 - tenant-portal › scenario 240 passed in 63ms
+2026-11-24T02:00:33.154Z [info] ok 241 - work-orders › scenario 241 passed in 70ms
+2026-11-24T02:00:33.291Z [info] ok 242 - contracts › scenario 242 passed in 77ms
+2026-11-24T02:00:33.428Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:00:33.565Z [info] ok 244 - repair-triage › scenario 244 passed in 91ms
+2026-11-24T02:00:33.702Z [info] ok 245 - notifications › scenario 245 passed in 8ms
+2026-11-24T02:00:33.839Z [info] ok 246 - tenant-portal › scenario 246 passed in 15ms
+2026-11-24T02:00:33.976Z [info] ok 247 - work-orders › scenario 247 passed in 22ms
+2026-11-24T02:00:34.113Z [info] ok 248 - contracts › scenario 248 passed in 29ms
+2026-11-24T02:00:34.250Z [info] ok 249 - invoicing › scenario 249 passed in 36ms
+2026-11-24T02:00:34.387Z [info] ok 250 - repair-triage › scenario 250 passed in 43ms
+2026-11-24T02:00:34.524Z [info] ok 251 - notifications › scenario 251 passed in 50ms
+2026-11-24T02:00:34.661Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:00:34.798Z [debug] cache miss for fixture work-orders/fixture-253.json, regenerating
+2026-11-24T02:00:34.935Z [info] ok 254 - contracts › scenario 254 passed in 71ms
+2026-11-24T02:00:35.072Z [info] ok 255 - invoicing › scenario 255 passed in 78ms
+2026-11-24T02:00:35.209Z [info] ok 256 - repair-triage › scenario 256 passed in 85ms
+2026-11-24T02:00:35.346Z [info] ok 257 - notifications › scenario 257 passed in 92ms
+2026-11-24T02:00:35.483Z [info] ok 258 - tenant-portal › scenario 258 passed in 9ms
+2026-11-24T02:00:35.620Z [info] ok 259 - work-orders › scenario 259 passed in 16ms
+2026-11-24T02:00:35.757Z [info] ok 260 - contracts › scenario 260 passed in 23ms
+2026-11-24T02:00:35.894Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:00:36.031Z [info] ok 262 - repair-triage › scenario 262 passed in 37ms
+2026-11-24T02:00:36.168Z [info] ok 263 - notifications › scenario 263 passed in 44ms
+2026-11-24T02:00:36.305Z [info] ok 264 - tenant-portal › scenario 264 passed in 51ms
+2026-11-24T02:00:36.442Z [info] ok 265 - work-orders › scenario 265 passed in 58ms
+2026-11-24T02:00:36.579Z [info] ok 266 - contracts › scenario 266 passed in 65ms
+2026-11-24T02:00:36.716Z [info] ok 267 - invoicing › scenario 267 passed in 72ms
+2026-11-24T02:00:36.853Z [info] ok 268 - repair-triage › scenario 268 passed in 79ms
+2026-11-24T02:00:36.990Z [info] ok 269 - notifications › scenario 269 passed in 86ms
+2026-11-24T02:00:37.127Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:00:37.264Z [info] ok 271 - work-orders › scenario 271 passed in 10ms
+2026-11-24T02:00:37.401Z [info] ok 272 - contracts › scenario 272 passed in 17ms
+2026-11-24T02:00:37.538Z [info] ok 273 - invoicing › scenario 273 passed in 24ms
+2026-11-24T02:00:37.675Z [info] ok 274 - repair-triage › scenario 274 passed in 31ms
+2026-11-24T02:00:37.812Z [info] ok 275 - notifications › scenario 275 passed in 38ms
+2026-11-24T02:00:37.949Z [debug] cache miss for fixture tenant-portal/fixture-276.json, regenerating
+2026-11-24T02:00:38.086Z [info] ok 277 - work-orders › scenario 277 passed in 52ms
+2026-11-24T02:00:38.223Z [info] ok 278 - contracts › scenario 278 passed in 59ms
+2026-11-24T02:00:38.360Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:00:38.497Z [info] ok 280 - repair-triage › scenario 280 passed in 73ms
+2026-11-24T02:00:38.634Z [info] ok 281 - notifications › scenario 281 passed in 80ms
+2026-11-24T02:00:38.771Z [info] ok 282 - tenant-portal › scenario 282 passed in 87ms
+2026-11-24T02:00:38.908Z [info] ok 283 - work-orders › scenario 283 passed in 4ms
+2026-11-24T02:00:39.045Z [info] ok 284 - contracts › scenario 284 passed in 11ms
+2026-11-24T02:00:39.182Z [info] ok 285 - invoicing › scenario 285 passed in 18ms
+2026-11-24T02:00:39.319Z [info] ok 286 - repair-triage › scenario 286 passed in 25ms
+2026-11-24T02:00:39.456Z [info] ok 287 - notifications › scenario 287 passed in 32ms
+2026-11-24T02:00:39.593Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:00:39.730Z [info] ok 289 - work-orders › scenario 289 passed in 46ms
+2026-11-24T02:00:39.867Z [info] ok 290 - contracts › scenario 290 passed in 53ms
+2026-11-24T02:00:40.004Z [info] ok 291 - invoicing › scenario 291 passed in 60ms
+2026-11-24T02:00:40.141Z [info] ok 292 - repair-triage › scenario 292 passed in 67ms
+2026-11-24T02:00:40.278Z [info] ok 293 - notifications › scenario 293 passed in 74ms
+2026-11-24T02:00:40.415Z [info] ok 294 - tenant-portal › scenario 294 passed in 81ms
+2026-11-24T02:00:40.552Z [info] ok 295 - work-orders › scenario 295 passed in 88ms
+2026-11-24T02:00:40.689Z [info] ok 296 - contracts › scenario 296 passed in 5ms
+2026-11-24T02:00:40.826Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:00:40.963Z [info] ok 298 - repair-triage › scenario 298 passed in 19ms
+2026-11-24T02:00:41.100Z [debug] cache miss for fixture notifications/fixture-299.json, regenerating
+2026-11-24T02:00:41.237Z [info] ok 300 - tenant-portal › scenario 300 passed in 33ms
+2026-11-24T02:00:41.374Z [info] ok 301 - work-orders › scenario 301 passed in 40ms
+2026-11-24T02:00:41.511Z [info] ok 302 - contracts › scenario 302 passed in 47ms
+2026-11-24T02:00:41.648Z [info] ok 303 - invoicing › scenario 303 passed in 54ms
+2026-11-24T02:00:41.785Z [info] ok 304 - repair-triage › scenario 304 passed in 61ms
+2026-11-24T02:00:41.922Z [info] ok 305 - notifications › scenario 305 passed in 68ms
+2026-11-24T02:00:42.059Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:00:42.196Z [info] ok 307 - work-orders › scenario 307 passed in 82ms
+2026-11-24T02:00:42.333Z [info] ok 308 - contracts › scenario 308 passed in 89ms
+2026-11-24T02:00:42.470Z [info] ok 309 - invoicing › scenario 309 passed in 6ms
+2026-11-24T02:00:42.607Z [info] ok 310 - repair-triage › scenario 310 passed in 13ms
+2026-11-24T02:00:42.744Z [info] ok 311 - notifications › scenario 311 passed in 20ms
+2026-11-24T02:00:42.881Z [info] ok 312 - tenant-portal › scenario 312 passed in 27ms
+2026-11-24T02:00:43.018Z [info] ok 313 - work-orders › scenario 313 passed in 34ms
+2026-11-24T02:00:43.155Z [info] ok 314 - contracts › scenario 314 passed in 41ms
+2026-11-24T02:00:43.292Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:00:43.429Z [info] ok 316 - repair-triage › scenario 316 passed in 55ms
+2026-11-24T02:00:43.566Z [info] ok 317 - notifications › scenario 317 passed in 62ms
+2026-11-24T02:00:43.703Z [info] ok 318 - tenant-portal › scenario 318 passed in 69ms
+2026-11-24T02:00:43.840Z [info] ok 319 - work-orders › scenario 319 passed in 76ms
+2026-11-24T02:00:43.977Z [info] ok 320 - contracts › scenario 320 passed in 83ms
+2026-11-24T02:00:44.114Z [info] ok 321 - invoicing › scenario 321 passed in 90ms
+2026-11-24T02:00:44.251Z [debug] cache miss for fixture repair-triage/fixture-322.json, regenerating
+2026-11-24T02:00:44.388Z [info] ok 323 - notifications › scenario 323 passed in 14ms
+2026-11-24T02:00:44.525Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:00:44.662Z [info] ok 325 - work-orders › scenario 325 passed in 28ms
+2026-11-24T02:00:44.799Z [info] ok 326 - contracts › scenario 326 passed in 35ms
+2026-11-24T02:00:44.936Z [info] ok 327 - invoicing › scenario 327 passed in 42ms
+2026-11-24T02:00:45.073Z [info] ok 328 - repair-triage › scenario 328 passed in 49ms
+2026-11-24T02:00:45.210Z [info] ok 329 - notifications › scenario 329 passed in 56ms
+2026-11-24T02:00:45.347Z [info] ok 330 - tenant-portal › scenario 330 passed in 63ms
+2026-11-24T02:00:45.484Z [info] ok 331 - work-orders › scenario 331 passed in 70ms
+2026-11-24T02:00:45.621Z [info] ok 332 - contracts › scenario 332 passed in 77ms
+2026-11-24T02:00:45.758Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:00:45.895Z [info] ok 334 - repair-triage › scenario 334 passed in 91ms
+2026-11-24T02:00:46.032Z [info] ok 335 - notifications › scenario 335 passed in 8ms
+2026-11-24T02:00:46.169Z [info] ok 336 - tenant-portal › scenario 336 passed in 15ms
+2026-11-24T02:00:46.306Z [info] ok 337 - work-orders › scenario 337 passed in 22ms
+2026-11-24T02:00:46.443Z [info] ok 338 - contracts › scenario 338 passed in 29ms
+2026-11-24T02:00:46.580Z [info] ok 339 - invoicing › scenario 339 passed in 36ms
+2026-11-24T02:00:46.717Z [info] ok 340 - repair-triage › scenario 340 passed in 43ms
+2026-11-24T02:00:46.854Z [info] ok 341 - notifications › scenario 341 passed in 50ms
+2026-11-24T02:00:46.991Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:00:47.128Z [info] ok 343 - work-orders › scenario 343 passed in 64ms
+2026-11-24T02:00:47.265Z [info] ok 344 - contracts › scenario 344 passed in 71ms
+2026-11-24T02:00:47.402Z [debug] cache miss for fixture invoicing/fixture-345.json, regenerating
+2026-11-24T02:00:47.539Z [info] ok 346 - repair-triage › scenario 346 passed in 85ms
+2026-11-24T02:00:47.676Z [info] ok 347 - notifications › scenario 347 passed in 92ms
+2026-11-24T02:00:47.813Z [info] ok 348 - tenant-portal › scenario 348 passed in 9ms
+2026-11-24T02:00:47.950Z [info] ok 349 - work-orders › scenario 349 passed in 16ms
+2026-11-24T02:00:48.087Z [info] ok 350 - contracts › scenario 350 passed in 23ms
+2026-11-24T02:00:48.224Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:00:48.361Z [info] ok 352 - repair-triage › scenario 352 passed in 37ms
+2026-11-24T02:00:48.498Z [info] ok 353 - notifications › scenario 353 passed in 44ms
+2026-11-24T02:00:48.635Z [info] ok 354 - tenant-portal › scenario 354 passed in 51ms
+2026-11-24T02:00:48.772Z [info] ok 355 - work-orders › scenario 355 passed in 58ms
+2026-11-24T02:00:48.909Z [info] ok 356 - contracts › scenario 356 passed in 65ms
+2026-11-24T02:00:49.046Z [info] ok 357 - invoicing › scenario 357 passed in 72ms
+2026-11-24T02:00:49.183Z [info] ok 358 - repair-triage › scenario 358 passed in 79ms
+2026-11-24T02:00:49.320Z [info] ok 359 - notifications › scenario 359 passed in 86ms
+2026-11-24T02:00:49.457Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:00:49.594Z [info] ok 361 - work-orders › scenario 361 passed in 10ms
+2026-11-24T02:00:49.731Z [info] ok 362 - contracts › scenario 362 passed in 17ms
+2026-11-24T02:00:49.868Z [info] ok 363 - invoicing › scenario 363 passed in 24ms
+2026-11-24T02:00:50.005Z [info] ok 364 - repair-triage › scenario 364 passed in 31ms
+2026-11-24T02:00:50.142Z [info] ok 365 - notifications › scenario 365 passed in 38ms
+2026-11-24T02:00:50.279Z [info] ok 366 - tenant-portal › scenario 366 passed in 45ms
+2026-11-24T02:00:50.416Z [info] ok 367 - work-orders › scenario 367 passed in 52ms
+2026-11-24T02:00:50.553Z [debug] cache miss for fixture contracts/fixture-368.json, regenerating
+2026-11-24T02:00:50.690Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:00:50.827Z [info] ok 370 - repair-triage › scenario 370 passed in 73ms
+2026-11-24T02:00:50.964Z [info] ok 371 - notifications › scenario 371 passed in 80ms
+2026-11-24T02:00:51.101Z [info] ok 372 - tenant-portal › scenario 372 passed in 87ms
+2026-11-24T02:00:51.238Z [info] ok 373 - work-orders › scenario 373 passed in 4ms
+2026-11-24T02:00:51.375Z [info] ok 374 - contracts › scenario 374 passed in 11ms
+2026-11-24T02:00:51.512Z [info] ok 375 - invoicing › scenario 375 passed in 18ms
+2026-11-24T02:00:51.649Z [info] ok 376 - repair-triage › scenario 376 passed in 25ms
+2026-11-24T02:00:51.786Z [info] ok 377 - notifications › scenario 377 passed in 32ms
+2026-11-24T02:00:51.923Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:00:52.060Z [info] ok 379 - work-orders › scenario 379 passed in 46ms
+2026-11-24T02:00:52.197Z [info] ok 380 - contracts › scenario 380 passed in 53ms
+2026-11-24T02:00:52.334Z [info] ok 381 - invoicing › scenario 381 passed in 60ms
+2026-11-24T02:00:52.471Z [info] ok 382 - repair-triage › scenario 382 passed in 67ms
+2026-11-24T02:00:52.608Z [info] ok 383 - notifications › scenario 383 passed in 74ms
+2026-11-24T02:00:52.745Z [info] ok 384 - tenant-portal › scenario 384 passed in 81ms
+2026-11-24T02:00:52.882Z [info] ok 385 - work-orders › scenario 385 passed in 88ms
+2026-11-24T02:00:53.019Z [info] ok 386 - contracts › scenario 386 passed in 5ms
+2026-11-24T02:00:53.156Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:00:53.293Z [info] ok 388 - repair-triage › scenario 388 passed in 19ms
+2026-11-24T02:00:53.430Z [info] ok 389 - notifications › scenario 389 passed in 26ms
+2026-11-24T02:00:53.567Z [info] ok 390 - tenant-portal › scenario 390 passed in 33ms
+2026-11-24T02:00:53.704Z [debug] cache miss for fixture work-orders/fixture-391.json, regenerating
+2026-11-24T02:00:53.841Z [info] ok 392 - contracts › scenario 392 passed in 47ms
+2026-11-24T02:00:53.978Z [info] ok 393 - invoicing › scenario 393 passed in 54ms
+2026-11-24T02:00:54.115Z [info] ok 394 - repair-triage › scenario 394 passed in 61ms
+2026-11-24T02:00:54.252Z [info] ok 395 - notifications › scenario 395 passed in 68ms
+2026-11-24T02:00:54.389Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:00:54.526Z [info] ok 397 - work-orders › scenario 397 passed in 82ms
+2026-11-24T02:00:54.663Z [info] ok 398 - contracts › scenario 398 passed in 89ms
+2026-11-24T02:00:54.800Z [info] ok 399 - invoicing › scenario 399 passed in 6ms
+2026-11-24T02:00:54.937Z [info] ok 400 - repair-triage › scenario 400 passed in 13ms
+2026-11-24T02:00:55.074Z [info] ok 401 - notifications › scenario 401 passed in 20ms
+2026-11-24T02:00:55.211Z [info] ok 402 - tenant-portal › scenario 402 passed in 27ms
+2026-11-24T02:00:55.348Z [info] ok 403 - work-orders › scenario 403 passed in 34ms
+2026-11-24T02:00:55.485Z [info] ok 404 - contracts › scenario 404 passed in 41ms
+2026-11-24T02:00:55.622Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:00:55.759Z [info] ok 406 - repair-triage › scenario 406 passed in 55ms
+2026-11-24T02:00:55.896Z [info] ok 407 - notifications › scenario 407 passed in 62ms
+2026-11-24T02:00:56.033Z [info] ok 408 - tenant-portal › scenario 408 passed in 69ms
+2026-11-24T02:00:56.170Z [info] ok 409 - work-orders › scenario 409 passed in 76ms
+2026-11-24T02:00:56.307Z [info] ok 410 - contracts › scenario 410 passed in 83ms
+2026-11-24T02:00:56.444Z [info] ok 411 - invoicing › scenario 411 passed in 90ms
+2026-11-24T02:00:56.581Z [info] repair-triage: running test/triage.test.js
+2026-11-24T02:00:56.718Z [info] ok 1 - gas smell in English is an emergency
+2026-11-24T02:00:56.855Z [error] not ok 2 - gas smell is an emergency, also when the tenant writes Dutch
+2026-11-24T02:00:56.992Z [error]   expected: 'emergency'
+2026-11-24T02:00:57.129Z [error]   actual:   'urgent'
+2026-11-24T02:00:57.266Z [error]   suite: repair-triage, stage: unit tests
+2026-11-24T02:00:57.403Z [info] ok 3 - heating problem without emergency keywords is urgent
+2026-11-24T02:00:57.540Z [info] ok 413 - notifications › scenario 413 passed in 14ms
+2026-11-24T02:00:57.677Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:00:57.814Z [info] ok 415 - work-orders › scenario 415 passed in 28ms
+2026-11-24T02:00:57.951Z [info] ok 416 - contracts › scenario 416 passed in 35ms
+2026-11-24T02:00:58.088Z [info] ok 417 - invoicing › scenario 417 passed in 42ms
+2026-11-24T02:00:58.225Z [info] ok 418 - repair-triage › scenario 418 passed in 49ms
+2026-11-24T02:00:58.362Z [info] ok 419 - notifications › scenario 419 passed in 56ms
+2026-11-24T02:00:58.499Z [info] ok 420 - tenant-portal › scenario 420 passed in 63ms
+2026-11-24T02:00:58.636Z [info] ok 421 - work-orders › scenario 421 passed in 70ms
+2026-11-24T02:00:58.773Z [info] ok 422 - contracts › scenario 422 passed in 77ms
+2026-11-24T02:00:58.910Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:00:59.047Z [info] ok 424 - repair-triage › scenario 424 passed in 91ms
+2026-11-24T02:00:59.184Z [info] ok 425 - notifications › scenario 425 passed in 8ms
+2026-11-24T02:00:59.321Z [info] ok 426 - tenant-portal › scenario 426 passed in 15ms
+2026-11-24T02:00:59.458Z [info] ok 427 - work-orders › scenario 427 passed in 22ms
+2026-11-24T02:00:59.595Z [info] ok 428 - contracts › scenario 428 passed in 29ms
+2026-11-24T02:00:59.732Z [info] ok 429 - invoicing › scenario 429 passed in 36ms
+2026-11-24T02:00:59.869Z [info] ok 430 - repair-triage › scenario 430 passed in 43ms
+2026-11-24T02:01:00.006Z [info] ok 431 - notifications › scenario 431 passed in 50ms
+2026-11-24T02:01:00.143Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:01:00.280Z [info] ok 433 - work-orders › scenario 433 passed in 64ms
+2026-11-24T02:01:00.417Z [info] ok 434 - contracts › scenario 434 passed in 71ms
+2026-11-24T02:01:00.554Z [info] ok 435 - invoicing › scenario 435 passed in 78ms
+2026-11-24T02:01:00.691Z [info] ok 436 - repair-triage › scenario 436 passed in 85ms
+2026-11-24T02:01:00.828Z [debug] cache miss for fixture notifications/fixture-437.json, regenerating
+2026-11-24T02:01:00.965Z [info] ok 438 - tenant-portal › scenario 438 passed in 9ms
+2026-11-24T02:01:01.102Z [info] ok 439 - work-orders › scenario 439 passed in 16ms
+2026-11-24T02:01:01.239Z [info] ok 440 - contracts › scenario 440 passed in 23ms
+2026-11-24T02:01:01.376Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:01:01.513Z [info] ok 442 - repair-triage › scenario 442 passed in 37ms
+2026-11-24T02:01:01.650Z [info] ok 443 - notifications › scenario 443 passed in 44ms
+2026-11-24T02:01:01.787Z [info] ok 444 - tenant-portal › scenario 444 passed in 51ms
+2026-11-24T02:01:01.924Z [info] ok 445 - work-orders › scenario 445 passed in 58ms
+2026-11-24T02:01:02.061Z [info] ok 446 - contracts › scenario 446 passed in 65ms
+2026-11-24T02:01:02.198Z [info] ok 447 - invoicing › scenario 447 passed in 72ms
+2026-11-24T02:01:02.335Z [info] ok 448 - repair-triage › scenario 448 passed in 79ms
+2026-11-24T02:01:02.472Z [info] ok 449 - notifications › scenario 449 passed in 86ms
+2026-11-24T02:01:02.609Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:01:02.746Z [info] ok 451 - work-orders › scenario 451 passed in 10ms
+2026-11-24T02:01:02.883Z [info] ok 452 - contracts › scenario 452 passed in 17ms
+2026-11-24T02:01:03.020Z [info] ok 453 - invoicing › scenario 453 passed in 24ms
+2026-11-24T02:01:03.157Z [info] ok 454 - repair-triage › scenario 454 passed in 31ms
+2026-11-24T02:01:03.294Z [info] ok 455 - notifications › scenario 455 passed in 38ms
+2026-11-24T02:01:03.431Z [info] ok 456 - tenant-portal › scenario 456 passed in 45ms
+2026-11-24T02:01:03.568Z [info] ok 457 - work-orders › scenario 457 passed in 52ms
+2026-11-24T02:01:03.705Z [info] ok 458 - contracts › scenario 458 passed in 59ms
+2026-11-24T02:01:03.842Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:01:03.979Z [debug] cache miss for fixture repair-triage/fixture-460.json, regenerating
+2026-11-24T02:01:04.116Z [info] ok 461 - notifications › scenario 461 passed in 80ms
+2026-11-24T02:01:04.253Z [info] ok 462 - tenant-portal › scenario 462 passed in 87ms
+2026-11-24T02:01:04.390Z [info] ok 463 - work-orders › scenario 463 passed in 4ms
+2026-11-24T02:01:04.527Z [info] ok 464 - contracts › scenario 464 passed in 11ms
+2026-11-24T02:01:04.664Z [info] ok 465 - invoicing › scenario 465 passed in 18ms
+2026-11-24T02:01:04.801Z [info] ok 466 - repair-triage › scenario 466 passed in 25ms
+2026-11-24T02:01:04.938Z [info] ok 467 - notifications › scenario 467 passed in 32ms
+2026-11-24T02:01:05.075Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:01:05.212Z [info] ok 469 - work-orders › scenario 469 passed in 46ms
+2026-11-24T02:01:05.349Z [info] ok 470 - contracts › scenario 470 passed in 53ms
+2026-11-24T02:01:05.486Z [info] ok 471 - invoicing › scenario 471 passed in 60ms
+2026-11-24T02:01:05.623Z [info] ok 472 - repair-triage › scenario 472 passed in 67ms
+2026-11-24T02:01:05.760Z [info] ok 473 - notifications › scenario 473 passed in 74ms
+2026-11-24T02:01:05.897Z [info] ok 474 - tenant-portal › scenario 474 passed in 81ms
+2026-11-24T02:01:06.034Z [info] ok 475 - work-orders › scenario 475 passed in 88ms
+2026-11-24T02:01:06.171Z [info] ok 476 - contracts › scenario 476 passed in 5ms
+2026-11-24T02:01:06.308Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:01:06.445Z [info] ok 478 - repair-triage › scenario 478 passed in 19ms
+2026-11-24T02:01:06.582Z [info] ok 479 - notifications › scenario 479 passed in 26ms
+2026-11-24T02:01:06.719Z [info] ok 480 - tenant-portal › scenario 480 passed in 33ms
+2026-11-24T02:01:06.856Z [info] ok 481 - work-orders › scenario 481 passed in 40ms
+2026-11-24T02:01:06.993Z [info] ok 482 - contracts › scenario 482 passed in 47ms
+2026-11-24T02:01:07.130Z [debug] cache miss for fixture invoicing/fixture-483.json, regenerating
+2026-11-24T02:01:07.267Z [info] ok 484 - repair-triage › scenario 484 passed in 61ms
+2026-11-24T02:01:07.404Z [info] ok 485 - notifications › scenario 485 passed in 68ms
+2026-11-24T02:01:07.541Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:01:07.678Z [info] ok 487 - work-orders › scenario 487 passed in 82ms
+2026-11-24T02:01:07.815Z [info] ok 488 - contracts › scenario 488 passed in 89ms
+2026-11-24T02:01:07.952Z [info] ok 489 - invoicing › scenario 489 passed in 6ms
+2026-11-24T02:01:08.089Z [info] ok 490 - repair-triage › scenario 490 passed in 13ms
+2026-11-24T02:01:08.226Z [info] ok 491 - notifications › scenario 491 passed in 20ms
+2026-11-24T02:01:08.363Z [info] ok 492 - tenant-portal › scenario 492 passed in 27ms
+2026-11-24T02:01:08.500Z [info] ok 493 - work-orders › scenario 493 passed in 34ms
+2026-11-24T02:01:08.637Z [info] ok 494 - contracts › scenario 494 passed in 41ms
+2026-11-24T02:01:08.774Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:01:08.911Z [info] ok 496 - repair-triage › scenario 496 passed in 55ms
+2026-11-24T02:01:09.048Z [info] ok 497 - notifications › scenario 497 passed in 62ms
+2026-11-24T02:01:09.185Z [info] ok 498 - tenant-portal › scenario 498 passed in 69ms
+2026-11-24T02:01:09.322Z [info] ok 499 - work-orders › scenario 499 passed in 76ms
+2026-11-24T02:01:09.459Z [info] ok 500 - contracts › scenario 500 passed in 83ms
+2026-11-24T02:01:09.596Z [info] ok 501 - invoicing › scenario 501 passed in 90ms
+2026-11-24T02:01:09.733Z [info] ok 502 - repair-triage › scenario 502 passed in 7ms
+2026-11-24T02:01:09.870Z [info] ok 503 - notifications › scenario 503 passed in 14ms
+2026-11-24T02:01:10.007Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:01:10.144Z [info] ok 505 - work-orders › scenario 505 passed in 28ms
+2026-11-24T02:01:10.281Z [debug] cache miss for fixture contracts/fixture-506.json, regenerating
+2026-11-24T02:01:10.418Z [info] ok 507 - invoicing › scenario 507 passed in 42ms
+2026-11-24T02:01:10.555Z [info] ok 508 - repair-triage › scenario 508 passed in 49ms
+2026-11-24T02:01:10.692Z [info] ok 509 - notifications › scenario 509 passed in 56ms
+2026-11-24T02:01:10.829Z [info] ok 510 - tenant-portal › scenario 510 passed in 63ms
+2026-11-24T02:01:10.966Z [info] ok 511 - work-orders › scenario 511 passed in 70ms
+2026-11-24T02:01:11.103Z [info] ok 512 - contracts › scenario 512 passed in 77ms
+2026-11-24T02:01:11.240Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:01:11.377Z [info] ok 514 - repair-triage › scenario 514 passed in 91ms
+2026-11-24T02:01:11.514Z [info] ok 515 - notifications › scenario 515 passed in 8ms
+2026-11-24T02:01:11.651Z [info] ok 516 - tenant-portal › scenario 516 passed in 15ms
+2026-11-24T02:01:11.788Z [info] ok 517 - work-orders › scenario 517 passed in 22ms
+2026-11-24T02:01:11.925Z [info] ok 518 - contracts › scenario 518 passed in 29ms
+2026-11-24T02:01:12.062Z [info] ok 519 - invoicing › scenario 519 passed in 36ms
+2026-11-24T02:01:12.199Z [info] ok 520 - repair-triage › scenario 520 passed in 43ms
+2026-11-24T02:01:12.336Z [info] ok 521 - notifications › scenario 521 passed in 50ms
+2026-11-24T02:01:12.473Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:01:12.610Z [info] ok 523 - work-orders › scenario 523 passed in 64ms
+2026-11-24T02:01:12.747Z [info] ok 524 - contracts › scenario 524 passed in 71ms
+2026-11-24T02:01:12.884Z [info] ok 525 - invoicing › scenario 525 passed in 78ms
+2026-11-24T02:01:13.021Z [info] ok 526 - repair-triage › scenario 526 passed in 85ms
+2026-11-24T02:01:13.158Z [info] ok 527 - notifications › scenario 527 passed in 92ms
+2026-11-24T02:01:13.295Z [info] ok 528 - tenant-portal › scenario 528 passed in 9ms
+2026-11-24T02:01:13.432Z [debug] cache miss for fixture work-orders/fixture-529.json, regenerating
+2026-11-24T02:01:13.569Z [info] ok 530 - contracts › scenario 530 passed in 23ms
+2026-11-24T02:01:13.706Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:01:13.843Z [info] ok 532 - repair-triage › scenario 532 passed in 37ms
+2026-11-24T02:01:13.980Z [info] ok 533 - notifications › scenario 533 passed in 44ms
+2026-11-24T02:01:14.117Z [info] ok 534 - tenant-portal › scenario 534 passed in 51ms
+2026-11-24T02:01:14.254Z [info] ok 535 - work-orders › scenario 535 passed in 58ms
+2026-11-24T02:01:14.391Z [info] ok 536 - contracts › scenario 536 passed in 65ms
+2026-11-24T02:01:14.528Z [info] ok 537 - invoicing › scenario 537 passed in 72ms
+2026-11-24T02:01:14.665Z [info] ok 538 - repair-triage › scenario 538 passed in 79ms
+2026-11-24T02:01:14.802Z [info] ok 539 - notifications › scenario 539 passed in 86ms
+2026-11-24T02:01:14.939Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:01:15.076Z [info] ok 541 - work-orders › scenario 541 passed in 10ms
+2026-11-24T02:01:15.213Z [info] ok 542 - contracts › scenario 542 passed in 17ms
+2026-11-24T02:01:15.350Z [info] ok 543 - invoicing › scenario 543 passed in 24ms
+2026-11-24T02:01:15.487Z [info] ok 544 - repair-triage › scenario 544 passed in 31ms
+2026-11-24T02:01:15.624Z [info] ok 545 - notifications › scenario 545 passed in 38ms
+2026-11-24T02:01:15.761Z [info] ok 546 - tenant-portal › scenario 546 passed in 45ms
+2026-11-24T02:01:15.898Z [info] ok 547 - work-orders › scenario 547 passed in 52ms
+2026-11-24T02:01:16.035Z [info] ok 548 - contracts › scenario 548 passed in 59ms
+2026-11-24T02:01:16.172Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:01:16.309Z [info] ok 550 - repair-triage › scenario 550 passed in 73ms
+2026-11-24T02:01:16.446Z [info] ok 551 - notifications › scenario 551 passed in 80ms
+2026-11-24T02:01:16.583Z [debug] cache miss for fixture tenant-portal/fixture-552.json, regenerating
+2026-11-24T02:01:16.720Z [info] ok 553 - work-orders › scenario 553 passed in 4ms
+2026-11-24T02:01:16.857Z [info] ok 554 - contracts › scenario 554 passed in 11ms
+2026-11-24T02:01:16.994Z [info] ok 555 - invoicing › scenario 555 passed in 18ms
+2026-11-24T02:01:17.131Z [info] ok 556 - repair-triage › scenario 556 passed in 25ms
+2026-11-24T02:01:17.268Z [info] ok 557 - notifications › scenario 557 passed in 32ms
+2026-11-24T02:01:17.405Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:01:17.542Z [info] ok 559 - work-orders › scenario 559 passed in 46ms
+2026-11-24T02:01:17.679Z [info] ok 560 - contracts › scenario 560 passed in 53ms
+2026-11-24T02:01:17.816Z [info] ok 561 - invoicing › scenario 561 passed in 60ms
+2026-11-24T02:01:17.953Z [info] ok 562 - repair-triage › scenario 562 passed in 67ms
+2026-11-24T02:01:18.090Z [info] ok 563 - notifications › scenario 563 passed in 74ms
+2026-11-24T02:01:18.227Z [info] ok 564 - tenant-portal › scenario 564 passed in 81ms
+2026-11-24T02:01:18.364Z [info] ok 565 - work-orders › scenario 565 passed in 88ms
+2026-11-24T02:01:18.501Z [info] ok 566 - contracts › scenario 566 passed in 5ms
+2026-11-24T02:01:18.638Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:01:18.775Z [info] ok 568 - repair-triage › scenario 568 passed in 19ms
+2026-11-24T02:01:18.912Z [info] ok 569 - notifications › scenario 569 passed in 26ms
+2026-11-24T02:01:19.049Z [info] ok 570 - tenant-portal › scenario 570 passed in 33ms
+2026-11-24T02:01:19.186Z [info] ok 571 - work-orders › scenario 571 passed in 40ms
+2026-11-24T02:01:19.323Z [info] ok 572 - contracts › scenario 572 passed in 47ms
+2026-11-24T02:01:19.460Z [info] ok 573 - invoicing › scenario 573 passed in 54ms
+2026-11-24T02:01:19.597Z [info] ok 574 - repair-triage › scenario 574 passed in 61ms
+2026-11-24T02:01:19.734Z [debug] cache miss for fixture notifications/fixture-575.json, regenerating
+2026-11-24T02:01:19.871Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:01:20.008Z [info] ok 577 - work-orders › scenario 577 passed in 82ms
+2026-11-24T02:01:20.145Z [info] ok 578 - contracts › scenario 578 passed in 89ms
+2026-11-24T02:01:20.282Z [info] ok 579 - invoicing › scenario 579 passed in 6ms
+2026-11-24T02:01:20.419Z [info] ok 580 - repair-triage › scenario 580 passed in 13ms
+2026-11-24T02:01:20.556Z [info] ok 581 - notifications › scenario 581 passed in 20ms
+2026-11-24T02:01:20.693Z [info] ok 582 - tenant-portal › scenario 582 passed in 27ms
+2026-11-24T02:01:20.830Z [info] ok 583 - work-orders › scenario 583 passed in 34ms
+2026-11-24T02:01:20.967Z [info] ok 584 - contracts › scenario 584 passed in 41ms
+2026-11-24T02:01:21.104Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:01:21.241Z [info] ok 586 - repair-triage › scenario 586 passed in 55ms
+2026-11-24T02:01:21.378Z [info] ok 587 - notifications › scenario 587 passed in 62ms
+2026-11-24T02:01:21.515Z [info] ok 588 - tenant-portal › scenario 588 passed in 69ms
+2026-11-24T02:01:21.652Z [info] ok 589 - work-orders › scenario 589 passed in 76ms
+2026-11-24T02:01:21.789Z [info] ok 590 - contracts › scenario 590 passed in 83ms
+2026-11-24T02:01:21.926Z [info] ok 591 - invoicing › scenario 591 passed in 90ms
+2026-11-24T02:01:22.063Z [info] ok 592 - repair-triage › scenario 592 passed in 7ms
+2026-11-24T02:01:22.200Z [info] ok 593 - notifications › scenario 593 passed in 14ms
+2026-11-24T02:01:22.337Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:01:22.474Z [info] ok 595 - work-orders › scenario 595 passed in 28ms
+2026-11-24T02:01:22.611Z [info] ok 596 - contracts › scenario 596 passed in 35ms
+2026-11-24T02:01:22.748Z [info] ok 597 - invoicing › scenario 597 passed in 42ms
+2026-11-24T02:01:22.885Z [debug] cache miss for fixture repair-triage/fixture-598.json, regenerating
+2026-11-24T02:01:23.022Z [info] ok 599 - notifications › scenario 599 passed in 56ms
+2026-11-24T02:01:23.159Z [info] ok 600 - tenant-portal › scenario 600 passed in 63ms
+2026-11-24T02:01:23.296Z [info] ok 601 - work-orders › scenario 601 passed in 70ms
+2026-11-24T02:01:23.433Z [info] ok 602 - contracts › scenario 602 passed in 77ms
+2026-11-24T02:01:23.570Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:01:23.707Z [info] ok 604 - repair-triage › scenario 604 passed in 91ms
+2026-11-24T02:01:23.844Z [info] ok 605 - notifications › scenario 605 passed in 8ms
+2026-11-24T02:01:23.981Z [info] ok 606 - tenant-portal › scenario 606 passed in 15ms
+2026-11-24T02:01:24.118Z [info] ok 607 - work-orders › scenario 607 passed in 22ms
+2026-11-24T02:01:24.255Z [info] ok 608 - contracts › scenario 608 passed in 29ms
+2026-11-24T02:01:24.392Z [info] ok 609 - invoicing › scenario 609 passed in 36ms
+2026-11-24T02:01:24.529Z [info] ok 610 - repair-triage › scenario 610 passed in 43ms
+2026-11-24T02:01:24.666Z [info] ok 611 - notifications › scenario 611 passed in 50ms
+2026-11-24T02:01:24.803Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:01:24.940Z [info] ok 613 - work-orders › scenario 613 passed in 64ms
+2026-11-24T02:01:25.077Z [info] ok 614 - contracts › scenario 614 passed in 71ms
+2026-11-24T02:01:25.214Z [info] ok 615 - invoicing › scenario 615 passed in 78ms
+2026-11-24T02:01:25.351Z [info] ok 616 - repair-triage › scenario 616 passed in 85ms
+2026-11-24T02:01:25.488Z [info] ok 617 - notifications › scenario 617 passed in 92ms
+2026-11-24T02:01:25.625Z [info] ok 618 - tenant-portal › scenario 618 passed in 9ms
+2026-11-24T02:01:25.762Z [info] ok 619 - work-orders › scenario 619 passed in 16ms
+2026-11-24T02:01:25.899Z [info] ok 620 - contracts › scenario 620 passed in 23ms
+2026-11-24T02:01:26.036Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:01:26.173Z [info] ok 622 - repair-triage › scenario 622 passed in 37ms
+2026-11-24T02:01:26.310Z [info] ok 623 - notifications › scenario 623 passed in 44ms
+2026-11-24T02:01:26.447Z [info] ok 624 - tenant-portal › scenario 624 passed in 51ms
+2026-11-24T02:01:26.584Z [info] ok 625 - work-orders › scenario 625 passed in 58ms
+2026-11-24T02:01:26.721Z [info] ok 626 - contracts › scenario 626 passed in 65ms
+2026-11-24T02:01:26.858Z [info] ok 627 - invoicing › scenario 627 passed in 72ms
+2026-11-24T02:01:26.995Z [info] ok 628 - repair-triage › scenario 628 passed in 79ms
+2026-11-24T02:01:27.132Z [info] ok 629 - notifications › scenario 629 passed in 86ms
+2026-11-24T02:01:27.269Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in tenant-portal
+2026-11-24T02:01:27.406Z [info] ok 631 - work-orders › scenario 631 passed in 10ms
+2026-11-24T02:01:27.543Z [info] ok 632 - contracts › scenario 632 passed in 17ms
+2026-11-24T02:01:27.680Z [info] ok 633 - invoicing › scenario 633 passed in 24ms
+2026-11-24T02:01:27.817Z [info] ok 634 - repair-triage › scenario 634 passed in 31ms
+2026-11-24T02:01:27.954Z [info] ok 635 - notifications › scenario 635 passed in 38ms
+2026-11-24T02:01:28.091Z [info] ok 636 - tenant-portal › scenario 636 passed in 45ms
+2026-11-24T02:01:28.228Z [info] ok 637 - work-orders › scenario 637 passed in 52ms
+2026-11-24T02:01:28.365Z [info] ok 638 - contracts › scenario 638 passed in 59ms
+2026-11-24T02:01:28.502Z [warn] (node:4211) DeprecationWarning: punycode module is deprecated in invoicing
+2026-11-24T02:01:28.639Z [info] ok 640 - repair-triage › scenario 640 passed in 73ms
+2026-11-24T02:01:28.776Z [info] tests 646, pass 645, fail 1
+2026-11-24T02:01:28.913Z [info] nightly pipeline finished with failures
