@@ -22,7 +22,8 @@ Triage Lead refuses step 1, because its instructions forbid changes in `tests/`.
 
 > **Tester focus:** the tests are the judge. A weak judge lets bad code through.
 
-The backlog has three requirements. Their tests are already in `tests/`, switched off (marked as backlog):
+The loop needs a judge before it starts: these tests decide every round. The backlog has three requirements. Their
+tests are already in `tests/`, switched off (marked as backlog):
 
 | # | Requirement |
 |---|---|
@@ -42,8 +43,9 @@ earlier, and its round in step 3 only ticks it off.
 
 ## 2. Get the plan and the prompt (4 min)
 
-The loop needs two small files: a **plan** with one item per backlog test (the memory), and a **prompt** that every
-round gets (the instructions). Both are ready-made in the repo.
+The loop needs two small files: a **plan** with one item per backlog test, and a **prompt** that every round gets.
+The plan is the agent's memory between rounds: it ticks an item and leaves a note for the next round. The prompt is
+the same order every round, so each round works the same way. Both are ready-made in the repo.
 
 **Type in your agent:**
 
@@ -103,7 +105,8 @@ hide a test that broke.
 
 ```text
 Create the folder notes if it is missing. Write the changes to src/ since the commit
-"Part 5: plan and prompt" to notes/loop.diff. Then ask the reviewer to review notes/loop.diff.
+"Part 5: plan and prompt" to notes/loop.diff. Then ask the reviewer subagent (in Copilot: the Reviewer agent)
+to review notes/loop.diff.
 ```
 
 Checkpoints in the agent don't cover a loop's work across sessions. Git does: every round is a commit you can go back to.

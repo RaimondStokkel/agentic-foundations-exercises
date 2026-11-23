@@ -101,7 +101,9 @@ stay in the helpers' own context windows.
 
 ## 4. Fix the blocking findings (3 min)
 
-**What did the reviewer say?** If it found a blocking problem, **type in your agent:**
+**What did the reviewer say?** Skip findings about the three backlog items (a category with capitals or spaces, hot
+water, a description over 2000 characters): those are part 5. If it found another blocking problem, **type in your
+agent:**
 
 ```text
 Fix the blocking findings. Leave the skipped Backlog tests and their requirements for part 5.
