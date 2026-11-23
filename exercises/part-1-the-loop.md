@@ -93,11 +93,14 @@ starts clean from the full specification:
 
 | Agent | How |
 |---|---|
-| Claude desktop app | Type `/rewind`. Pick the point before your task and choose **Restore code and conversation**. No `/rewind` in your app? Type: `Undo all changes in src and tests with git restore and git clean.` |
-| GitHub Copilot App | The app has no rewind. Type: `Undo all changes in src and tests with git restore and git clean.` |
+| Claude desktop app | Type `/rewind`. Pick the point before your task and choose **Restore code and conversation**. No `/rewind` in your app? Type: `Undo all changes in src and tests with git restore and git clean.` Then start a new session in your stack folder (**+ New**) and choose **Manual** again |
+| GitHub Copilot App | The app has no rewind. Type: `Undo all changes in src and tests with git restore and git clean.` Then start a new session: **+** next to **Sessions**, your stack folder, **Current checkout** |
 | Copilot CLI | Type `/rewind`. Pick your task prompt: Copilot goes back to just before it. Choose **Conversation + files** |
 
 **Type in your agent:** `Run the tests.` You should be back to 1 failing test.
+
+Why a new session after a git undo? Git puts the files back, but the conversation still holds the first fix. A new
+session makes step 6 start as fresh as step 3, so you can compare the two runs.
 
 > **Good to know:** a checkpoint undoes the agent's file edits. It does not undo commands it ran, a push, a deployment
 > or a message it sent. That is why part 2 exists.
@@ -119,8 +122,11 @@ Acceptance criteria:
 Add a test for each criterion. Do not change the existing tests.
 ```
 
-Compare with the first run: the number of steps, the files it touched, and whether every criterion is met.
-**Which run would you trust in a real repository?**
+**You should see:** no failing tests (the 3 backlog tests are still skipped), at least one new test per criterion,
+and no change to the existing tests.
+
+Compare with the first run: the files it touched, and whether every criterion is met. The number of steps is not the
+point: the second run often takes more, because it writes tests. **Which run would you trust in a real repository?**
 
 ## 7. Commit (1 min)
 
