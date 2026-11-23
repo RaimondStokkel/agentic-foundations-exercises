@@ -34,7 +34,8 @@ Switch on the three skipped backlog tests in tests/: remove only their skip mark
 Run the tests and tell me how many fail. Then commit with the message: Part 5: switch on the backlog tests
 ```
 
-Approve the test change. **You should see:** 3 failing tests.
+Approve the test change. **You should see:** 3 failing tests. Fewer? Then your agent already did a backlog item
+earlier, and its round in step 3 only ticks it off.
 
 ## 2. Get the plan and the prompt (4 min)
 
@@ -67,8 +68,10 @@ Then do **one round per plan item**, three rounds in all:
 1. Start a **new session** in your stack folder. That is the fresh context.
 2. **Type in your agent:** `Read ralph/PROMPT.md and follow its instructions exactly.` If it asks to run the tests,
    approve it.
-3. When it stops, **type in your agent:** `Run the tests, list the failing tests by name, and show me git status.`
-4. **Judge.** Fewer failing tests, no test failing that passed before, and nothing changed in `tests/`, `.claude/`,
+3. When it stops, **type in your agent:** `Run the tests, list the failing tests by name, say which plan item you
+   ticked, and show me git status.`
+4. **Judge.** The test of the ticked item passes, there are fewer failing tests (or as many, if that test already
+   passed before the round), no test fails that passed before, and nothing changed in `tests/`, `.claude/`,
    `.github/` or `hooks/`?
    - Yes: **type** `Commit everything with the message: loop round 1` (2, 3).
    - No: **type** `Throw away all changes since the last commit.` Then try the round again.

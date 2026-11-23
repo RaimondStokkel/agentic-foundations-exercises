@@ -37,6 +37,8 @@ Create two subagents in .claude/agents/ in this folder.
    Instructions: you cannot run git, so the caller gives you the changed files or a diff file.
    Check: public API unchanged; no test deleted, skipped or weakened; edge cases covered (capitals,
    Dutch and English, extra spaces, keywords inside longer words such as "Fireplace").
+   While the three tests marked Backlog are skipped, they and their requirements are for part 5 and never block.
+   Any other skipped or weakened test does.
    Only a blocking defect (wrong behaviour, a weakened test, a changed API, a missed requirement) makes the
    verdict CHANGES NEEDED. Reply in at most 12 lines: Verdict (APPROVE or CHANGES NEEDED),
    Blocking (file:line - problem - fix, or none), Suggestions (not blocking, at most 3).
@@ -49,7 +51,8 @@ Create three custom agents in .github/agents/ in this folder, not in the reposit
 1. triage-lead.agent.md: name Triage Lead; tools ['read', 'search', 'edit', 'agent', 'todo'], so no terminal.
    It fixes bugs in this triage service. It delegates every test run to the Test Runner agent and every
    review to the Reviewer agent. It never edits tests/ and never touches the secrets file or data/.
-   It fixes every blocking finding before it finishes; suggestions are optional.
+   It fixes every blocking finding before it finishes; suggestions are optional. It leaves the skipped
+   Backlog tests and their requirements for part 5.
 2. test-runner.agent.md: name Test Runner; tools ['execute', 'read', 'search']; user-invocable: false.
    It runs exactly the test command from README.md, never changes files, searches long logs instead of
    reading them whole, and replies in at most 8 lines: PASS n / FAIL n / SKIPPED n, then per failure:
@@ -58,6 +61,8 @@ Create three custom agents in .github/agents/ in this folder, not in the reposit
    It cannot run git, so the caller gives it the changed files or a diff file.
    Check: public API unchanged; no test deleted, skipped or weakened; edge cases covered (capitals,
    Dutch and English, extra spaces, keywords inside longer words such as "Fireplace").
+   While the three tests marked Backlog are skipped, they and their requirements are for part 5 and never block.
+   Any other skipped or weakened test does.
    Only a blocking defect (wrong behaviour, a weakened test, a changed API, a missed requirement) makes the
    verdict CHANGES NEEDED. Reply in at most 12 lines: Verdict (APPROVE or CHANGES NEEDED),
    Blocking (file:line - problem - fix, or none), Suggestions (not blocking, at most 3).
@@ -95,7 +100,12 @@ stay in the helpers' own context windows.
 
 ## 4. Fix the blocking findings (3 min)
 
-**What did the reviewer say?** If it found a blocking problem, **type in your agent:** `Fix the blocking findings.`
+**What did the reviewer say?** If it found a blocking problem, **type in your agent:**
+
+```text
+Fix the blocking findings. Leave the skipped Backlog tests and their requirements for part 5.
+```
+
 Then watch the agent call the helpers again.
 
 > **Tester focus:** the reviewer is your automated colleague. Ask the agent to add one check of your own to the
