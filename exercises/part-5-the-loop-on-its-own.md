@@ -58,7 +58,19 @@ Read both. Where the prompt says "the loop script", that is you in step 3.
 
 ## 3. Be the loop (8 min)
 
-Let the agent work without asking for every edit:
+You now do by hand what a loop script would do. Every round has the same four moves, and each one has a reason:
+
+| You | What happens | Why |
+|---|---|---|
+| Start a new session | The agent starts with an empty memory | Nothing from an earlier round steers it, and a long job never fills one context window |
+| Type the same prompt | It reads `ralph/fix_plan.md`, takes the first open item, fixes it, runs the tests, ticks the item and leaves a note | The plan file is its memory between rounds: notes on disk, not the chat |
+| Judge | You compare the failing tests and the changed files with before | The tests decide whether the item is done, not the agent saying "done" |
+| Commit or throw away | A commit is a checkpoint | A bad round costs one rollback, never your earlier work |
+
+After three rounds you have done by hand what `tools/ralph.sh` does on its own (see the Extra below). An agent can
+work without you only when these four things are in place.
+
+First, set up your agent for the rounds:
 
 | Agent | How |
 |---|---|
