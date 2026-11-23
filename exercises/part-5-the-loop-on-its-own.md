@@ -8,6 +8,10 @@ the judge, git commits are the checkpoints, and you are the loop.
 | You start with | Your part 4 commit |
 | You end with | Three backlog items done, each in its own commit, and a review of the result |
 
+In part 1 the loop was **inside** the agent: one session, and the model decided when to stop. This loop goes
+**around** the agent: every round is a new session, and the tests decide whether the round counts. Inside each round,
+the agent still runs the loop from part 1.
+
 This is a **Ralph loop**: run the same short prompt again and again, each time in a fresh session. The agent remembers
 nothing between rounds. Its memory is a plan file and git, as in part 3.
 

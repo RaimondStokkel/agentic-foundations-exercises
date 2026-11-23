@@ -12,6 +12,8 @@ An agent is a model in a loop. Every turn it **thinks** (what do I know, what ne
 read a file, run the tests, edit a file) and **observes** (reads what came back). It stops when it answers without
 asking for a tool.
 
+This is the loop **inside** the agent. Part 5 puts a second loop **around** it.
+
 ## 1. Make the agent ask first (1 min)
 
 | Agent | How |
