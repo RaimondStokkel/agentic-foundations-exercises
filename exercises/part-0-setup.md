@@ -17,10 +17,10 @@ From here on you only type in your agent and approve what it asks.
 
 - **One agent, with a licence:**
   - **Claude:** the Claude desktop app, **Code** tab (a Pro, Max, Team or Enterprise plan)
-  - **GitHub Copilot, Agents window:** VS Code with GitHub Copilot
+  - **GitHub Copilot App** the app from the Windows Store
   - **GitHub Copilot CLI:** `copilot` in a terminal
 - **Git**
-- **One of these:** Node.js 20+, Python 3.10+, .NET SDK 8+ or JDK 11+. Not sure what you have? The agent checks it
+- **One of these:** Node.js 20+, Python 3.10+, .NET SDK 8+ or JDK 11+. Not sure what you have? Don't worry. The agent checks it
   for you in step 2.
 
 No licence? Tell the trainer before the session: without one you can only follow along in the Teams chat.
