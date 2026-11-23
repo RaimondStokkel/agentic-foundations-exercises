@@ -1,6 +1,6 @@
 # Part 4: Subagents
 
-**20 minutes.** You give the agent two helpers, each with its own context window and only the tools it needs.
+**25 minutes.** You give the agent two helpers, each with its own context window and only the tools it needs.
 Then you watch the agent hand work to them.
 
 | | |

@@ -1,6 +1,6 @@
 # Part 1: The loop
 
-**22 minutes.** You watch the agent think, act and observe. Then you steer it with acceptance criteria and undo its
+**20 minutes.** You watch the agent think, act and observe. Then you steer it with acceptance criteria and undo its
 work with a checkpoint.
 
 | | |
@@ -33,7 +33,7 @@ Before you start the agent, post your answers in the Teams chat:
 > **Tester focus:** also write down what could go wrong. Two classics: the agent changes the *test* instead of the
 > code, or the fix passes the test but breaks something nobody tested.
 
-## 3. Watch one loop (5 min)
+## 3. Watch one loop (4 min)
 
 **Type in your agent:**
 
@@ -99,7 +99,7 @@ starts clean from the full specification:
 > **Good to know:** a checkpoint undoes the agent's file edits. It does not undo commands it ran, a push, a deployment
 > or a message it sent. That is why part 2 exists.
 
-## 6. Steer with acceptance criteria (5 min)
+## 6. Steer with acceptance criteria (4 min)
 
 > **Tester focus:** turning findings into acceptance criteria is your craft, so be strict. Everyone writes them here,
 > from what you found in step 4.

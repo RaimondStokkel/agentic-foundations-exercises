@@ -1,6 +1,6 @@
 # Part 5: The loop on its own
 
-**18 minutes.** The agent works through a backlog one item at a time, every round with a fresh context. The tests are
+**20 minutes.** The agent works through a backlog one item at a time, every round with a fresh context. The tests are
 the judge, git commits are the checkpoints, and you are the loop.
 
 | | |

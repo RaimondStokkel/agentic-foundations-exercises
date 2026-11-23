@@ -15,12 +15,12 @@ Agents window, or the Copilot CLI). They are for **developers in any stack** and
 
 | Part | You learn | Time |
 |---|---|---|
-| [0. Set up](exercises/part-0-setup.md) | Get the code and open it in your agent. Best done before the session | 10 min |
-| [1. The loop](exercises/part-1-the-loop.md) | The loop inside the agent: how it thinks, acts and observes; steering it with acceptance criteria; undoing its work | 22 min |
+| [0. Set up](exercises/part-0-setup.md) | Get the code and open it in your agent. Best done before the session | 15 min |
+| [1. The loop](exercises/part-1-the-loop.md) | The loop inside the agent: how it thinks, acts and observes; steering it with acceptance criteria; undoing its work | 20 min |
 | [2. Boundaries](exercises/part-2-boundaries.md) | What the agent may do alone, must ask for, or may never do; permission rules and a guard hook | 25 min |
 | [3. Context](exercises/part-3-context.md) | What a long file does to the context window; searching instead of reading; memory in a file | optional, 12 min |
-| [4. Subagents](exercises/part-4-subagents.md) | Helpers with their own context and only the tools they need | 20 min |
-| [5. The loop on its own](exercises/part-5-the-loop-on-its-own.md) | A second loop, around the agent: a fresh context per round, tests as the judge and commits as checkpoints | 18 min |
+| [4. Subagents](exercises/part-4-subagents.md) | Helpers with their own context and only the tools they need | 25 min |
+| [5. The loop on its own](exercises/part-5-the-loop-on-its-own.md) | A second loop, around the agent: a fresh context per round, tests as the judge and commits as checkpoints | 20 min |
 
 **In the session** (Teams): everyone works alone, on their own laptop. The trainer explains a topic with a few
 slides, then you do the next part in your agent, following its file. Thumbs-up in Teams when you are done; raise your

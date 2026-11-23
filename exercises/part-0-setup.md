@@ -1,6 +1,6 @@
 # Part 0: Set up
 
-**10 minutes. Best done before the session.** You put the exercise code on your computer and open it in your agent.
+**15 minutes. Best done before the session.** You put the exercise code on your computer and open it in your agent.
 From here on you only type in your agent and approve what it asks.
 
 ## How the session works
