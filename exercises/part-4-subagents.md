@@ -141,6 +141,19 @@ Commit all changes with the message: Part 4: test-runner and reviewer subagents
 - Which jobs in your own work could a read-only helper do?
 - The helper only knows its brief. What must the main agent put in that brief?
 
+## Core learnings
+
+- **A helper is a small file you can read and check.** Its description says when to use it, its tools what it may do,
+  its model how smart and how cheap it is, and its instructions what it reports back. A new session loads it.
+- **The tool list is the boundary, not the instructions.** The reviewer has no edit tool and no shell, so it cannot
+  change a file. The test-runner has a shell, so "never edits files" is only a line in its instructions.
+- **Delegation keeps the main agent's context small.** The test output and the files the reviewer read stayed in the
+  helpers' own context windows. The main conversation got only a short summary back from each helper.
+- **Many helpers may read, but only one agent writes.** The helpers ran the tests and reviewed the code, and only the
+  main agent changed it. Edits that depend on each other stay with that one agent, so they cannot clash.
+- **A reviewer with fresh eyes can say no when every test passes.** It has not seen how the main agent got to its
+  change, and it checks the code against the requirements. A test only checks the cases it was written for.
+
 ## Stuck or behind?
 
 Stuck: raise your hand in Teams, or post in the Teams chat.

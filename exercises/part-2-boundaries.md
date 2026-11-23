@@ -175,6 +175,20 @@ Commit the rules and the hook with the message: Part 2: permission rules and a g
 - Too many "ask" rules make people click yes without reading. Which of your asks could be an allow, and which a deny?
 - What would your guard block in your own repository?
 
+## Core learnings
+
+- **Decide what should happen before you test it.** Your allow, ask and deny choices in step 1 were a test plan. In
+  step 4, every request that did not behave as you decided was a bug to fix in the rules or the hook.
+- **The model only asks; the harness decides.** A prompt such as "never read .env" is only a suggestion. When the
+  agent said no by itself, nothing was tested: only a refusal from a rule or the hook proves your harness.
+- **Rules match the text, a hook reads the whole call.** The same command, written another way, can slip past a rule
+  that matches its text. The guard hook sees the whole call before it runs, but it only blocks what it looks for.
+- **Put checks on top of each other, from soft to hard.** The mode decides how often the agent asks you, rules block
+  what their text matches, and the hook checks every call. Each catches some of what the one before lets through.
+- **A boundary only works once it is loaded.** Rules and hooks load when a session starts, so you started a new
+  session before you tried to break them. In the GitHub Copilot App no permission level says never, and the hook runs
+  only after you trust it: there the hook is the real no.
+
 ## Stuck or behind?
 
 Stuck: raise your hand in Teams, or post in the Teams chat.

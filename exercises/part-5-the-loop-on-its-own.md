@@ -110,6 +110,18 @@ Checkpoints in the agent don't cover a loop's work across sessions. Git does: ev
 - What would you need before you run a loop like this on a real repository? That is where the next session (5 Jan)
   starts.
 
+## Core learnings
+
+- **In a loop around the agent, a check decides, not the model.** In part 1 the agent stopped when it judged the work
+  done. Here a round only counted when the tests said so, and you committed or threw it away on that result.
+- **Fresh context every round, memory in files.** Every round started in a new session that remembered nothing. It found
+  its place from `ralph/fix_plan.md`, the note the last round left there, and the git history.
+- **Small steps make a slip cheap.** Each round did one plan item and ended in a commit or a throw-away. A bad round
+  cost you one retry, not the whole backlog.
+- **The agent aims for green, not for right.** So the check must be one it cannot change: a round that touched
+  `tests/` or the harness did not count. Passing tests can still miss what was meant, so a reviewer read the loop's
+  work at the end.
+
 ## Extra: the loop as a script
 
 With the Copilot CLI or the Claude Code CLI installed, a script can be the loop instead of you. In **Git Bash**, from

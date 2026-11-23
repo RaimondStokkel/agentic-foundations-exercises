@@ -154,6 +154,19 @@ Approve the commit. From now on the agent commits, but only when you ask.
 - What did the acceptance criteria change?
 - Where in this loop would you want a check that the agent cannot skip? (Part 2.)
 
+## Core learnings
+
+- **The model decides when the loop stops.** Each round it asks for one tool and reads the result before it picks
+  the next step. Passing tests are one more result to read: the loop ends when the agent answers without a tool call.
+- **Asking first lets you see every step.** With the agent set to ask, nothing ran until you approved it. That only
+  helps if you read each step before you click.
+- **A passing test is a weaker spec than the requirement.** A test checks the examples someone wrote down, not all
+  that the requirement means. In step 4 you checked the result against the requirement, not only against the test.
+- **Acceptance criteria say when the work is done.** Written into the task, they give the agent, a reviewer and you
+  the same list to check. A test for each criterion keeps that check in place after the session ends.
+- **A checkpoint makes a wrong step cheap.** In step 5 you took back the whole first fix in one move, instead of
+  correcting it with more prompts. The next run started without that attempt in the conversation to steer it.
+
 ## Stuck or behind?
 
 Stuck: raise your hand in Teams, or post in the Teams chat.

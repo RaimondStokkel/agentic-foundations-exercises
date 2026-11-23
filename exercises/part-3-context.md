@@ -91,4 +91,18 @@ every round of the loop starts fresh and reads its memory from a file.
 - What would you put in a notes file for a task that takes a whole day?
 - In part 4, a helper reads the long output in its own context window. Why does that help the main agent?
 
+## Core learnings
+
+- **Everything the agent reads stays in its context window.** In step 1 you saw the window fill up as the agent read
+  the log. More text does not make the agent smarter: a full window can make it slower and less accurate.
+- **Search first, and read only what you need.** In step 2 a search found the same failing test and pulled in only a
+  few lines. It is the lightest way to keep the window small.
+- **The context window is working memory; files are long-term memory.** The fresh session in step 3 answered from
+  `notes/progress.md` without opening the log. If something must outlive a session, write it to a file.
+- **A summary loses detail, so keep it honest.** Your notes left things out, just as an agent's own compact does.
+  Write down what the evidence shows, and no more.
+- **A fresh session with good notes beats a long, cluttered one.** Old reads and failed tries stay in the window, and
+  the agent keeps working with them in view. You started three new sessions in this part, and the last one still knew
+  the answer from the notes.
+
 Next: [Part 4: Subagents](part-4-subagents.md)

@@ -123,6 +123,18 @@ goes for every later part: an agent that names or changes another stack is in th
 - [ ] Your agent has a session open in your stack folder.
 - [ ] The agent reports 5 passed, 1 failed, 3 skipped.
 
+## Core learnings
+
+- **The folder you open is the agent's scope.** A session works in the folder it starts in. Start it one folder too
+  high and it may work on all four stacks; start it in your stack folder and that stack is the project.
+- **You say what you want; the agent picks the steps.** In step 2 you asked for a clone, a branch and some versions,
+  not for commands. The agent chose the commands, and it may ask you first: read each one before you approve it.
+- **A new session starts with a clean slate.** The chat of your first session is not in it. In step 3 you did not
+  say again which stack you chose: opening the stack folder was enough.
+- **Know where you start before anything changes.** 5 passed, 1 failed, 3 skipped is your starting point, and the one
+  failure is the bug you fix in part 1. When the agent later says it fixed something, you have numbers to check it
+  against.
+
 ## Stuck?
 
 - **The clone fails:** check that Git is installed (`git --version` in a terminal), or raise your hand in Teams.
