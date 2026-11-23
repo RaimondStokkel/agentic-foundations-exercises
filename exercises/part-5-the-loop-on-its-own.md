@@ -85,8 +85,8 @@ hide a test that broke.
 **Type in your agent:**
 
 ```text
-Write the changes to src/ since the commit "Part 5: plan and prompt" to notes/loop.diff.
-Then ask the reviewer to review notes/loop.diff.
+Create the folder notes if it is missing. Write the changes to src/ since the commit
+"Part 5: plan and prompt" to notes/loop.diff. Then ask the reviewer to review notes/loop.diff.
 ```
 
 Checkpoints in the agent don't cover a loop's work across sessions. Git does: every round is a commit you can go back to.
