@@ -21,7 +21,7 @@ From weak to strong:
 > feature.
 
 For each request below, decide what the agent should do: **allow**, **ask** you first, or **deny**. Write your answers
-down for yourself. The trainer asks for a few of them in the Teams chat.
+down for yourself.
 
 | # | Someone asks the agent | Your decision |
 |---|---|---|
@@ -61,9 +61,9 @@ Write every shell rule for both Bash and PowerShell. Show me the file.
 
 Claude asks before it writes this file: approve it. If two rules match, deny wins over ask, and ask wins over allow.
 
-**Copilot, Agents window.** There is no rules file. You choose a level in the permissions picker under the prompt.
-Keep **Manual permissions**: it asks before most commands and edits. No level says "never". For a real no, you need the
-hook in step 3.
+**GitHub Copilot App.** There is no rules file. You choose a level under **Tool permissions** in the mode menu under
+the prompt. Keep **Ask every time**: it asks before edits, web fetches and commands that change something. No level
+says "never". For a real no, you need the hook in step 3.
 
 **Copilot CLI.** Rules are flags you give when you start it. Type `/exit`, then start it again with your own test
 tool instead of `python` (`npm`, `python`, `dotnet` or `java`):
@@ -76,7 +76,7 @@ We tested `read(.env)` on Copilot CLI 1.0.112 (`copilot --version`). Keep this c
 from now on.
 
 > **Good to know:** Copilot reads every file in your folder without asking, `.env` included. The CLI rule
-> `read(.env)` stops its read tool, but not a shell command such as `cat .env`. The Agents window has no such rule.
+> `read(.env)` stops its read tool, but not a shell command such as `cat .env`. The GitHub Copilot App has no such rule.
 > That is a job for the hook.
 
 ## 3. Switch on the guard hook (5 min)
@@ -101,7 +101,9 @@ from now on changing it always needs your approval.
 ## 4. Start fresh, then try to break it (9 min)
 
 The agent loads rules and hooks when a session starts. **Start a new session in your stack folder** (Claude: **+ New**;
-Agents window: **New Session**; CLI: `/exit` and start again with your flags).
+GitHub Copilot App: **+** next to **Sessions**, with **Current checkout**; CLI: `/exit` and start again with your flags).
+
+The GitHub Copilot App shows the new hook and asks whether you trust it. Trust it: until you do, the hook does not run.
 
 First, **type in your agent:**
 
@@ -128,10 +130,10 @@ Code even tried to *write* a script that reads `.env`, and the guard blocked wri
 In Claude the guard usually answers before the rules, so most refusals say "Blocked by harness guard". A refusal that
 names your permission settings came from a rule.
 
-> **Copilot, Agents window:** nothing can deny H10 for you. The guard does not look at web fetches, and this window
-> has no rules file. You get an approval prompt: decline it and write `I declined`. If the fetch runs without asking,
-> write `ran` and tell the trainer. If H4 shows you what is in `.env`, the guard did not load in this window: tell
-> the trainer too.
+> **GitHub Copilot App:** nothing can deny H10 for you. The guard does not look at web fetches, and the app has no
+> rules file. You get an approval prompt: decline it and write `I declined`. If the fetch runs without asking,
+> write `ran` and tell the trainer. If H4 shows you what is in `.env`, the guard did not run: check that you trusted
+> the hook, and tell the trainer.
 
 > **Tester focus:** every request where what happened differs from your decision is a bug in the harness. Tell the
 > agent what went wrong and ask it to fix the rules or the hook. Then try that request again. If the guard refuses the

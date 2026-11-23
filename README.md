@@ -4,8 +4,8 @@ Hands-on exercises for the Zig Grow session **Agentic Foundations** (AI capabili
 You work through them by **chatting with your agent**: you type what the steps say and approve what the agent asks.
 You don't need to write code. Each part builds on the one before.
 
-The exercises work with **Claude** (the Code tab of the Claude desktop app) and with **GitHub Copilot** (VS Code's
-Agents window, or the Copilot CLI). They are for **developers in any stack** and for **testers**.
+The exercises work with **Claude** (the Code tab of the Claude desktop app) and with **GitHub Copilot** (the GitHub
+Copilot App, or the Copilot CLI). They are for **developers in any stack** and for **testers**.
 
 > **All data in this repo is synthetic.** Each stack has a `.env` with a fake key and a `data/tenant-export.csv`
 > with made-up tenants. They are there on purpose, so the agent's boundaries have something to protect.
@@ -31,7 +31,7 @@ hand when you are stuck. [Part 0](exercises/part-0-setup.md) explains how it wor
 | Agent | Where |
 |---|---|
 | Claude | The **Code** tab of the Claude desktop app, a local session on your computer |
-| GitHub Copilot, Agents window | VS Code: **Open in Agents** in the title bar, then a session on **This Computer** with the **Agent** |
+| GitHub Copilot App | The desktop app: a session on **This computer** in your stack folder, with **Current checkout** |
 | GitHub Copilot CLI | `copilot` in a terminal |
 
 All need a licence. **No licence?** Tell the trainer before the session.
@@ -93,7 +93,7 @@ All four stacks pass their tests at every solution tag. The guard hook passes th
 Windows PowerShell 5.1 and PowerShell 7 (`tools/test-guard.mjs`). The loop script passes 8 scenarios with a stub agent
 (`tools/test-ralph.sh`), without calling a model.
 
-**Not tested:** the Claude desktop app and Copilot's Agents window. Their steps follow the vendors' documentation, and
+**Not tested:** the Claude desktop app and the GitHub Copilot App. Their steps follow the vendors' documentation, and
 both read the same rule, hook and agent files as the tested CLIs. Also not tested: macOS and Linux.
 
 ## What is in this repo

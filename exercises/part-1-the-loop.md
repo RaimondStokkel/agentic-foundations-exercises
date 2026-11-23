@@ -19,12 +19,12 @@ This is the loop **inside** the agent. Part 5 puts a second loop **around** it.
 | Agent | How |
 |---|---|
 | Claude desktop app | In the mode selector under the prompt box, choose **Manual** |
-| Copilot, Agents window | In the permissions picker under the prompt, choose **Manual permissions** |
+| GitHub Copilot App | Click the mode menu under the prompt, point to **Tool permissions** and choose **Ask every time**. Keep the mode on **Interactive**. To keep this for every new session, also set **Settings** > **Sessions** > **Tool permissions** to **Ask every time** |
 | Copilot CLI | Nothing to do: it asks before it runs a command or changes a file |
 
 ## 2. Predict (3 min)
 
-Before you start the agent, post your answers in the Teams chat:
+Before you start the agent, answer these for yourself:
 
 - What will the agent do first?
 - How many steps (tool calls) will it need?
@@ -48,6 +48,8 @@ Before you approve a step, say what you expect it to return. Keep a short tally 
 | 1 | | | |
 
 The text the agent writes between its steps is the "thought". Every tool call it shows you is an "action".
+The GitHub Copilot App folds the actions into grey lines, such as "Run Python tests ... and 1 other tool call". Click
+the arrow in front of a line to see each action and what came back.
 Some agents write nothing before a tool call. Then fill in the first column yourself: what do you expect this step
 to tell you?
 
@@ -92,7 +94,7 @@ starts clean from the full specification:
 | Agent | How |
 |---|---|
 | Claude desktop app | Type `/rewind`. Pick the point before your task and choose **Restore code and conversation**. No `/rewind` in your app? Type: `Undo all changes in src and tests with git restore and git clean.` |
-| Copilot, Agents window | Open the **Changes** view (**Last Turn**) to see what changed. Then type: `Undo all changes in src and tests with git restore and git clean.` |
+| GitHub Copilot App | Click **Changes** above the prompt box to see what changed. Then type: `Undo all changes in src and tests with git restore and git clean.` |
 | Copilot CLI | Type `/rewind`. Pick your task prompt: Copilot goes back to just before it. Choose **Conversation + files** |
 
 **Type in your agent:** `Run the tests.` You should be back to 1 failing test.

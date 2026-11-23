@@ -44,7 +44,7 @@ Create two subagents in .claude/agents/ in this folder.
    Blocking (file:line - problem - fix, or none), Suggestions (not blocking, at most 3).
 ```
 
-**Copilot (Agents window and CLI). Type in your agent:**
+**Copilot (GitHub Copilot App and CLI). Type in your agent:**
 
 ```text
 Create three custom agents in .github/agents/ in this folder, not in the repository root.
@@ -92,7 +92,7 @@ The agent loads its helpers when a session starts. Start a **new session** in yo
 | Agent | How, and what to type |
 |---|---|
 | Claude desktop app | **+ New**, then: `Use the test-runner subagent to run the tests. Then ask the reviewer subagent to review src/ against the tests.` |
-| Copilot, Agents window | **New Session** in your stack folder, **Copilot** target. Pick **Triage Lead** in the **Agent** dropdown, then: `Run the tests and get a review of src/.` |
+| GitHub Copilot App | **+** next to **Sessions**, your stack folder, **Current checkout**. Pick **Triage Lead** in the agent picker in the prompt box, then: `Run the tests and get a review of src/.` |
 | Copilot CLI | `/exit`, then start with your flags plus `--agent triage-lead`. Then: `Run the tests and get a review of src/.` |
 
 Watch the main conversation. It gets a short summary from each helper. The test output and the files the reviewer read
@@ -117,10 +117,10 @@ Then watch the agent call the helpers again.
 
 | Agent | How |
 |---|---|
-| Copilot, Agents window | Pick the normal **Agent** in the **Agent** dropdown |
+| GitHub Copilot App | In the agent picker in the prompt box, switch from **Triage Lead** back to the default agent |
 | Copilot CLI | `/exit`, then start with your flags from part 2, without `--agent triage-lead` |
 
-Stay with the normal Agent for part 5.
+Stay with the default agent for part 5.
 
 **Type in your agent:**
 
@@ -141,7 +141,7 @@ Commit all changes with the message: Part 4: test-runner and reviewer subagents
 ## Stuck or behind?
 
 Stuck: raise your hand in Teams, or post in the Teams chat.
-Out of time? Copilot users: pick the normal **Agent** first, because Triage Lead has no terminal.
+Out of time? Copilot users: switch back to the default agent first, because Triage Lead has no terminal.
 **Type in your agent:**
 
 ```text

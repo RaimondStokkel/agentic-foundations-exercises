@@ -17,7 +17,7 @@ From here on you only type in your agent and approve what it asks.
 
 - **One agent, with a licence:**
   - **Claude:** the Claude desktop app, **Code** tab (a Pro, Max, Team or Enterprise plan)
-  - **GitHub Copilot App** the app from the Microsoft Store
+  - **GitHub Copilot App:** the app from the Microsoft Store
   - **GitHub Copilot CLI:** `copilot` in a terminal
 - **Git**
 - **One of these:** Node.js 20+, Python 3.10+, .NET SDK 8+ or JDK 11+. Not sure what you have? Don't worry. The agent checks it
@@ -32,7 +32,7 @@ Make an empty folder, for example `Documents\agentic`. Open it in your agent:
 | Agent | How |
 |---|---|
 | Claude desktop app | Open the **Code** tab. Under the prompt box, choose **Local**, then click the folder control and choose **Open folder…** |
-| Copilot, Agents window | In VS Code, click **Open in Agents** in the title bar. Choose **New Session**, **This Computer** and your folder. Keep the **Copilot** target and pick **Agent** |
+| GitHub Copilot App | Click **+** next to **Sessions**. Under **Start session in**, choose **Open local folder** and your folder. Under the prompt box, keep **This computer** |
 | Copilot CLI | In a terminal, go to the folder (`cd Documents\agentic`) and type `copilot` |
 
 If the agent asks whether you trust the folder, say yes.
@@ -76,8 +76,12 @@ Start a new session in `agentic-foundations-exercises\stacks\<your stack>`, the 
 | Agent | How |
 |---|---|
 | Claude desktop app | Click **+ New** (or press Ctrl+N). Choose **Local**, then **Open folder…** and your stack folder |
-| Copilot, Agents window | **New Session**, **This Computer**, your stack folder, **Copilot**, **Agent** |
+| GitHub Copilot App | Click **+** next to **Sessions**, then **Open local folder** and your stack folder. Under the prompt box, keep **This computer**, and under **Workspace** choose **Current checkout** |
 | Copilot CLI | Type `/exit`. Then `cd agentic-foundations-exercises\stacks\python` (your stack) and `copilot` |
+
+**GitHub Copilot App:** make the same choices for every new session from now on. **Current checkout** keeps your work
+in your clone. A **New worktree** starts from a clean copy, and the new session would not see your earlier work. If
+the app asks whether you trust the repository, trust it.
 
 **Type in your agent:**
 

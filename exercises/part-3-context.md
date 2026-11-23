@@ -26,7 +26,7 @@ Then look at how full the context window is, and note what you see:
 | Agent | How |
 |---|---|
 | Claude desktop app | Type `/context`, or open the **Context** card in the session details panel |
-| Copilot, Agents window | Look at how the agent read the log: the whole file or a search? |
+| GitHub Copilot App | Type `/context` |
 | Copilot CLI | Type `/context` |
 
 The log has 649 lines. **Did the agent read all of them, or search?** If your agent searched already, that is a
