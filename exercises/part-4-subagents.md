@@ -92,7 +92,7 @@ The agent loads its helpers when a session starts. Start a **new session** in yo
 | Agent | How, and what to type |
 |---|---|
 | Claude desktop app | **+ New**, then: `Use the test-runner subagent to run the tests. Then ask the reviewer subagent to review src/ against the tests.` |
-| GitHub Copilot App | **+** next to **Sessions**, your stack folder, **Current checkout**. Pick **Triage Lead** in the agent picker in the prompt box, then: `Run the tests and get a review of src/.` |
+| GitHub Copilot App | **+** next to **Sessions**, your stack folder (not `agentic-foundations-exercises`), **Current checkout**. Pick **Triage Lead** in the agent picker in the prompt box, then: `Run the tests and get a review of src/.` |
 | Copilot CLI | `/exit`, then start with your flags plus `--agent triage-lead`. Then: `Run the tests and get a review of src/.` |
 
 Watch the main conversation. It gets a short summary from each helper. The test output and the files the reviewer read
@@ -141,6 +141,12 @@ Commit all changes with the message: Part 4: test-runner and reviewer subagents
 ## Stuck or behind?
 
 Stuck: raise your hand in Teams, or post in the Teams chat.
+
+**The agent names or changes other stacks?** Then the session runs in the wrong folder. Start a new session in your
+stack folder, the path you wrote down in part 0 (GitHub Copilot App: pick your stack folder, not
+`agentic-foundations-exercises`). Did it change files there? **Type in the new session:**
+`Undo every change outside this folder with git restore and git clean.`
+
 Out of time? Copilot users: switch back to the default agent first, because Triage Lead has no terminal.
 **Type in your agent:**
 
@@ -149,6 +155,6 @@ Take .claude/agents and .github/agents from the git tag block-3-solution and com
 with the message: Part 4 from the solution
 ```
 
-Then start a new session, so the helpers load.
+Then start a new session in your stack folder, so the helpers load.
 
 Next: [Part 5: The loop on its own](part-5-the-loop-on-its-own.md)

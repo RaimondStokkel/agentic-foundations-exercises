@@ -65,7 +65,8 @@ Let the agent work without asking for every edit:
 
 Then do **one round per plan item**, three rounds in all:
 
-1. Start a **new session** in your stack folder. That is the fresh context.
+1. Start a **new session** in your stack folder. That is the fresh context. GitHub Copilot App: pick your stack
+   folder, not `agentic-foundations-exercises`.
 2. **Type in your agent:** `Read ralph/PROMPT.md and follow its instructions exactly.` If it asks to run the tests,
    approve it.
 3. When it stops, **type in your agent:** `Run the tests, list the failing tests by name, say which plan item you
@@ -123,6 +124,12 @@ when the plan is done or after 5 rounds. When we tested it, it finished the back
 ## Stuck or behind?
 
 Stuck: raise your hand in Teams, or post in the Teams chat.
+
+**The agent names or changes other stacks?** Then the session runs in the wrong folder. Start a new session in your
+stack folder, the path you wrote down in part 0 (GitHub Copilot App: pick your stack folder, not
+`agentic-foundations-exercises`). Did it change files there? **Type in the new session:**
+`Undo every change outside this folder with git restore and git clean.`
+
 Out of time? **Type in your agent:**
 
 ```text

@@ -66,22 +66,28 @@ developer: the exercises are about the agent, not the code.
 I chose Python. Print the full path of the stack folder I should open in my next session.
 ```
 
+**Write that path down.** Every "new session" in the later parts starts in exactly this folder. Never start one in
+`agentic-foundations-exercises`, the folder above it: that folder holds all four stacks, and an agent started there
+may work on all four.
+
 ## 3. Open your stack folder (3 min)
 
 From now on, **your stack folder is the project**. The agent reads its rules and helpers from the folder you open, so
 always open the stack folder, not the folder above it.
 
-Start a new session in `agentic-foundations-exercises\stacks\<your stack>`, the path the agent just printed:
+Start a new session in `agentic-foundations-exercises\stacks\<your stack>`, the path you wrote down:
 
 | Agent | How |
 |---|---|
 | Claude desktop app | Click **+ New** (or press Ctrl+N). Choose **Local**, then **Open folder…** and your stack folder |
-| GitHub Copilot App | Click **+** next to **Sessions**, then **Open local folder** and your stack folder. Under the prompt box, keep **This computer**, and under **Workspace** choose **Current checkout** |
+| GitHub Copilot App | Click **+** next to **Sessions**. Under **Start session in**, choose **Open local folder** and pick the stack folder itself, not `agentic-foundations-exercises`. Under the prompt box, keep **This computer**, and under **Workspace** choose **Current checkout** |
 | Copilot CLI | Type `/exit`. Then `cd agentic-foundations-exercises\stacks\python` (your stack) and `copilot` |
 
-**GitHub Copilot App:** make the same choices for every new session from now on. **Current checkout** keeps your work
-in your clone. A **New worktree** starts from a clean copy, and the new session would not see your earlier work. If
-the app asks whether you trust the repository, trust it.
+**GitHub Copilot App:** for every new session from now on, click **+** next to **Sessions** and, under **Start session
+in**, pick your stack folder. Never pick `agentic-foundations-exercises` or the folder from step 1. Is your stack
+folder not in the list? Choose **Open local folder** and pick it again. Keep **This computer** and **Current
+checkout**: **Current checkout** keeps your work in your clone. A **New worktree** starts from a clean copy, and the
+new session would not see your earlier work. If the app asks whether you trust the repository, trust it.
 
 **Type in your agent:**
 
@@ -91,6 +97,10 @@ Run the tests as README.md describes and tell me how many pass, fail and are ski
 
 **You should see:** 9 tests. 5 pass, 1 fails (a Dutch gas smell is not seen as an emergency) and 3 are skipped
 (the backlog for part 5). The failing test is there on purpose: seeing it fail means your setup works.
+
+**Check the folder.** The answer is about your stack only. Does the agent run the tests of more than one stack, or
+ask which stack you mean? Then the session runs in the wrong folder: start a new one in your stack folder. The same
+goes for every later part: an agent that names or changes another stack is in the wrong folder.
 
 ## Done when
 
@@ -102,5 +112,8 @@ Run the tests as README.md describes and tell me how many pass, fail and are ski
 - **The clone fails:** check that Git is installed (`git --version` in a terminal), or raise your hand in Teams.
 - **None of Node.js, Python, .NET or Java is installed:** install Python or Node.js before the session (ask IT if you can't).
 - **The tests don't run:** type `Why do the tests not run? Explain it in simple words.` The agent is good at this.
+- **The agent names or changes other stacks:** the session runs in the wrong folder. Start a new session in the stack
+  folder you wrote down. GitHub Copilot App: pick your stack folder under **Start session in**, not
+  `agentic-foundations-exercises`.
 
 Next: [Part 1: The loop](part-1-the-loop.md)

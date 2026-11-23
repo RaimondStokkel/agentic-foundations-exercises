@@ -36,7 +36,7 @@ The log comes from the JavaScript build of the service, so it names `test/triage
 
 ## 2. The lean way (3 min)
 
-Start a **new session**. **Type in your agent:**
+Start a **new session** in your stack folder. **Type in your agent:**
 
 ```text
 Search logs/nightly-test-run.log for "not ok". Read the matching line and the few lines around it.
@@ -63,7 +63,7 @@ file. For the others, approve or decline: both work.
 
 The next session knows only what is in this file, so the notes must hold everything it needs.
 
-Start a **new session**. **Type in your agent:**
+Start a **new session** in your stack folder. **Type in your agent:**
 
 ```text
 Read only notes/progress.md. Which test failed last night, what happened,

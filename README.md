@@ -31,7 +31,7 @@ hand when you are stuck. [Part 0](exercises/part-0-setup.md) explains how it wor
 | Agent | Where |
 |---|---|
 | Claude | The **Code** tab of the Claude desktop app, a local session on your computer |
-| GitHub Copilot App | The desktop app: a session on **This computer** in your stack folder, with **Current checkout** |
+| GitHub Copilot App | The desktop app: a session on **This computer** in your stack folder, with **Current checkout**. Add the stack folder itself with **Open local folder** |
 | GitHub Copilot CLI | `copilot` in a terminal |
 
 All need a licence. **No licence?** Tell the trainer before the session.
@@ -55,6 +55,9 @@ Developers and testers do every step of the same parts. Some steps have a note f
 Every stack has the same small service, the same tests and the same bug. **Business Central (AL), Go, PHP or another
 stack?** Pick the folder you read most easily. The exercises are about the agent, not the language. Doing this with a
 real repository is the next session (5 Jan).
+
+Start every session in your stack folder, never in the root of this repository. An agent started in the root sees all
+four stacks and may change all four.
 
 ## Solutions
 

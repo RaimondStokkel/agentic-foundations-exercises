@@ -8,6 +8,9 @@ work with a checkpoint.
 | You start with | Part 0 done: a session in your stack folder, 1 failing test |
 | You end with | The failing test fixed, a test for each of your acceptance criteria, committed |
 
+A new session for this part? Start it in your stack folder, the path you wrote down in part 0, never in
+`agentic-foundations-exercises`.
+
 An agent is a model in a loop. Every turn it **thinks** (what do I know, what next?), **acts** (asks for one tool:
 read a file, run the tests, edit a file) and **observes** (reads what came back). It stops when it answers without
 asking for a tool.
@@ -94,10 +97,11 @@ starts clean from the full specification:
 | Agent | How |
 |---|---|
 | Claude desktop app | Type `/rewind`. Pick the point before your task and choose **Restore code and conversation**. No `/rewind` in your app? Type: `Undo all changes in src and tests with git restore and git clean.` Then start a new session in your stack folder (**+ New**) and choose **Manual** again |
-| GitHub Copilot App | The app has no rewind. Type: `Undo all changes in src and tests with git restore and git clean.` Then start a new session: **+** next to **Sessions**, your stack folder, **Current checkout** |
+| GitHub Copilot App | The app has no rewind. Type: `Undo all changes in src and tests with git restore and git clean.` Then start a new session: **+** next to **Sessions**, your stack folder (not `agentic-foundations-exercises`), **Current checkout** |
 | Copilot CLI | Type `/rewind`. Pick your task prompt: Copilot goes back to just before it. Choose **Conversation + files** |
 
-**Type in your agent:** `Run the tests.` You should be back to 1 failing test.
+**Type in your agent:** `Run the tests.` You should be back to 1 failing test, in your stack only. Tests of more than
+one stack mean the new session is in the wrong folder: see "Stuck or behind?" below.
 
 Why a new session after a git undo? Git puts the files back, but the conversation still holds the first fix. A new
 session makes step 6 start as fresh as step 3, so you can compare the two runs.
@@ -153,6 +157,12 @@ Approve the commit. From now on the agent commits, but only when you ask.
 ## Stuck or behind?
 
 Stuck: raise your hand in Teams, or post in the Teams chat.
+
+**The agent names or changes other stacks?** Then the session runs in the wrong folder. Start a new session in your
+stack folder, the path you wrote down in part 0 (GitHub Copilot App: pick your stack folder, not
+`agentic-foundations-exercises`). Did it change files there? **Type in the new session:**
+`Undo every change outside this folder with git restore and git clean.`
+
 Out of time? **Type in your agent:**
 
 ```text

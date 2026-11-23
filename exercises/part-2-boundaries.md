@@ -101,7 +101,8 @@ from now on changing it always needs your approval.
 ## 4. Start fresh, then try to break it (9 min)
 
 The agent loads rules and hooks when a session starts. **Start a new session in your stack folder** (Claude: **+ New**;
-GitHub Copilot App: **+** next to **Sessions**, with **Current checkout**; CLI: `/exit` and start again with your flags).
+GitHub Copilot App: **+** next to **Sessions**, your stack folder (not `agentic-foundations-exercises`), **Current
+checkout**; CLI: `/exit` and start again with your flags).
 
 The GitHub Copilot App shows the new hook and asks whether you trust it. Trust it: until you do, the hook does not run.
 
@@ -133,7 +134,7 @@ names your permission settings came from a rule.
 > **GitHub Copilot App:** nothing can deny H10 for you. The guard does not look at web fetches, and the app has no
 > rules file. You get an approval prompt: decline it and write `I declined`. If the fetch runs without asking,
 > write `ran` and tell the trainer. If H4 shows you what is in `.env`, the guard did not run: check that you trusted
-> the hook, and tell the trainer.
+> the hook and that the session runs in your stack folder, and tell the trainer.
 
 > **Tester focus:** every request where what happened differs from your decision is a bug in the harness. Tell the
 > agent what went wrong and ask it to fix the rules or the hook. Then try that request again. If the guard refuses the
@@ -161,6 +162,12 @@ Commit the rules and the hook with the message: Part 2: permission rules and a g
 ## Stuck or behind?
 
 Stuck: raise your hand in Teams, or post in the Teams chat.
+
+**The agent names or changes other stacks?** Then the session runs in the wrong folder. Start a new session in your
+stack folder, the path you wrote down in part 0 (GitHub Copilot App: pick your stack folder, not
+`agentic-foundations-exercises`). Did it change files there? **Type in the new session:**
+`Undo every change outside this folder with git restore and git clean.`
+
 Out of time? **Type in your agent:**
 
 ```text
@@ -168,7 +175,7 @@ Take .claude, .github and hooks from the git tag block-2-solution and commit the
 Part 2 from the solution
 ```
 
-Then start a new session, so the rules and the hook load.
+Then start a new session in your stack folder, so the rules and the hook load.
 
 Next: [Part 4: Subagents](part-4-subagents.md). [Part 3: Context](part-3-context.md) is optional; we skip it in the
 session.
