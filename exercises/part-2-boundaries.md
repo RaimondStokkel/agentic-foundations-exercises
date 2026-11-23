@@ -89,7 +89,7 @@ from now on.
 A hook is a small script that the harness runs before every tool call. It can say no, whatever the model wants. The
 repo has a ready-made, tested one: it blocks every call that mentions a git push, `.env` or the tenant export.
 
-**Type in your agent:**
+**Claude desktop app. Type in your agent:**
 
 ```text
 Switch on the ready-made guard hook from the git tag block-2-solution. Take its folders with
@@ -97,6 +97,16 @@ git checkout block-2-solution -- hooks .github/hooks
 and copy the "hooks" part of the tag's .claude/settings.json into our .claude/settings.json
 (create the file if it is missing). Then explain in plain words what the hook blocks.
 ```
+
+**GitHub Copilot App and Copilot CLI. Type in your agent:**
+
+```text
+Switch on the ready-made guard hook from the git tag block-2-solution. Take its folders with
+git checkout block-2-solution -- hooks .github/hooks
+Then explain in plain words what the hook blocks.
+```
+
+Copilot reads the hook from `.github/hooks/guard.json`, so you don't need a settings file.
 
 If the agent asks to change `.claude/`, `.github/` or `hooks/`, approve it. Note that this is the harness: in Claude,
 from now on changing it always needs your approval.
