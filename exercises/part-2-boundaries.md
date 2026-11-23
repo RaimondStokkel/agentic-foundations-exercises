@@ -165,4 +165,5 @@ Part 2 from the solution
 
 Then start a new session, so the rules and the hook load.
 
-Next: [Part 3: Context](part-3-context.md)
+Next: [Part 4: Subagents](part-4-subagents.md). [Part 3: Context](part-3-context.md) is optional; we skip it in the
+session.

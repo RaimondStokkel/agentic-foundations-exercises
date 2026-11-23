@@ -5,7 +5,7 @@ Then you watch the agent hand work to them.
 
 | | |
 |---|---|
-| You start with | Your part 2 commit (and part 3's notes) |
+| You start with | Your part 2 commit. Part 3 is optional and not needed here |
 | You end with | A test-runner and a reviewer, committed, and one run where the agent delegated to both |
 
 A **subagent** is a helper with its own context window, its own tools and its own model. It gets a short brief and

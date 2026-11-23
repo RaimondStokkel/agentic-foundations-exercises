@@ -13,7 +13,7 @@ In part 1 the loop was **inside** the agent: one session, and the model decided 
 the agent still runs the loop from part 1.
 
 This is a **Ralph loop**: run the same short prompt again and again, each time in a fresh session. The agent remembers
-nothing between rounds. Its memory is a plan file and git, as in part 3.
+nothing between rounds. Its memory is a plan file and git: notes on disk, not the conversation.
 
 ## 1. Switch on the backlog (4 min)
 

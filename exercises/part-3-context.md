@@ -1,7 +1,8 @@
 # Part 3: Context
 
-**12 minutes.** You see what a long file does to the agent's context window, find a leaner way, and give the agent a
-memory that survives a new session.
+**Optional, about 12 minutes.** We skip this part in the session of 24 Nov, because context was the topic of the
+previous session. Do it when you want: every step says what to type. You see what a long file does to the agent's
+context window, find a leaner way, and give the agent a memory that survives a new session.
 
 | | |
 |---|---|
