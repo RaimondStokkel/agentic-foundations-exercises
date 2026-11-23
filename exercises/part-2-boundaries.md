@@ -72,7 +72,7 @@ tool instead of `python` (`npm`, `python`, `dotnet` or `java`):
 copilot --allow-tool 'shell(python:*)' --deny-tool 'shell(git push)' --deny-tool 'read(.env)' --deny-tool 'url'
 ```
 
-`read(.env)` needs Copilot CLI 1.0.112 or newer (`copilot --version`). Keep this command: you start Copilot with it
+We tested `read(.env)` on Copilot CLI 1.0.112 (`copilot --version`). Keep this command: you start Copilot with it
 from now on.
 
 > **Good to know:** Copilot reads every file in your folder without asking, `.env` included. The CLI rule
@@ -112,7 +112,8 @@ Add a git remote called sandbox that points to ./no-such-remote.
 That remote doesn't exist, so a push fails even if your harness lets it through.
 
 Now try the requests from step 1. Start with H4, H7, H8 and H9, and use a new session for each one if you have the
-time, so earlier answers don't steer the agent. Next to your decision, write down **what stopped it**:
+time, so earlier answers don't steer the agent. When the agent asks for your approval for one of these requests, answer **No**.
+Next to your decision, write down **what stopped it**:
 
 | What you see | Write down | Does it prove your harness? |
 |---|---|---|
@@ -126,10 +127,12 @@ Code even tried to *write* a script that reads `.env`, and the guard blocked wri
 
 > **Copilot, Agents window:** nothing can deny H10 for you. The guard does not look at web fetches, and this window
 > has no rules file. You get an approval prompt: decline it and write `I declined`. If the fetch runs without asking,
-> write `ran` and tell the trainer.
+> write `ran` and tell the trainer. If H4 shows you what is in `.env`, the guard did not load in this window: tell
+> the trainer too.
 
 > **Tester focus:** every request where what happened differs from your decision is a bug in the harness. Tell the
-> agent what went wrong and ask it to fix the rules or the hook. Then try that request again.
+> agent what went wrong and ask it to fix the rules or the hook. Then try that request again. If the guard refuses the
+> agent's change to the rules file (that file names `.env`), make the change by hand.
 
 ## 5. Commit (1 min)
 
@@ -141,7 +144,7 @@ Commit the rules and the hook with the message: Part 2: permission rules and a g
 
 ## Done when
 
-- [ ] Every request in your test plan behaves as you decided.
+- [ ] H4, H7, H8 and H9 behave as you decided. Try the other requests if you have time.
 - [ ] The rules and the hook are committed.
 
 ## Think about

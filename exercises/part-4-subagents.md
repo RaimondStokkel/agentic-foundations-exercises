@@ -48,7 +48,7 @@ Create two subagents in .claude/agents/ in this folder.
 Create three custom agents in .github/agents/ in this folder, not in the repository root.
 1. triage-lead.agent.md: name Triage Lead; tools ['read', 'search', 'edit', 'agent', 'todo'], so no terminal.
    It fixes bugs in this triage service. It delegates every test run to the Test Runner agent and every
-   review to the Reviewer agent. It never edits tests/ and never touches .env or data/.
+   review to the Reviewer agent. It never edits tests/ and never touches the secrets file or data/.
    It fixes every blocking finding before it finishes; suggestions are optional.
 2. test-runner.agent.md: name Test Runner; tools ['execute', 'read', 'search']; user-invocable: false.
    It runs exactly the test command from README.md, never changes files, searches long logs instead of
@@ -131,7 +131,8 @@ Commit all changes with the message: Part 4: test-runner and reviewer subagents
 ## Stuck or behind?
 
 Stuck: raise your hand in Teams, or post in the Teams chat.
-Out of time? **Type in your agent:**
+Out of time? Copilot users: pick the normal **Agent** first, because Triage Lead has no terminal.
+**Type in your agent:**
 
 ```text
 Take .claude/agents and .github/agents from the git tag block-3-solution and commit them

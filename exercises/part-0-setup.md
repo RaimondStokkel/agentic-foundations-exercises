@@ -47,7 +47,8 @@ agentic-foundations-exercises inside the folder I opened. Create a branch called
 Then check which of these are installed and tell me their versions: git, node, python, dotnet, java.
 ```
 
-The agent asks before it runs a command. Read each command, then approve it.
+Your agent may ask before it runs a command: read each command, then approve it. Claude can start in **Auto** mode
+and then asks less. In part 1 you switch it to **Manual**.
 
 Now pick your **stack**: the language you read most easily, out of what is installed. You don't need to be a
 developer: the exercises are about the agent, not the code.

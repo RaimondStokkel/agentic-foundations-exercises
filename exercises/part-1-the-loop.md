@@ -22,7 +22,7 @@ asking for a tool.
 
 ## 2. Predict (3 min)
 
-Before you start the agent, post your answers in the Teams chat. Type them, then send on the trainer's 3-2-1:
+Before you start the agent, post your answers in the Teams chat:
 
 - What will the agent do first?
 - How many steps (tool calls) will it need?
@@ -88,9 +88,9 @@ starts clean from the full specification:
 
 | Agent | How |
 |---|---|
-| Claude desktop app | Type `/rewind`. Pick the point before your task and choose **Restore code and conversation** |
+| Claude desktop app | Type `/rewind`. Pick the point before your task and choose **Restore code and conversation**. No `/rewind` in your app? Type: `Undo all changes in src and tests with git restore and git clean.` |
 | Copilot, Agents window | Open the **Changes** view (**Last Turn**) to see what changed. Then type: `Undo all changes in src and tests with git restore and git clean.` |
-| Copilot CLI | Type `/rewind`. Pick the turn before your task and restore the files and the conversation |
+| Copilot CLI | Type `/rewind`. Pick your task prompt: Copilot goes back to just before it. Choose **Conversation + files** |
 
 **Type in your agent:** `Run the tests.` You should be back to 1 failing test.
 

@@ -24,7 +24,7 @@ Then look at how full the context window is, and note what you see:
 
 | Agent | How |
 |---|---|
-| Claude desktop app | The usage ring next to the model picker, or type `/context` |
+| Claude desktop app | Type `/context`, or open the **Context** card in the session details panel |
 | Copilot, Agents window | Look at how the agent read the log: the whole file or a search? |
 | Copilot CLI | Type `/context` |
 

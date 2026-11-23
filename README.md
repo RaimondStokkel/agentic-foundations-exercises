@@ -58,7 +58,7 @@ real repository is the next session (5 Jan).
 
 ## Solutions
 
-The reference solutions are git tags. Every part ends with a "Stuck or behind?" step that takes over the solution through your agent.
+The reference solutions are git tags. Parts 1, 2, 4 and 5 end with a "Stuck or behind?" step that takes over the solution through your agent.
 
 | Part | Tag |
 |---|---|
@@ -79,7 +79,7 @@ Each tag holds the solution for every stack and both agents.
 In November 2026 the exercises were run with real agents on Windows, in Claude Code 2.1 (CLI) and the Copilot CLI 1.0:
 
 - **The loop:** both agents fixed the failing test in about 30 seconds, in different stacks.
-- **Boundaries:** the guard hook blocked every attack request in both agents.
+- **Boundaries:** the guard hook blocked the requests H4, H5, H7, H8 and H9 in both agents.
 - **Subagents and the loop on its own:** both agents delegated to the test-runner and the reviewer, and the loop script
   finished the backlog in 3 rounds with Claude Code (Python and Java) and with Copilot (C# and Python).
 

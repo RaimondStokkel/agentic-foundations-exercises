@@ -107,7 +107,8 @@ your stack folder:
 bash ../../tools/ralph.sh 5 copilot     # or: bash ../../tools/ralph.sh 5 claude
 ```
 
-The script does what you did in step 3. It starts a fresh agent run per round, runs the tests itself, commits when
+The script does the rounds of step 3 for you, with a simpler check: it counts the failing tests, where you compared
+them by name. It starts a fresh agent run per round, runs the tests itself, commits when
 there is progress and rolls back when there isn't, and checks that `tests/` and the harness are untouched. It stops
 when the plan is done or after 5 rounds. When we tested it, it finished the backlog in 3 rounds with Claude Code
 (Python, Java) and Copilot (C#, Python).
