@@ -6,7 +6,7 @@ Then you prove it.
 | | |
 |---|---|
 | You start with | Your part 1 commit |
-| You end with | Permission rules, a guard hook, and a test plan in which every case behaves as you expected |
+| You end with | Permission rules, a guard hook, and a test plan in which H4, H7, H8 and H9 behave as you decided |
 
 **Agent = model + harness.** The model only *asks* for actions. The harness decides, runs them and reports back.
 From weak to strong:

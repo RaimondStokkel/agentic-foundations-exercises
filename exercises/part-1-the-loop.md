@@ -53,7 +53,7 @@ Before you approve a step, say what you expect it to return. Keep a short tally 
 The text the agent writes between its steps is the "thought". Every tool call it shows you is an "action".
 The GitHub Copilot App folds the actions into grey lines, such as "Run Python tests ... and 1 other tool call". Click
 the arrow in front of a line to see each action and what came back.
-Some agents write nothing before a tool call. Then fill in the first column yourself: what do you expect this step
+Some agents write nothing before a tool call. Then fill in the **Thought** column yourself: what do you expect this step
 to tell you?
 
 When it is done, compare with your prediction. **How many steps did it take? Which observation changed its plan?**
