@@ -14,11 +14,16 @@ export function classifyRepairRequest({ description, category, vulnerableTenant 
     throw new TypeError('description is required');
   }
 
+  // Tenants who need extra care get a fast response.
+  if (vulnerableTenant) {
+    return 'urgent';
+  }
+
   if (EMERGENCY_KEYWORDS.some((keyword) => description.includes(keyword))) {
     return 'emergency';
   }
 
-  if (URGENT_CATEGORIES.includes(category) || vulnerableTenant) {
+  if (URGENT_CATEGORIES.includes(category)) {
     return 'urgent';
   }
 

@@ -20,12 +20,18 @@ public static class Triage
             throw new ArgumentException("description is required", nameof(description));
         }
 
+        // Tenants who need extra care get a fast response.
+        if (vulnerableTenant)
+        {
+            return Priority.Urgent;
+        }
+
         if (Keywords.Emergency.Any(keyword => description.Contains(keyword)))
         {
             return Priority.Emergency;
         }
 
-        if ((category is not null && Keywords.UrgentCategories.Contains(category)) || vulnerableTenant)
+        if (category is not null && Keywords.UrgentCategories.Contains(category))
         {
             return Priority.Urgent;
         }

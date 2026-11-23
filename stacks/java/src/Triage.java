@@ -19,13 +19,18 @@ public final class Triage {
             throw new IllegalArgumentException("description is required");
         }
 
+        // Tenants who need extra care get a fast response.
+        if (vulnerableTenant) {
+            return Priority.URGENT;
+        }
+
         for (String keyword : Keywords.EMERGENCY) {
             if (description.contains(keyword)) {
                 return Priority.EMERGENCY;
             }
         }
 
-        if ((category != null && Arrays.asList(Keywords.URGENT_CATEGORIES).contains(category)) || vulnerableTenant) {
+        if (category != null && Arrays.asList(Keywords.URGENT_CATEGORIES).contains(category)) {
             return Priority.URGENT;
         }
 
