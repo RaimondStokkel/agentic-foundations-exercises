@@ -63,7 +63,7 @@ Let the agent work without asking for every edit:
 | Agent | How |
 |---|---|
 | Claude desktop app | Mode selector: **Accept edits**. Your rules still apply: a change in `tests/` still asks, and a push or `.env` stays blocked |
-| GitHub Copilot App | Use the default agent, not Triage Lead. Keep **Always ask** and approve edits in `src/` and `ralph/` only |
+| GitHub Copilot App | In the agent picker, use the default agent, not Triage Lead. Keep **Always ask**: the app has no rules file, so you guard `tests/`. Approve edits in `src/` and `ralph/`, decline anything else. When it first asks to run the tests, choose **Always allow this command for this session** |
 | Copilot CLI | `/exit`, then start with your flags from part 2 plus `--allow-tool write` |
 
 Then do **one round per plan item**, three rounds in all:
