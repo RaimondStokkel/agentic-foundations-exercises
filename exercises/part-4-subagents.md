@@ -114,7 +114,9 @@ Then watch the agent call the helpers again.
 
 ## 5. Commit (1 min)
 
-**Copilot users, switch agents first.** Triage Lead has no terminal, so it cannot commit.
+**Copilot users, switch agents first.** Triage Lead has no terminal, but it may still commit by handing the job to a
+helper. It refuses part 5, though: its instructions forbid changes in `tests/`, and part 5 starts by switching on the
+backlog tests. So switch back to the default agent now:
 
 | Agent | How |
 |---|---|
@@ -147,7 +149,7 @@ Stuck: raise your hand in Teams, or post in the Teams chat.
 stack folder, as in [part 0](part-0-setup.md#how-to-start-a-new-session). Did it change files there? **Type in the new session:**
 `Undo every change outside this folder with git restore and git clean.`
 
-Out of time? Copilot users: switch back to the default agent first, because Triage Lead has no terminal.
+Out of time? Copilot users: switch back to the default agent first (see step 5).
 **Type in your agent:**
 
 ```text

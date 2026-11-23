@@ -15,6 +15,9 @@ the agent still runs the loop from part 1.
 This is a **Ralph loop**: run the same short prompt again and again, each time in a fresh session. The agent remembers
 nothing between rounds. Its memory is a plan file and git: notes on disk, not the conversation.
 
+**Copilot users:** use the default agent, not Triage Lead (see [part 4, step 5](part-4-subagents.md#5-commit-1-min)).
+Triage Lead refuses step 1, because its instructions forbid changes in `tests/`.
+
 ## 1. Switch on the backlog (4 min)
 
 > **Tester focus:** the tests are the judge. A weak judge lets bad code through.
