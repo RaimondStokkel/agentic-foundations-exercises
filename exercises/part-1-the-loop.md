@@ -94,7 +94,7 @@ starts clean from the full specification:
 | Agent | How |
 |---|---|
 | Claude desktop app | Type `/rewind`. Pick the point before your task and choose **Restore code and conversation**. No `/rewind` in your app? Type: `Undo all changes in src and tests with git restore and git clean.` |
-| GitHub Copilot App | Click **Changes** above the prompt box to see what changed. Then type: `Undo all changes in src and tests with git restore and git clean.` |
+| GitHub Copilot App | The app has no rewind. Type: `Undo all changes in src and tests with git restore and git clean.` |
 | Copilot CLI | Type `/rewind`. Pick your task prompt: Copilot goes back to just before it. Choose **Conversation + files** |
 
 **Type in your agent:** `Run the tests.` You should be back to 1 failing test.
