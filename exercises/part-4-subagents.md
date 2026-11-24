@@ -77,7 +77,7 @@ Approve the changes: the agents live in the harness folders, so your rules ask f
 - The description says *when* to use the helper.
 - The tools are a short list. The reviewer has no edit tool and no shell. The test-runner has no edit tool.
 - The reply format is short and fixed.
-- Only one agent writes code.
+- Neither helper writes code. Only the agent you talk to does (in Copilot: Triage Lead).
 
 > **Developer focus:** the reviewer can only read and search. The test-runner also has a shell. Which of the two is
 > technically unable to change a file, and which one only promises not to?
