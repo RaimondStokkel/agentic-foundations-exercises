@@ -16,8 +16,8 @@ changes the code.
 
 > **Developer focus:** the tools list of each helper is its boundary. Read it before you approve the file.
 
-- The **test-runner** runs the tests and reports in a few lines. It has no edit tool, and it runs on a cheaper, faster
-  model: running tests needs no deep thinking.
+- The **test-runner** runs the tests and reports in a few lines. It has no edit tool. In Claude it runs on a cheaper,
+  faster model: running tests needs no deep thinking. In Copilot it uses the same model as your session.
 - The **reviewer** reads the code and the tests and gives a verdict. It can't edit or run anything.
 
 Paste the block for your agent as a whole. You don't need to understand every line: the agent turns it into the files.
